@@ -1,0 +1,6 @@
+Liste des différents graphs à créer:
+
+Mort par age
+par genre
+par race
+suicide ou non?
