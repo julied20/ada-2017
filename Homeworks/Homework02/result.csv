@@ -1,0 +1,256 @@
+,University,Location,Location,Rank,Rank,Ratio Int. Students,Ratio Int. Students,Ratio Students/Staff,Ratio Students/Staff
+,University,Country,region,QS,THE,QS,THE,QS,THE
+0,Massachusetts Institute of Technology,United States,North America,1,5,21.0,1.0,21.0,8.7
+1,Stanford University,United States,North America,2,=3,1.0,1.0,1.0,7.5
+2,Harvard University,United States,North America,3,6,1.0,2.0,1.0,8.9
+3,California Institute of Technology,United States,North America,4,=3,1.0,1.0,1.0,6.5
+4,University of Cambridge,United Kingdom,Europe,5,2,1.0,7.0,10.0,10.9
+5,University of Oxford,United Kingdom,Europe,6,1,1.0,1.0,10.0,11.2
+6,University College London,United Kingdom,Europe,7,16,14.0,1.0,15.0,10.5
+7,Imperial College London,United Kingdom,Europe,8,8,2.0,1.0,10.0,11.4
+8,University of Chicago,United States,North America,9,9,1.0,25.0,1.0,6.2
+9,ETH Zurich - Swiss Federal Institute of Technology,,Europe,10,,3.0,,1.0,
+10,"Nanyang Technological University, Singapore",Singapore,Asia,11,52,1.0,1.0,2.0,16.3
+11,Federal Institute of Technology in Lausanne,Switzerland,Europe,12,=38,1.0,1.0,1.0,11.2
+12,Princeton University,United States,North America,13,7,1.0,1.0,1.0,8.3
+13,Cornell University,United States,North America,14,19,1.0,2.0,2.0,9.8
+14,National University of Singapore,Singapore,Asia,15,=22,1.0,2.0,2.0,17.0
+15,Yale University,United States,North America,16,12,3.0,1.0,26.0,4.3
+16,Johns Hopkins University,United States,North America,17,13,1.0,6.0,46.0,4.3
+17,Columbia University,United States,North America,18,14,5.0,1.0,1.0,6.1
+18,University of Pennsylvania,United States,North America,19,=10,1.0,1.0,1.0,6.5
+19,Australian National University,Australia,Oceania,20,48,1.0,1.0,2.0,19.3
+20,University of Michigan,United States,North America,=21,21,13.0,2.0,1.0,8.6
+21,Duke University,United States,North America,=21,17,8.0,2.0,2.0,4.5
+22,University of Edinburgh,United Kingdom,Europe,=23,=27,1.0,1.0,5.0,12.5
+23,King's College London,,Europe,=23,,1.0,,10.0,
+24,Tsinghua University,China,Asia,25,30,4.0,1.0,2.0,13.7
+25,University of Hong Kong,Hong Kong,Asia,26,40,2.0,2.0,6.0,18.0
+26,"University of California, Berkeley",United States,North America,27,18,17.0,1.0,1.0,13.1
+27,University of Tokyo,Japan,Asia,=28,46,7.0,10.0,1.0,6.7
+28,Northwestern University,United States,North America,=28,20,1.0,6.0,1.0,12.8
+29,Hong Kong University of Science and Technology,Hong Kong,Asia,30,44,1.0,1.0,25.0,23.1
+30,University of Toronto,Canada,North America,31,=22,1.0,1.0,1.0,18.7
+31,McGill University,Canada,North America,32,42,1.0,26.0,1.0,13.3
+32,"University of California, Los Angeles",United States,North America,33,15,1.0,1.0,1.0,9.6
+33,University of Manchester,United Kingdom,Europe,34,=54,2.0,2.0,10.0,14.6
+34,London School of Economics and Political Science,United Kingdom,Europe,35,=25,4.0,1.0,32.0,12.2
+35,Kyoto University,Japan,Asia,=36,=74,2.0,1.0,14.0,8.7
+36,Seoul National University,South Korea,Asia,=36,=74,1.0,1.0,2.0,12.6
+37,Peking University,China,Asia,=38,=27,2.0,8.0,1.0,8.9
+38,"University of California, San Diego",United States,North America,=38,31,1.0,1.0,1.0,12.8
+39,Fudan University,China,Asia,40,116,5.0,1.0,1.0,12.1
+40,KAIST - Korea Advanced Institute of Science & Technology,,Asia,=41,,2.0,,2.0,
+41,University of Melbourne,Australia,Oceania,=41,32,2.0,4.0,7.0,26.6
+42,"Higher Normal School, Paris",,Europe,43,,1.0,,1.0,
+43,University of Bristol,United Kingdom,Europe,44,76,1.0,3.0,10.0,13.7
+44,University of New South Wales,Australia,Oceania,45,85,4.0,1.0,4.0,26.7
+45,Chinese University of Hong Kong,Hong Kong,Asia,46,58,1.0,1.0,1.0,17.3
+46,University of Queensland,Australia,Oceania,=47,65,1.0,2.0,1.0,35.7
+47,Carnegie Mellon University,United States,North America,=47,24,1.0,1.0,2.0,13.5
+48,City University of Hong Kong,Hong Kong,Asia,49,=119,3.0,35.0,1.0,11.2
+49,University of Sydney,Australia,Oceania,50,61,2.0,1.0,2.0,21.6
+50,University of British Columbia,Canada,North America,51,=34,2.0,1.0,2.0,18.1
+51,New York University,United States,North America,52,=27,,2.0,,9.6
+52,Brown University,United States,North America,53,=50,1.0,2.0,1.0,10.7
+53,Delft University of Technology,Netherlands,Europe,54,63,7.0,1.0,1.0,19.6
+54,University of Wisconsin-Madison,United States,North America,55,43,15.0,4.0,1.0,10.7
+55,Tokyo Institute of Technology,,Asia,56,,1.0,,1.0,
+56,University of Warwick,United Kingdom,Europe,57,91,1.0,1.0,1.0,13.0
+57,University of Amsterdam,Netherlands,Europe,58,59,1.0,1.0,1.0,12.3
+58,École Polytechnique,France,Europe,59,115,6.0,9.0,1.0,5.1
+59,Monash University,Australia,Oceania,60,=80,1.0,2.0,1.0,33.7
+60,University of Washington,United States,North America,61,=25,3.0,1.0,3.0,11.4
+61,Shanghai Jiao Tong University,China,Asia,62,=188,1.0,2.0,1.0,12.4
+62,Osaka University,,Asia,63,,2.0,,2.0,
+63,Technical University of Munich,Germany,Europe,64,41,1.0,1.0,2.0,54.4
+64,University of Glasgow,United Kingdom,Europe,65,=80,1.0,1.0,5.0,15.4
+65,Ludwig-Maximilians-University Munich,,Europe,66,,41.0,,1.0,
+66,University of Texas at Austin,United States,North America,67,49,1.0,1.0,1.0,17.1
+67,Heidelberg University,Germany,Europe,68,45,2.0,1.0,4.0,23.2
+68,University of Illinois at Urbana-Champaign,United States,North America,69,37,29.0,1.0,1.0,22.8
+69,Georgia Institute of Technology,United States,North America,70,33,1.0,1.0,1.0,20.7
+70,Pohang University of Science And Technology,,Asia,=71,,3.0,,1.0,
+71,KU Leuven,Belgium,Europe,=71,47,2.0,3.0,1.0,37.1
+72,University of Copenhagen,Denmark,Europe,=73,=109,1.0,1.0,1.0,4.1
+73,University of Zurich,Switzerland,Europe,=73,136,1.0,1.0,1.0,5.9
+74,Buenos Aires' University,,Latin America,75,,1.0,,1.0,
+75,Tohoku University,,Asia,=76,,1.0,,1.0,
+76,National Taiwan University,Taiwan,Asia,=76,=198,1.0,2.0,1.0,11.5
+77,Durham University,United Kingdom,Europe,=78,97,5.0,1.0,1.0,14.9
+78,Lund University,Sweden,Europe,=78,93,6.0,1.0,1.0,12.1
+79,"University of North Carolina, Chapel Hill",,North America,80,,1.0,,1.0,
+80,Boston University,United States,North America,81,=70,3.0,1.0,7.0,8.6
+81,University of Auckland,New Zealand,Oceania,=82,192,1.0,1.0,1.0,18.8
+82,University of Sheffield,United Kingdom,Europe,=82,104,5.0,1.0,5.0,14.9
+83,University of Birmingham,United Kingdom,Europe,=84,=141,5.0,1.0,2.0,15.0
+84,University of Nottingham,United Kingdom,Europe,=84,=147,1.0,2.0,5.0,14.0
+85,Ohio State University,United States,North America,86,=70,2.0,1.0,1.0,12.7
+86,Zhejiang University,China,Asia,87,=177,1.0,1.0,1.0,14.1
+87,Trinity College Dublin,Ireland,Europe,88,=117,3.0,1.0,1.0,22.8
+88,Rice University,United States,North America,89,=86,1.0,1.0,1.0,9.0
+89,Korea University,,Asia,=90,,2.0,,1.0,
+90,University of Alberta,Canada,North America,=90,=119,1.0,13.0,1.0,21.6
+91,University of St Andrews,United Kingdom,Europe,92,=143,10.0,1.0,20.0,13.0
+92,University of Western Australia,Australia,Oceania,=93,=111,3.0,1.0,71.0,21.8
+93,Pennsylvania State University,United States,North America,=93,77,1.0,1.0,1.0,15.2
+94,Lomonosov Moscow State University,Russian Federation,Europe,=95,194,1.0,2.0,1.0,7.3
+95,Hong Kong Polytechnic University,Hong Kong,Asia,=95,=182,1.0,1.0,1.0,26.9
+96,University of Science and Technology of China,China,Asia,97,132,4.0,3.0,24.0,8.2
+97,University of Geneva,Switzerland,Europe,=98,=130,4.0,5.0,4.0,15.1
+98,KTH Royal Institute of Technology,Sweden,Europe,=98,=173,1.0,1.0,2.0,16.0
+99,Washington University in St. Louis,,North America,100,,2.0,,1.0,
+100,University of Leeds,United Kingdom,Europe,101,139,1.0,1.0,605.0,14.7
+101,University of Southampton,United Kingdom,Europe,=102,=126,1.0,11.0,15.0,12.5
+102,University of Helsinki,Finland,Europe,=102,90,1.0,2.0,1.0,16.2
+103,Eindhoven University of Technology,Netherlands,Europe,104,=141,1.0,1.0,1.0,18.6
+104,Purdue University,United States,North America,105,60,1.0,1.0,1.0,17.4
+105,Yonsei University,,Asia,106,,1.0,,1.0,
+106,Karlsruhe Institute of Technology,Germany,Europe,107,133,1.0,6.0,1.0,26.3
+107,Sungkyunkwan University,,Asia,108,,1.0,,1.0,
+108,Utrecht University,Netherlands,Europe,=109,68,1.0,1.0,1.0,15.2
+109,Leiden University,Netherlands,Europe,=109,67,1.0,3.0,1.0,18.2
+110,University of Adelaide,Australia,Oceania,=109,=134,2.0,1.0,1.0,34.3
+111,Uppsala University,Sweden,Europe,112,=86,1.0,1.0,1.0,17.3
+112,University of Groningen,Netherlands,Europe,113,=83,1.0,17.0,3.0,24.1
+113,University of Malaya,,Asia,=114,,2.0,,1.0,
+114,Nanjing University,China,Asia,=114,=169,5.0,2.0,1.0,14.2
+115,Nagoya University,,Asia,=116,,1.0,,1.0,
+116,Technical University of Denmark,Denmark,Europe,=116,=153,2.0,4.0,1.0,6.0
+117,"University of California, Davis",United States,North America,118,=54,7.0,5.0,7.0,13.8
+118,Aarhus University,Denmark,Europe,119,=109,18.0,3.0,6.0,14.3
+119,Humboldt University of Berlin,Germany,Europe,120,62,1.0,1.0,2.0,56.5
+120,Universidade de São Paulo,,Latin America,121,,1.0,,1.0,
+121,National Autonomous University of Mexico,,Latin America,=122,,1.0,,1.0,
+122,Hokkaido University,,Asia,=122,,1.0,,1.0,
+123,Wageningen University,,Europe,124,,1.0,,1.0,
+124,Free University of Berlin,Germany,Europe,=125,88,1.0,1.0,11.0,57.0
+125,Ghent University,Belgium,Europe,=125,107,2.0,1.0,8.0,35.9
+126,Queen Mary University of London,United Kingdom,Europe,127,121,1.0,15.0,5.0,13.3
+127,Kyushu University,,Asia,128,,1.0,,2.0,
+128,"University of Maryland, College Park",United States,North America,129,69,7.0,2.0,112.0,16.5
+129,Montreal university,,North America,130,,8.0,,1.0,
+130,Pierre and Marie Curie University,France,Europe,131,=123,1.0,1.0,1.0,12.3
+131,University of Southern California,United States,North America,132,66,1.0,1.0,1.0,12.8
+132,Chalmers University of Technology,,Europe,133,,1.0,,1.0,
+133,"University of California, Santa Barbara",United States,North America,134,53,7.0,2.0,7.0,28.1
+134,Lancaster University,United Kingdom,Europe,=135,=150,12.0,1.0,15.0,13.1
+135,University of York,United Kingdom,Europe,=135,=137,1.0,1.0,3.0,15.1
+136,Cardiff University,United Kingdom,Europe,=137,=162,5.0,2.0,5.0,13.5
+137,Pontifical Catholic University of Chile,,Latin America,=137,,1.0,,1.0,
+138,Aalto University,Finland,Europe,=137,190,1.0,4.0,3.0,20.2
+139,McMaster University,Canada,North America,140,78,2.0,1.0,1.0,24.7
+140,RWTH Aachen University,Germany,Europe,141,79,3.0,1.0,1.0,57.7
+141,University of Pittsburgh,United States,North America,=142,=100,1.0,1.0,1.0,5.9
+142,University of Oslo,Norway,Europe,=142,146,1.0,1.0,1.0,18.6
+143,Technical University Berlin,,Europe,144,,42.0,,42.0,
+144,The Hebrew University of Jerusalem,,Asia,145,,1.0,,1.0,
+145,University of Lausanne,Switzerland,Europe,146,152,1.0,5.0,1.0,13.6
+146,Erasmus University Rotterdam,Netherlands,Europe,=147,=72,1.0,1.0,1.0,20.1
+147,Emory University,United States,North America,=147,98,6.0,1.0,4.0,4.4
+148,University of Basel,Switzerland,Europe,=149,=95,3.0,3.0,7.0,17.7
+149,Michigan State University,United States,North America,=149,=83,1.0,1.0,1.0,17.0
+150,University of Otago,,Oceania,151,,1.0,,2.0,
+151,University of Waterloo,,North America,152,,1.0,,3.0,
+152,Catholic University of Louvain,Belgium,Europe,153,129,1.0,1.0,1.0,37.8
+153,University of Vienna,Austria,Europe,154,=165,1.0,1.0,1.0,20.8
+154,Hanyang University,,Asia,155,,1.0,,1.0,
+155,University of Barcelona,,Europe,156,,2.0,,1.0,
+156,Ecole Normale Superieure of Lyon,France,Europe,157,=182,1.0,1.0,2.0,8.5
+157,University of Aberdeen,United Kingdom,Europe,=158,185,1.0,1.0,5.0,13.9
+158,University of Exeter,United Kingdom,Europe,=158,=130,1.0,7.0,1.0,17.5
+159,University of Bath,,Europe,160,,1.0,,5.0,
+160,Newcastle University,United Kingdom,Europe,=161,=175,1.0,6.0,1.0,15.6
+161,National Tsing Hua University,,Asia,=161,,1.0,,30.0,
+162,University of Minnesota,United States,North America,163,=56,2.0,1.0,1.0,17.4
+163,University of Bergen,,Europe,=164,,1.0,,1.0,
+164,"University of California, Irvine",United States,North America,=164,99,3.0,1.0,3.0,17.0
+165,Eberhard Karls University of Tübingen,,Europe,=164,,2.0,,2.0,
+166,University of Bern,Switzerland,Europe,167,=105,2.0,3.0,2.0,16.5
+167,University College Dublin,,Europe,168,,3.0,,1.0,
+168,Dartmouth College,United States,North America,169,89,1.0,5.0,1.0,6.6
+169,Politecnico di Milano,,Europe,170,,1.0,,1.0,
+170,Albert-Ludwigs-Universitaet Freiburg,,Europe,171,,3.0,,2.0,
+171,Indian Institute of Technology Delhi,,Asia,172,,1.0,,1.0,
+172,King Fahd University of Petroleum & Minerals,,Asia,=173,,1.0,,2.0,
+173,University of Liverpool,United Kingdom,Europe,=173,=177,1.0,5.0,5.0,11.7
+174,University of Virginia,United States,North America,=173,=113,1.0,1.0,1.0,9.7
+175,University of Technology Sydney,,Oceania,176,,1.0,,1.0,
+176,CentraleSupélec,,Europe,177,,1.0,,1.0,
+177,University of Florida,United States,North America,178,=143,1.0,1.0,1.0,17.5
+178,Indian Institute of Technology Bombay,,Asia,=179,,3.0,,6.0,
+179,University of Twente,Netherlands,Europe,=179,=179,1.0,1.0,2.0,12.8
+180,University of Göttingen,Germany,Europe,181,=113,2.0,6.0,6.0,27.9
+181,Vrije Universiteit Brussel,,Europe,=182,,1.0,,4.0,
+182,Universidade Estadual de Campinas,,Latin America,=182,,14.0,,4.0,
+183,University of Colorado Boulder,United States,North America,=182,=100,3.0,10.0,1.0,16.3
+184,Vienna University of Technology,,Europe,=182,,1.0,,1.0,
+185,University of Rochester,United States,North America,186,=153,33.0,1.0,1.0,4.3
+186,Autonomous University of Madrid,,Europe,187,,3.0,,1.0,
+187,Alma Mater - University of Bologna,,Europe,=188,,1.0,,1.0,
+188,University of Reading,,Europe,=188,,1.0,,10.0,
+189,Indian Institute of Science,,Asia,190,,47.0,,47.0,
+190,University of Cape Town,South Africa,Africa,191,171,7.0,3.0,1.0,11.7
+191,Scuola Normale Superiore di Pisa,Italy,Europe,=192,184,4.0,1.0,2.0,5.2
+192,Scuola Superiore Sant'Anna Pisa di Studi Universitari e di Perfezionamento,,Europe,=192,,3.0,,1.0,
+193,Keio University CEMS MIM,,Asia,=192,,2.0,,5.0,
+194,Stockholm University,Sweden,Europe,=195,=134,1.0,4.0,3.0,24.9
+195,Autonomous University of Barcelona,Spain,Europe,=195,=147,2.0,1.0,9.0,12.9
+196,Texas A&M University,United States,North America,=195,=159,2.0,1.0,2.0,23.6
+197,Monterrey Institute of Technology and Higher Studies,,Latin America,199,,4.0,,2.0,
+198,Maastricht University,Netherlands,Europe,200,103,1.0,1.0,1.0,18.0
+199,University of Chile,,Latin America,201,,2.0,,16.0,
+200,ETH Zurich – Swiss Federal Institute of Technology Zurich,Switzerland,,,=10,,1.0,,14.6
+201,LMU Munich,Germany,,,=34,,1.0,,15.6
+202,King’s College London,United Kingdom,,,36,,1.0,,12.0
+203,Karolinska Institute,Sweden,,,=38,,1.0,,10.9
+204,Washington University in St Louis,United States,,,=50,,1.0,,7.5
+205,University of North Carolina at Chapel Hill,United States,,,=56,,4.0,,9.7
+206,Wageningen University & Research,Netherlands,,,64,,1.0,,19.7
+207,Paris Sciences and Letters - PSL Research University Paris,France,,,=72,,1.0,,10.1
+208,University of Freiburg,Germany,,,82,,1.0,,40.3
+209,Technical University of Berlin,Germany,,,92,,10.0,,64.3
+210,University of Tübingen,Germany,,,94,,1.0,,38.5
+211,Korea Advanced Institute of Science and Technology (KAIST),South Korea,,,=95,,1.0,,10.6
+212,University of Bonn,Germany,,,=100,,1.0,,77.9
+213,Vanderbilt University,United States,,,=105,,1.0,,3.3
+214,University of Montreal,Canada,,,108,,1.0,,21.9
+215,Sungkyunkwan University (SKKU),South Korea,,,=111,,1.0,,19.6
+216,Indiana University,United States,,,=117,,5.0,,14.1
+217,Radboud University Nijmegen,Netherlands,,,122,,2.0,,19.1
+218,Georgetown University,United States,,,=123,,1.0,,8.6
+219,University of Mannheim,Germany,,,125,,1.0,,74.5
+220,Arizona State University,United States,,,=126,,1.0,,20.1
+221,Charité - University Medicine Berlin,Germany,,,=126,,6.0,,16.2
+222,Pohang University of Science and Technology,South Korea,,,=137,,2.0,,10.4
+223,Pompeu Fabra University,Spain,,,140,,12.0,,20.8
+224,University of Cologne,Germany,,,145,,1.0,,50.9
+225,University of Sussex,United Kingdom,,,=147,,2.0,,15.4
+226,University of Notre Dame,United States,,,=150,,1.0,,13.4
+227,Scuola Superiore Sant’Anna,Italy,,,=155,,2.0,,11.7
+228,Technical University of Dresden,Germany,,,=155,,1.0,,35.9
+229,Ulm University,Germany,,,=155,,1.0,,28.4
+230,Case Western Reserve University,United States,,,158,,1.0,,7.1
+231,University of Leicester,United Kingdom,,,=159,,1.0,,14.1
+232,University of Arizona,United States,,,161,,3.0,,13.0
+233,"University of California, Santa Cruz",United States,,,=162,,2.0,,23.0
+234,University of Erlangen-Nuremberg,Germany,,,=162,,6.0,,58.5
+235,Vrije Universiteit Amsterdam,Netherlands,,,=165,,1.0,,18.1
+236,University of Würzburg,Germany,,,=165,,1.0,,33.9
+237,University of Alabama at Birmingham,United States,,,168,,1.0,,15.2
+238,Tufts University,United States,,,=169,,1.0,,9.3
+239,"Rutgers, the State University of New Jersey",United States,,,172,,1.0,,11.1
+240,University of Münster,Germany,,,=173,,7.0,,42.6
+241,Free University of Brussels,Belgium,,,=175,,1.0,,43.4
+242,University of Luxembourg,Luxembourg,,,=179,,1.0,,14.6
+243,Paris-Sud University,France,,,181,,1.0,,14.5
+244,University of Miami,United States,,,186,,4.0,,5.9
+245,University of Dundee,United Kingdom,,,187,,3.0,,14.9
+246,University of East Anglia,United Kingdom,,,=188,,3.0,,13.6
+247,University of Massachusetts,United States,,,191,,2.0,,13.3
+248,Northeastern University,United States,,,193,,4.0,,14.0
+249,Tilburg University,Netherlands,,,195,,1.0,,22.5
+250,Paris-Sorbonne University – Paris 4,France,,,196,,1.0,,30.2
+251,"Royal Holloway, University of London",United Kingdom,,,197,,1.0,,15.4
+252,"University of California, Riverside",United States,,,=198,,2.0,,20.7
+253,University of Gothenburg,Sweden,,,=198,,1.0,,10.0
