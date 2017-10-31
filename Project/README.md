@@ -17,7 +17,7 @@ The aim of this project is to visualise, on an interactive map, the different co
 
 ## Dataset
 
-**Dataset :** 'UCDP/PRIO Armed Conflict Dataset version 17.1' dataset from [here](http://ucdp.uu.se/downloads/)
+**Dataset :** 'UCDP/PRIO Armed Conflict Dataset version 17.1' dataset. Can be downloaded [here](http://ucdp.uu.se/downloads/).
 
 The Dataset come from a joint project between the Uppsala Conflict Data Program (UCDP) and the Peace Research Institute in Oslo (PRIO). 
 It contains information on armed conflict where at least one party is the government of a state in the time period 1946-2016.
