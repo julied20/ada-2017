@@ -4,7 +4,7 @@
 
 Different patterns appeared after the decolonisation. Some country like Morocco (french ex-colony) who had obtain his independence in a “relative” peace was and are note weakened by wars. On the contrary, Syria (also a french ex-colony) obtained its independence with difficulties, and since then, they have very important politics difficulties. The difference of stability between these two country can it be linked to the way they obtain their independence?
 
-The problematic of this project is the next : How did the decolonization affected the stability of the colonised country? To answer this questions, the 'UCDP/PRIO Armed Conflict Dataset version 17.1' dataset from [here](http://ucdp.uu.se/downloads/), which covers armed conflict on the period from 1946 to 2016 is used.
+The problematic of this project is the next : How did the decolonization affected the stability of the colonised country? To answer this question, the 'UCDP/PRIO Armed Conflict Dataset version 17.1' dataset from [here](http://ucdp.uu.se/downloads/), which covers armed conflict on the period from 1946 to 2016 is used.
 
 The aim of this project is to visualise, on an interactive map, the different conflicts linked to the decolonisation. A data story will be created to retrace what has been done during this project. 
 
