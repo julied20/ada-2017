@@ -21,6 +21,7 @@ The aim of this project is to visualise, on an interactive map, the different co
 The Dataset comes from a joint project between the Uppsala Conflict Data Program (UCDP) and the Peace Research Institute in Oslo (PRIO). 
 It contains information on armed conflicts where at least one party is the government of a state in the time period 1946-2016.
 UCDP defines conflict as: “a contested incompatibility that concerns government and/or territory where the use of armed force between two parties, of which at least one is the government of a state, results in at least 25 battle-related deaths in a calendar year.”
+
 This Dataset regroups all the conflicts informations, like the countries or political parties involved, or the date of the conflict. But in order to interpret these information and answer the research questions, more material is needed.
 This additional material is extracted from Wikidata. Wikidata is a central storage for the structured data of Wikipedia, Wikisource and others.
 
