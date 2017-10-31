@@ -3,11 +3,15 @@
 ## Abstract
 _A 150 word description of the project idea, goals, dataset used. What story you would like to tell and why? What's the motivation behind your project?_
 
-We will use the 'UCDP/PRIO Armed Conflict Dataset version 17.1' dataset from [here](http://ucdp.uu.se/downloads/), which covers armed conflict on the period from 1946 to 2016. From there, we want to record how the deconolization happened in post-european colonies to answer our problematic: How did the decolonisation affected the stability of the colonised country? 
+Currently, lot of countries on war are ancient colony. Some country like Morocco (French ex-colony) who had obtain his independence in a “relative” peace was and are note weakened by wars. Conversely Syria (also a french ex-colony) obtain their independence in blood and they have very important politics difficulties since. Maybe there is a link between the way how colony obtain their independence and their political stability ? 
 
-We can first observe how did the deconolization took place, then observe the type of gouvernement that emerged (we could scrap informations from wikipedia to add informations). As the dataset looks at a large range of years, the stability of those gouvernements can also be visualized. 
+The problematic of our project is the next : How did the decolonization affected the stability of the colonised country ? To do that, we will use the 'UCDP/PRIO Armed Conflict Dataset version 17.1' dataset from [here](http://ucdp.uu.se/downloads/), which covers armed conflict on the period from 1946 to 2016.
 
-At the end of the project, a data story will be created. Ideally, we would be able to observe on a map the different conflits linked to the decolonization. Adding interactivity to the map would let the user observe more informations, or just more precise with the conflict visualization on a smaller scale (cities and villages). The map could also evolve with the year we observe to add some dynamic to our story.
+## ---> on peut virer ce passage si on veut respecter plus la limite de mot
+We can first observe how did the decolonization took place, then observe the type of government that emerged (we could scrap informations from wikipedia to add informations). As the dataset looks at a large range of years, the stability of those governments can also be visualized. 
+## <---
+
+At the end of the project, a data story will be created. Ideally, we would be able to observe on a map the different conflicts linked to the decolonization. Adding interactivity to the map would let the user observe more informations, or just more precise with the conflict visualization on a smaller scale (cities and villages). The map could also evolve with the year we observe to add some dynamic to our story.
 
 
 ## Research questions
