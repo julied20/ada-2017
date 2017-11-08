@@ -1,0 +1,82 @@
+Canton,Classes d'âge 15-24,25-49,Mesures,Taux de chômage,Coefficients de variation,Chômeurs inscrits,Taux de chômage,Septembre 2017,Total,Total_N,Total2
+
+
+Zurich,1,15-24 ans,,3.7,A,3'420,3.7,A,3'420
+Zurich,2,25-49 ans,,3.4,A,17'053,3.4,A,17'053
+Zurich,3,50 ans et plus,,2.9,A,6'752,2.9,A,6'752
+Berne,1,15-24 ans,,2.8,B,2'003,2.8,B,2'003
+Berne,2,25-49 ans,,2.5,A,7'773,2.5,A,7'773
+Berne,3,50 ans et plus,,2.2,A,3'882,2.2,A,3'882
+Lucerne,1,15-24 ans,,2.1,B,664,2.1,B,664
+Lucerne,2,25-49 ans,,1.7,A,2'159,1.7,A,2'159
+Lucerne,3,50 ans et plus,,1.6,B,1'062,1.6,B,1'062
+Uri,1,15-24 ans,,0.5,D,15,0.5,D,15
+Uri,2,25-49 ans,,0.5,C,58,0.5,C,58
+Uri,3,50 ans et plus,,0.7,C,39,0.7,C,39
+Schwyz,1,15-24 ans,,1.6,C,185,1.6,C,185
+Schwyz,2,25-49 ans,,1.6,B,759,1.6,B,759
+Schwyz,3,50 ans et plus,,1.9,B,511,1.9,B,511
+Obwald,1,15-24 ans,,0.7,D,21,0.7,D,21
+Obwald,2,25-49 ans,,0.7,C,78,0.7,C,78
+Obwald,3,50 ans et plus,,0.8,C,54,0.8,C,54
+Nidwald,1,15-24 ans,,0.9,D,31,0.9,D,31
+Nidwald,2,25-49 ans,,0.9,C,123,0.9,C,123
+Nidwald,3,50 ans et plus,,1.2,C,94,1.2,C,94
+Glaris,1,15-24 ans,,1.8,D,60,1.8,D,60
+Glaris,2,25-49 ans,,1.7,C,211,1.7,C,211
+Glaris,3,50 ans et plus,,2.1,C,145,2.1,C,145
+Zoug,1,15-24 ans,,1.8,C,133,1.8,C,133
+Zoug,2,25-49 ans,,2.4,B,935,2.4,B,935
+Zoug,3,50 ans et plus,,2.3,B,475,2.3,B,475
+Fribourg,1,15-24 ans,,3.2,B,683,3.2,B,683
+Fribourg,2,25-49 ans,,2.7,A,2'628,2.7,A,2'628
+Fribourg,3,50 ans et plus,,2.5,B,1'155,2.5,B,1'155
+Soleure,1,15-24 ans,,2.9,B,584,2.9,B,584
+Soleure,2,25-49 ans,,2.5,A,1'991,2.5,A,1'991
+Soleure,3,50 ans et plus,,2.6,B,1'226,2.6,B,1'226
+Bâle-Ville,1,15-24 ans,,4.4,C,408,4.4,C,408
+Bâle-Ville,2,25-49 ans,,3.7,B,2'262,3.7,B,2'262
+Bâle-Ville,3,50 ans et plus,,2.8,B,785,2.8,B,785
+Bâle-Campagne,1,15-24 ans,,3.2,C,524,3.2,C,524
+Bâle-Campagne,2,25-49 ans,,2.8,A,2'359,2.8,A,2'359
+Bâle-Campagne,3,50 ans et plus,,2.5,B,1'199,2.5,B,1'199
+Schaffhouse,1,15-24 ans,,3.8,C,226,3.8,C,226
+Schaffhouse,2,25-49 ans,,3.1,B,722,3.1,B,722
+Schaffhouse,3,50 ans et plus,,2.3,C,338,2.3,C,338
+Appenzell Rhodes-Extérieures,1,15-24 ans,,1.5,C,65,1.5,C,65
+Appenzell Rhodes-Extérieures,2,25-49 ans,,1.7,C,259,1.7,C,259
+Appenzell Rhodes-Extérieures,3,50 ans et plus,,1.8,C,199,1.8,C,199
+Appenzell Rhodes-Intérieures,1,15-24 ans,,1,D,16,1,D,16
+Appenzell Rhodes-Intérieures,2,25-49 ans,,0.5,C,24,0.5,C,24
+Appenzell Rhodes-Intérieures,3,50 ans et plus,,0.9,D,22,0.9,D,22
+St-Gall,1,15-24 ans,,2.4,B,1'046,2.4,B,1'046
+St-Gall,2,25-49 ans,,2.2,A,3'394,2.2,A,3'394
+St-Gall,3,50 ans et plus,,2.1,A,1'687,2.1,A,1'687
+Grisons,1,15-24 ans,,1.4,C,194,1.4,C,194
+Grisons,2,25-49 ans,,1,B,613,1,B,613
+Grisons,3,50 ans et plus,,1,B,359,1,B,359
+Argovie,1,15-24 ans,,3.3,B,1'555,3.3,B,1'555
+Argovie,2,25-49 ans,,3,A,6'062,3,A,6'062
+Argovie,3,50 ans et plus,,2.7,A,3'067,2.7,A,3'067
+Thurgovie,1,15-24 ans,,2.3,B,517,2.3,B,517
+Thurgovie,2,25-49 ans,,2,A,1'626,2,A,1'626
+Thurgovie,3,50 ans et plus,,2,B,915,2,B,915
+Tessin,1,15-24 ans,,5.2,C,803,5.2,C,803
+Tessin,2,25-49 ans,,2.9,A,2'850,2.9,A,2'850
+Tessin,3,50 ans et plus,,3,B,1'549,3,B,1'549
+Vaud,1,15-24 ans,,4.3,B,1'904,4.3,B,1'904
+Vaud,2,25-49 ans,,4.6,A,11'190,4.6,A,11'190
+Vaud,3,50 ans et plus,,3.6,A,4'061,3.6,A,4'061
+Valais,1,15-24 ans,,3.3,B,746,3.3,B,746
+Valais,2,25-49 ans,,2.8,A,2'800,2.8,A,2'800
+Valais,3,50 ans et plus,,2.5,B,1'270,2.5,B,1'270
+Neuchâtel,1,15-24 ans,,6.1,C,726,6.1,C,726
+Neuchâtel,2,25-49 ans,,5.2,B,2'829,5.2,B,2'829
+Neuchâtel,3,50 ans et plus,,4.6,B,1'183,4.6,B,1'183
+Genève,1,15-24 ans,,4.6,B,914,4.6,B,914
+Genève,2,25-49 ans,,5.8,A,8'627,5.8,A,8'627
+Genève,3,50 ans et plus,,4.1,B,2'693,4.1,B,2'693
+Jura,1,15-24 ans,,5.1,C,266,5.1,C,266
+Jura,2,25-49 ans,,4.4,B,892,4.4,B,892
+Jura,3,50 ans et plus,,4,C,461,4,C,461
+Total,,,,3,A,133'169,3,A,133'169
