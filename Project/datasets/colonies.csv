@@ -1,0 +1,109 @@
+,Colonized Country,ID, Date,Colonizer Country,URL
+1,Greenland,GL,0,Denmark,/wiki/Greenland
+2,Iceland,IS,0,Denmark,/wiki/Iceland
+3,Canada,CA,0,France,/wiki/Canada
+4,Haiti,HT,1804,France,/wiki/Haiti
+5,Benin,BJ,1960,France,/wiki/Benin
+6,Cameroon,CM,0,France,/wiki/Cameroon
+7,Chad,TD,1960,France,/wiki/Chad
+8,Central African Republic,CF,1960,France,/wiki/Central_African_Republic
+9,Guinea,GN,1958,France,/wiki/Guinea
+10,Burkina Faso,BF,1960,France,/wiki/Burkina_Faso
+11,Djibouti,DJ,1977,France,/wiki/Djibouti
+12,Mali,ML,1960,France,/wiki/Mali
+13,Togo,TG,1960,France,/wiki/Togo
+14,Gabon,GA,1960,France,/wiki/Gabon
+15,Ivory Coast,CI,1960,France,/wiki/Ivory_Coast
+16,Mauritania,MR,1960,France,/wiki/Mauritania
+17,Morocco,MA,1956,France,/wiki/Morocco
+18,Republic of Tunisia,TN,1956,France,/wiki/Republic_of_Tunisia
+19,Mauritius,MU,1968,United Kingdom,/wiki/Mauritius
+20,Cambodia,KH,1953,France,/wiki/Cambodia
+21,Laos,LA,1949,France,/wiki/Laos
+22,Vietnam,VN,1945,France,/wiki/Vietnam
+23,Vanuatu,VU,1980,France,/wiki/Vanuatu
+24,Guyana,GY,1966,United Kingdom,/wiki/Guyana
+25,Suriname,SR,1954,Netherlands,/wiki/Suriname
+26,South Africa,ZA,0,Netherlands,/wiki/South_Africa
+27,Ghana,GH,0,Netherlands,/wiki/Ghana
+28,Republic of Angola,AO,1975,Portugal,/wiki/Angola
+29,Senegal,SN,1960,France,/wiki/Senegal
+30,Iraq,IQ,(1932-10-03),United Kingdom,/wiki/Iraq
+31,Bangladesh,BD,1971,Netherlands,/wiki/Bangladesh
+32,Indonesia,ID,1945,Netherlands,/wiki/Indonesia
+33,Taiwan,TW,0,Netherlands,/wiki/Taiwan
+34,Brazil,BR,1822,Portugal,/wiki/Brazil
+35,Cisplatina (Uruguay),UY,1825,Portugal,/wiki/Uruguay
+36,French Guiana,GF,0,Portugal,/wiki/French_Guiana
+37,Angola,AO,1975,Portugal,/wiki/Angola
+38,Cabinda,AO-CAB,0,Portugal,/wiki/Cabinda_Province
+39,Cape Verde,CV,1460,Portugal,/wiki/Cape_Verde
+40,Nigeria,NG,1914,United Kingdom,/wiki/Nigeria
+41,Mozambique,MZ,1975,Portugal,/wiki/Mozambique
+42,Guinea-Bissau,GW,1973,Portugal,/wiki/Guinea-Bissau
+43,Goa,IN-GA,0,Portugal,/wiki/Goa
+44,East Timor,TL,1975,Portugal,/wiki/East_Timor
+45,Kazakhstan,KZ,1991,Russia,/wiki/Kazakhstan
+46,Kyrgyzstan,KG,1924,Russia,/wiki/Kyrgyzstan
+47,Tajikistan,TJ,1991,Russia,/wiki/Tajikistan
+48,Turkmenistan,TM,0,Russia,/wiki/Turkmenistan
+49,Uzbekistan,UZ,1992,Russia,/wiki/Uzbekistan
+50,Belarus,BY,1918,Russia,/wiki/Belarus
+51,Estonia,EE,1917,Russia,/wiki/Estonia
+52,Latvia,LV,1918[2],Russia,/wiki/Latvia
+53,Lithuania,LT,1009,Russia,/wiki/Lithuania
+54,Moldova,MD,1990,Russia,/wiki/Moldova
+55,Ukraine,UA,1917,Russia,/wiki/Ukraine
+56,Georgia,GE,0,Russia,/wiki/Georgia_(country)
+57,Azerbaijan,AZ,(completed),Russia,/wiki/Azerbaijan
+58,Costa Rica,CR,0,Spain,/wiki/Costa_Rica
+59,El Salvador,SV,1821,Spain,/wiki/El_Salvador
+60,Cuba,CU,1898,Spain,/wiki/Cuba
+61,Dominican Republic,DO,1821[2],Spain,/wiki/Dominican_Republic
+62,Jamaica,JM,1962,United Kingdom,/wiki/Jamaica
+63,Argentine Republic,AR,1810,Spain,/wiki/Argentine_Republic
+64,Equatorial Guinea,GQ,1968,Spain,/wiki/Equatorial_Guinea
+65,Philippines,PH,0,Spain,/wiki/Philippines
+66,Falkland Islands,FK,0,Britain,/wiki/Falkland_Islands
+67,Sudan,SD,1956,United Kingdom,/wiki/Sudan
+68,Lesotho,LS,1966,United Kingdom,/wiki/Lesotho
+69,Botswana,BW,1966,United Kingdom,/wiki/Botswana
+70,Kenya,KE,1963,United Kingdom,/wiki/Kenya
+71,Somalia,SO,1960[3],Britain,/wiki/Somalia
+72,Egypt,EG,1922,United Kingdom,/wiki/Egypt
+73,The Gambia,GM,1965,United Kingdom,/wiki/The_Gambia
+74,Federal Republic of Nigeria,NG,1914,United Kingdom,/wiki/Federal_Republic_of_Nigeria
+75,Zambia,ZM,1890,United Kingdom,/wiki/Zambia
+76,Malawi,MW,1964,United Kingdom,/wiki/Malawi
+77,Sierra Leone,SL,1961,United Kingdom,/wiki/Sierra_Leone
+78,Namibia,NA,0,Britain,/wiki/Namibia
+79,Zimbabwe,ZW,1965,United Kingdom,/wiki/Zimbabwe
+80,Swaziland,SZ,1968,United Kingdom,/wiki/Swaziland
+81,Tanzania,TZ,0,Britain,/wiki/Tanzania
+82,Uganda,UG,1962,United Kingdom,/wiki/Uganda
+83,Yemen,YE,0,Britain,/wiki/Yemen
+84,Kuwait,KW,0,Britain,/wiki/Kuwait
+85,Oman,OM,0,Britain,/wiki/Oman
+86,Israel,IL,1948,Britain,/wiki/Israel
+87,Qatar,QA,0,Britain,/wiki/Qatar
+88,Hashemite Kingdom of Transjordan,JO,1921,Britain,/wiki/Hashemite_Kingdom_of_Transjordan
+89,United Arab Emirates,AE,1971,Britain,/wiki/United_Arab_Emirates
+90,India,IN,1947,United Kingdom,/wiki/India
+91,Pakistan,PK,1947,Britain,/wiki/Pakistan
+92,Myanmar,MM,1948,Britain,/wiki/Myanmar
+93,Sri Lanka,LK,1948,United Kingdom,/wiki/Sri_Lanka
+94,Corsica,FR-COR,0,Britain,/wiki/Corsica
+95,Cyprus,CY,0,Britain,/wiki/Cyprus
+96,Ireland,IE,1916,United Kingdom,/wiki/Republic_of_Ireland
+97,Democratic Republic of the Congo,CD,1960[1],Belgium,/wiki/Democratic_Republic_of_the_Congo
+98,Republic of Burundi,BI,0,Belgium,/wiki/Republic_of_Burundi
+99,Rwanda,RW,1962,Belgium,/wiki/Rwanda
+100,Burundi,BI,0,Belgium,/wiki/Burundi
+101,Saarland,DE-SL,0,Austria,/wiki/Saarland
+102,Solomon Islands,SB,1978,United Kingdom,/wiki/Solomon_Islands
+103,Brunei,BN,1984,United Kingdom,/wiki/Brunei
+104,New Zealand,NZ,1856,United Kingdom,/wiki/New_Zealand
+105,Malaysia,MY,1957[4],United Kingdom,/wiki/Malaysia
+106,Independent State of Papua New Guinea,PG,0,United Kingdom,/wiki/Independent_State_of_Papua_New_Guinea
+107,Samoa,WS,0,United Kingdom,/wiki/Samoa
+108,Hong Kong,HK,0,United Kingdom,/wiki/Hong_Kong
