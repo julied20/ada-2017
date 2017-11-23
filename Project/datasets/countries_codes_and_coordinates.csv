@@ -26,7 +26,7 @@ Bermuda,BM,BMU,60,32.3333,-64.75
 Bhutan,BT,BTN,64,27.5,90.5
 Bolivia Plurinational State of,BO,BOL,68,-17,-65
 Bolivia,BO,BOL,68,-17,-65
-Bosnia and Herzegovina,BA,BIH,70,44,18
+Bosnia-Herzegovina,BA,BIH,70,44,18
 Botswana,BW,BWA,72,-22,24
 Bouvet Island,BV,BVT,74,-54.4333,3.4
 Brazil,BR,BRA,76,-10,-55
@@ -50,7 +50,7 @@ Cocos (Keeling) Islands,CC,CCK,166,-12.5,96.8333
 Colombia,CO,COL,170,4,-72
 Comoros,KM,COM,174,-12.1667,44.25
 Congo,CG,COG,178,-1,15
-Congo the Democratic Republic of the,CD,COD,180,0,25
+DR Congo,CD,COD,180,0,25
 Cook Islands,CK,COK,184,-21.2333,-159.7667
 Costa Rica,CR,CRI,188,10,-84
 Côte d'Ivoire,CI,CIV,384,8,-5
@@ -70,7 +70,7 @@ Equatorial Guinea,GQ,GNQ,226,2,10
 Eritrea,ER,ERI,232,15,39
 Estonia,EE,EST,233,59,26
 Ethiopia,ET,ETH,231,8,38
-Falkland Islands (Malvinas),FK,FLK,238,-51.75,-59
+Malvinas/Falkland Islands,FK,FLK,238,-51.75,-59
 Faroe Islands,FO,FRO,234,62,-7
 Fiji,FJ,FJI,242,-18,175
 Finland,FI,FIN,246,64,26
@@ -103,7 +103,7 @@ Hungary,HU,HUN,348,47,20
 Iceland,IS,ISL,352,65,-18
 India,IN,IND,356,20,77
 Indonesia,ID,IDN,360,-5,120
-Iran Islamic Republic of,IR,IRN,364,32,53
+Iran,IR,IRN,364,32,53
 Iraq,IQ,IRQ,368,33,44
 Ireland,IE,IRL,372,53,-8
 Isle of Man,IM,IMN,833,54.23,-4.55
@@ -116,12 +116,12 @@ Jordan,JO,JOR,400,31,36
 Kazakhstan,KZ,KAZ,398,48,68
 Kenya,KE,KEN,404,1,38
 Kiribati,KI,KIR,296,1.4167,173
-Korea Democratic People's Republic of,KP,PRK,408,40,127
-Korea Republic of,KR,KOR,410,37,127.5
+North Korea,KP,PRK,408,40,127
+Korea,KR,KOR,410,37,127.5
 South Korea,KR,KOR,410,37,127.5
 Kuwait,KW,KWT,414,29.3375,47.6581
 Kyrgyzstan,KG,KGZ,417,41,75
-Lao People's Democratic Republic,LA,LAO,418,18,105
+Laos,LA,LAO,418,18,105
 Latvia,LV,LVA,428,57,25
 Lebanon,LB,LBN,422,33.8333,35.8333
 Lesotho,LS,LSO,426,-29.5,28.5
@@ -172,7 +172,7 @@ Norway,NO,NOR,578,62,10
 Oman,OM,OMN,512,21,57
 Pakistan,PK,PAK,586,30,70
 Palau,PW,PLW,585,7.5,134.5
-Palestinian Territory Occupied,PS,PSE,275,32,35.25
+Palestine,PS,PSE,275,32,35.25
 Panama,PA,PAN,591,9,-80
 Papua New Guinea,PG,PNG,598,-6,147
 Paraguay,PY,PRY,600,-23,-58
@@ -218,11 +218,11 @@ Svalbard and Jan Mayen,SJ,SJM,744,78,20
 Swaziland,SZ,SWZ,748,-26.5,31.5
 Sweden,SE,SWE,752,62,15
 Switzerland,CH,CHE,756,47,8
-Syrian Arab Republic,SY,SYR,760,35,38
+Syria,SY,SYR,760,35,38
 Taiwan Province of China,TW,TWN,158,23.5,121
 Taiwan,TW,TWN,158,23.5,121
 Tajikistan,TJ,TJK,762,39,71
-Tanzania United Republic of,TZ,TZA,834,-6,35
+Tanzania,TZ,TZA,834,-6,35
 Thailand,TH,THA,764,15,100
 Timor-Leste,TL,TLS,626,-8.55,125.5167
 Togo,TG,TGO,768,8,1.1667
@@ -239,7 +239,7 @@ Uganda,UG,UGA,800,1,32
 Ukraine,UA,UKR,804,49,32
 United Arab Emirates,AE,ARE,784,24,54
 United Kingdom,GB,GBR,826,54,-2
-United States,US,USA,840,38,-97
+United States of America,US,USA,840,38,-97
 United States Minor Outlying Islands,UM,UMI,581,19.2833,166.6
 Uruguay,UY,URY,858,-33,-56
 Uzbekistan,UZ,UZB,860,41,64
