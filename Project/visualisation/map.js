@@ -1,79 +1,104 @@
-// Créer un point:
-let dataPoints = [{
-        latitude: 52.523407,
-        longitude: 13.4114,
-        type: 'bubble',
-        color: '#CC0000',
+let country_coordinates;
 
-        fixedSize: false,
-        alpha: 0.5,
-        height: 5,
-        width: 5,
-        centered: true
-},
+AmCharts.loadFile( "countries_codes_and_coordinates.csv", {}, function( response ) {
 
-{
-        latitude: 43.8163,
-        longitude: -79.4287,
-        type: 'rectangle',
-        color: '#CC0034',
+  country_coordinates = AmCharts.parseCSV( response, {
+    "useColumnNames": true
+  } );
 
-        fixedSize: false,
-        alpha: 0.5,
-        height: 5,
-        width: 5,
-        centered: true
-}];
+  console.log(country_coordinates);
 
-//Créer une ligne
-let line = [ {
-  "id": "line1",
-  "arc": -0.85,
-  "alpha": 0.3,
-  "latitudes": [ 43.8163, 52.523407 ],
-  "longitudes": [ -79.4287, 13.4114 ]
-}]
+
+  AmCharts.loadFile( "clean_conflict.csv", {}, function( response ) {
+
+    conflict = AmCharts.parseCSV( response, {
+      "useColumnNames": true
+    } );
+
+    console.log(conflict);
 
 
 
-let map = AmCharts.makeChart( "chartdiv", {
-  "type": "map",
-  "dataProvider": {
-    "map": "worldLow",
-    "zoomLevel": 3.5,
-    "zoomLongitude": -55,
-    "zoomLatitude": 42,
 
-    "lines": line,
-    "images": dataPoints
-  },
+    // Créer un point:
+    let dataPoints = [{
+      latitude: country_coordinates[0].Latitude,
+      longitude: country_coordinates[0].Longitude,
+      type: 'bubble',
+      color: '#CC0000',
 
-  "areasSettings": {
-    "unlistedAreasColor": "#8dd9ef"
-  },
+      fixedSize: false,
+      alpha: 0.5,
+      height: 5,
+      width: 5,
+      centered: true
+    },
 
-  "imagesSettings": {
-    "color": "#585869",
-    "rollOverColor": "#585869",
-    "selectedColor": "#585869",
-    "pauseDuration": 0.2,
-    "animationDuration": 2.5,
-    "adjustAnimationSpeed": true
-  },
+    {
+      latitude: country_coordinates[45].Latitude,
+      longitude: country_coordinates[45].Latitude,
+      type: 'rectangle',
+      color: '#CC0034',
 
-  "linesSettings": {
-    "color": "#585869",
-    "alpha": 0.4
-  },
+      fixedSize: false,
+      alpha: 0.5,
+      height: 5,
+      width: 5,
+      centered: true
+    }];
 
-  "listeners": [ {
-    "event": "init",
-    "method": function( e ) {
+    //Créer une ligne
+    let line = [ {
+      "id": "line1",
+      "arc": -0.85,
+      "alpha": 0.3,
+      "latitudes": [ country_coordinates[45].Latitude, country_coordinates[0].Latitude ],
+      "longitudes": [ country_coordinates[45].Longitude, country_coordinates[0].Longitude ]
+    }]
 
-      // get map object
-      let map = e.chart;
 
-    }
-  } ]
 
-} );
+    let map = AmCharts.makeChart( "chartdiv", {
+      "type": "map",
+      "dataProvider": {
+        "map": "worldLow",
+        "zoomLevel": 1,
+        "zoomLongitude": 46,
+        "zoomLatitude": 2,
+
+        "lines": line,
+        "images": dataPoints
+      },
+
+      "areasSettings": {
+        "unlistedAreasColor": "#8dd9ef"
+      },
+
+      "imagesSettings": {
+        "color": "#585869",
+        "rollOverColor": "#585869",
+        "selectedColor": "#585869",
+        "pauseDuration": 0.2,
+        "animationDuration": 2.5,
+        "adjustAnimationSpeed": true
+      },
+
+      "linesSettings": {
+        "color": "#585869",
+        "alpha": 0.4
+      },
+
+      "listeners": [ {
+        "event": "init",
+        "method": function( e ) {
+
+          // get map object
+          let map = e.chart;
+
+        }
+      } ]
+
+    } );
+
+  });
+});
