@@ -93,7 +93,7 @@
 92,Zambia,ZM,27,06,1890,United Kingdom,/wiki/Zambia
 93,Malawi,MW,6,07,1964,United Kingdom,/wiki/Malawi
 94,Sierra Leone,SL,27,04,1961,United Kingdom,/wiki/Sierra_Leone
-95,Namibia,NA,21,03,1990,United Kingdom,/wiki/Namibia
+95,Namibia,NA,31,05,1910,United Kingdom,/wiki/Namibia
 96,Zimbabwe,ZW,11,11,1965,United Kingdom,/wiki/Zimbabwe
 97,Swaziland,SZ,6,09,1968,United Kingdom,/wiki/Swaziland
 98,Tanzania,TZ,9,12,1961,United Kingdom,/wiki/Tanzania
@@ -112,8 +112,6 @@
 111,DR Congo,CD,30,06,1960,Belgium,/wiki/Democratic_Republic_of_the_Congo
 112,Burundi,BI,1,07,1962,Belgium,/wiki/Burundi
 113,Rwanda,RW,1,07,1962,Belgium,/wiki/Rwanda
-114,Eritrea,ER,,,,Italy,/wiki/Eritrea
-115,Ethiopia,ET,,,,Italy,/wiki/Ethiopia
 116,Australia,AU,1,01,1901,United Kingdom,/wiki/Australia
 117,Solomon Islands,SB,7,07,1978,United Kingdom,/wiki/Solomon_Islands
 118,Fiji,FJ,10,10,1970,United Kingdom,/wiki/Fiji
@@ -124,6 +122,5 @@
 123,Samoa,WS,14,06,1889,United Kingdom,/wiki/Samoa
 124,Algeria,DZ,3,07,1945,France,/wiki/Algeria
 125,Syria,SY,24,10,1945,France,/wiki/Syria
-126,Namibia,NA,9,02,1990,United Kingdom,/wiki/Namibia
-127,Niger,NE,03,08,1960,France,/wiki/Niger
-128,Lebanon,LB,24,10,1945,France,/wiki/Lebanon
+126,Niger,NE,03,08,1960,France,/wiki/Niger
+127,Lebanon,LB,24,10,1945,France,/wiki/Lebanon
