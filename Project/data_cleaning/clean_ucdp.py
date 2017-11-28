@@ -5,10 +5,13 @@ import os
 import numpy as np
 from datetime import datetime
 
+'''This python script can be executed to get a clean csv from the ucdp dataset.'''
+
+
 def clean_ucdp():
 
     conflict_df = pd.read_csv('../datasets/ucdp-prio-acd-171.csv')
-    countries_codes = pd.read_csv('datasets/countries_codes_and_coordinates.csv')
+    countries_codes = pd.read_csv('../datasets/countries_codes_and_coordinates.csv')
     
     # Some preprocessing is made on the dataset in order to only have the country name, to facilitate the matching and the visualisation after
     for index, row in conflict_df.iterrows():
@@ -41,6 +44,7 @@ def clean_ucdp():
     iso_code = countries_codes['ISO2'].tolist()
     sidea = conflict_df['sidea'].tolist()
     location  = conflict_df['location'].tolist()
+    terr = conflict_df['terr'].tolist()
 
     
     # The location of the conflict should be in the variable location. Sometimes, in this variable, a specific region of a country is named, which doesn't have an  ISO. In this case, the choice is made to set the ISO from the the location country, as the location represent the name of the country/ies that have a primary claim to the conflict. As it can have several countries in the variable location, we look into the variable sidea, which represent the primary party to a conflict. If we don't find anything, we set the ISO to 0
@@ -60,7 +64,7 @@ def clean_ucdp():
             iso_conflict.append(0)
 
 
-    clean_filename = 'datasets/clean_conflict.csv'
+    clean_filename = '../datasets/clean_conflict.csv'
     conflict_df = conflict_df.assign(ISO2 = iso_conflict )
     conflict_df.to_csv(clean_filename)
     
