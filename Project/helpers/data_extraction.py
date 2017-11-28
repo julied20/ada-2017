@@ -4,7 +4,7 @@ import re
 import numpy as np
 
 from bs4 import BeautifulSoup
-from helpers.data_from_infobox import *
+from data_extraction.data_from_infobox import *
 
 def get_wikipedia_dataframe():
     colonization_df = pd.DataFrame(columns=['Colonized Country', 'ID', 'Day', 'Month', 'Year', 'Colonizer Country', "URL"])
@@ -13,13 +13,15 @@ def get_wikipedia_dataframe():
     r = requests.get(URL_QS)
     soup = BeautifulSoup(r.text, 'lxml')
 
+    # Find all colonizer coutries
     colonizer_countries = get_colonizer_countries(soup)
+    # Find all continents
     regions = get_regions(soup)
 
     for colonizer_country in colonizer_countries:
         print(colonizer_country, "...")
 
-        # Trouve tout les emplacements où on fait mention du pays "colonizer"
+        # Find all mention of colonizer coutries
         colonizer_index = soup.find_all("p", text=colonizer_country)
 
         for i in range (len(colonizer_index)):
@@ -29,11 +31,16 @@ def get_wikipedia_dataframe():
                 if colonized_country.text not in regions and len(colonized_country.attrs) < 3:
                     check_country(colonization_df, colonized_country.text, colonizer_country, colonizer_countries, colonized_country['href'], 1)
 
+    # Clean the dataframe
     colonization_df_cleaned = get_dataframe_cleaned(colonization_df)
+
+    # Dataframe Saving
+    colonization_df_cleaned.to_csv("datasets/colonies_wikipedia.csv")
 
     return colonization_df_cleaned
 
 def get_colonizer_countries(soup):
+    """ Find all colonizer countries in the wikipedia webpage"""
     colonizer_countries = []
 
     # To find the name of all colonizer country of Europe, we take care about 2 things :
@@ -52,6 +59,7 @@ def get_colonizer_countries(soup):
     return colonizer_countries
 
 def get_regions(soup):
+    """ Find all continents in the wikipedia webpage"""
     regions = []
 
     for region in soup.find("ul").findAll('li'):
@@ -62,10 +70,11 @@ def get_regions(soup):
     return regions
 
 def get_dataframe_cleaned(df):
+    """ Clean the colonized countries dataframe"""
     # Dataset cleaning
     colonization_df_cleaned = df.replace("Britain", "United Kingdom")
 
-    # Add missing countries
+    # Add missing countries due to a not homogenous infobox in wikipedia page
     colonization_df_cleaned.loc[len(colonization_df_cleaned)+1] = ['Algeria', "DZ", "3", "07", "1945", "France", "/wiki/Algeria"]
     colonization_df_cleaned.loc[len(colonization_df_cleaned)+1] = ['Syria', "SY", "24", "10", "1945", "France", "/wiki/Syria"]
     colonization_df_cleaned.loc[len(colonization_df_cleaned)+1] = ['Niger', "NE", "03", "08", "1960", "France", "/wiki/Niger"]
@@ -77,24 +86,21 @@ def get_dataframe_cleaned(df):
     change_date(colonization_df_cleaned, "Ukraine", "24", "08", "1991")
     change_date(colonization_df_cleaned, "Iceland", "17", "06", "1944")
 
-    # Remove countries
+    # Remove countries which are not realy a colony (they are more occuped coutries)
     colonization_df_cleaned = colonization_df_cleaned[colonization_df_cleaned["Colonized Country"] != "Eritrea"]
     colonization_df_cleaned = colonization_df_cleaned[colonization_df_cleaned["Colonized Country"] != "Ethiopia"]
     colonization_df_cleaned = colonization_df_cleaned[colonization_df_cleaned["Colonized Country"] != "Kuwait"]
 
-    # Dataframe Saving
-    colonization_df_cleaned.to_csv("datasets/colonies_wikipedia.csv")
-
     return colonization_df_cleaned
 
 def change_date(df, country, day, month, year):
+    """ Change the date in the colonized countries dataframe"""
     df.loc[df['Colonized Country'] == country, 'Day'] = day
     df.loc[df['Colonized Country'] == country, 'Month'] = month
     df.loc[df['Colonized Country'] == country, 'Year'] = year
 
 def get_infobox(soup):
     """Get the infobox of a wikipedia page (infobox contains all important informations)."""
-
     infobox = soup.find("table", class_="infobox geography")
     if not infobox: infobox = soup.find("table", class_="infobox geography vcard")
     if not infobox: infobox = soup.find("table", class_="infobox geography vcard vevent")
@@ -104,16 +110,19 @@ def get_infobox(soup):
     return infobox.extract()
 
 def check_country(df, colonized, colonizer, colonizer_countries, URL, nb_check):
+    """ Chack all informations of a country (colonizer, independance date, etc)"""
 
     # The checking of each colony is as follows :
-    # - If a infobox (the resum on the right side) exist, we check the size. If the size is inferior than a
-    #   certain value, we does not considere this country because it is more a island or a city than a country.
-    #   We also check if the colonizer country is the same at the end as the begin. And the end, we take the
-    #   colonizer country juste before the independance.
-    # - If a word like 'disestablished' or 'disestablishments' is found in the page, we considere that the
+    # - If a infobox (the resum on the right side) exist, we check the size. If
+    #   the size is inferior than a  certain value, we does not considere this country
+    #   because it is more a island or a city than a country. We also check if the
+    #   colonizer country is the same at the end as the begin. And the end, we take
+    #   the colonizer country juste before the independance.
+    # - If a word like 'disestablished' or 'disestablishments' is found in the
+    #   page, we considere that the
     #   country don't exist any more. We check if a new country was created on find
-    #   the sentence "Succeeded by" in the infobox (if it extist) and repeat the checking with the new
-    #   country if found
+    #   the sentence "Succeeded by" in the infobox (if it extist) and repeat the
+    #   checking with the new country if found
 
     if nb_check > 4 or colonized in colonizer_countries:
         return
