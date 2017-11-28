@@ -40,4 +40,9 @@ In order to pursue our analysis on the former european colonies, we create a new
 
 The main jupyter notebook regroups the exploratory analysis performed on our datasets. We focus mainly on the decolonisation process, trying to display meaningful informations to better grasps the state of the former colonized continents and countries.
 
+### Further work
+
+The next step will constist mainly in a visualisation of our data. We want to be able to observe how and when the conflicts happens, and the evolution of them.
+A preview of the kind of visualisation that we can have is available here: https://julied20.github.io/ada-2017/core.html
+
 However, we found one major limitation in our datasets that might limit the scope of our project. In order to analyse properly the stability of the former colonized countries, we wanted to look as the conflicts happening in the country. Most of the times, those conflicts are represented as a simple entry that is renewed each year. We have therefore a limited scope on the observation of stability, it would be interesting to find a way to scrap or find a new dataset that contains also the number of casualties. For that, we could use another UCDP dataset which also contains this value for the periof 1990-2017, it would offer a photography of the current state of those countries.
