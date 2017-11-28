@@ -108,10 +108,13 @@ def get_colonizer_and_decoloniz_date(infobox, colonizer, colonizer_countries):
                     if independence_next:
                         indep_day, indep_month, indep_year = get_date_cleaned(independence_next.find_next("td"))
 
-        if new_colonizer in colonizer_countries:
-            return new_colonizer, indep_day, indep_month, indep_year
+        if independence or formation:
+            if new_colonizer in colonizer_countries:
+                return new_colonizer, indep_day, indep_month, indep_year
+            else:
+                return colonizer, indep_day, indep_month, indep_year
         else:
-            return colonizer, indep_day, indep_month, indep_year
+            return np.nan, np.nan, np.nan, np.nan
 
 
 def get_today_part_of(infobox):
@@ -125,11 +128,10 @@ def get_today_part_of(infobox):
         today_part_of = today_part_of.find_all_next("a")
 
         # Naviguate in all "today part of" country
-        while is_a_country(today_part_of[i]) and i < 5 and i < len(today_part_of) - 1:
-            if today_part_of[i].has_attr('href'):
+        for i in range(len(today_part_of)):
+            if is_a_country(today_part_of[i]) and today_part_of[i].has_attr('href'):
                 new_countries.append(today_part_of[i].text)
                 URL.append(today_part_of[i]['href'])
-            i += 1
 
         return new_countries, URL
 

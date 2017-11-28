@@ -1,5 +1,5 @@
 ,Colonized Country,ID,Day,Month,Year,Colonizer Country,URL
-1,Iceland,IS,,,,Denmark,/wiki/Iceland
+1,Iceland,IS,17,06,1944,Denmark,/wiki/Iceland
 2,Canada,CA,1,07,1867,United Kingdom,/wiki/Canada
 3,United States,US,4,07,1776,France,/wiki/United_States
 4,Haiti,HT,1,01,1804,France,/wiki/Haiti
@@ -53,7 +53,7 @@
 52,Latvia,LV,6,09,1991,Russia,/wiki/Latvia
 53,Lithuania,LT,16,02,1918,Russia,/wiki/Lithuania
 54,Moldova,MD,27,08,1991b,Russia,/wiki/Moldova
-55,Ukraine,UA,,,,Russia,/wiki/Ukraine
+55,Ukraine,UA,24,08,1991,Russia,/wiki/Ukraine
 56,Georgia,GE,26,05,1918,Russia,/wiki/Georgia_(country)
 57,Azerbaijan,AZ,21,12,1991,Russia,/wiki/Azerbaijan
 58,Bahamas,BS,10,07,1973,United Kingdom,/wiki/The_Bahamas
@@ -67,7 +67,7 @@
 66,Jamaica,JM,6,08,1962,United Kingdom,/wiki/Jamaica
 67,Mexico,MX,16,09,1810,Spain,/wiki/Mexico
 68,Nicaragua,NI,15,09,1821,Spain,/wiki/Nicaragua
-69,Philippines,PH,,,,Spain,/wiki/Philippines
+69,Philippines,PH,12,06,1898,Spain,/wiki/Philippines
 70,Trinidad and Tobago,TT,31,08,1962,United Kingdom,/wiki/Trinidad_and_Tobago
 71,Venezuela,VE,5,07,1811,Spain,/wiki/Venezuela
 72,Argentina,AR,9,07,1816,Spain,/wiki/Argentina
@@ -98,7 +98,6 @@
 97,Swaziland,SZ,6,09,1968,United Kingdom,/wiki/Swaziland
 98,Tanzania,TZ,9,12,1961,United Kingdom,/wiki/Tanzania
 99,Uganda,UG,9,10,1962,United Kingdom,/wiki/Uganda
-100,Kuwait,KW,,,,United Kingdom,/wiki/Kuwait
 101,Pakistan,PK,14,08,1947,United Kingdom,/wiki/Pakistan
 102,United Arab Emirates,AE,2,12,1971,United Kingdom,/wiki/United_Arab_Emirates
 103,Israel,IL,14,05,1948,United Kingdom,/wiki/Israel

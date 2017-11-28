@@ -6,6 +6,92 @@ import numpy as np
 from bs4 import BeautifulSoup
 from data_extraction.data_from_infobox import *
 
+def get_wikipedia_dataframe():
+    colonization_df = pd.DataFrame(columns=['Colonized Country', 'ID', 'Day', 'Month', 'Year', 'Colonizer Country', "URL"])
+
+    URL_QS = 'https://en.wikipedia.org/wiki/List_of_former_European_colonies'
+    r = requests.get(URL_QS)
+    soup = BeautifulSoup(r.text, 'lxml')
+
+    colonizer_countries = get_colonizer_countries(soup)
+    regions = get_regions(soup)
+
+    for colonizer_country in colonizer_countries:
+        print(colonizer_country, "...")
+
+        # Trouve tout les emplacements où on fait mention du pays "colonizer"
+        colonizer_index = soup.find_all("p", text=colonizer_country)
+
+        for i in range (len(colonizer_index)):
+            colonized_countries = colonizer_index[i].next_sibling.next_sibling('a')
+
+            for colonized_country in colonized_countries:
+                if colonized_country.text not in regions and len(colonized_country.attrs) < 3:
+                    check_country(colonization_df, colonized_country.text, colonizer_country, colonizer_countries, colonized_country['href'], 1)
+
+    colonization_df_cleaned = get_dataframe_cleaned(colonization_df)
+
+    return colonization_df_cleaned
+
+def get_colonizer_countries(soup):
+    colonizer_countries = []
+
+    # To find the name of all colonizer country of Europe, we take care about 2 things :
+    #  - If there is more than 2 spaces in the text -> isn't a country
+    #  - If there is less than 2 letters in the text -> isn't a country
+
+    for country in soup.findAll('p'):
+        nb_space = sum(c.isspace() for c in country.text)
+
+        if country.text not in colonizer_countries and nb_space < 3 and len(country.text) > 2:
+            colonizer_countries.append(country.text)
+
+    # List Cleaning
+    colonizer_countries = [country.replace('\n', '') for country in colonizer_countries]
+
+    return colonizer_countries
+
+def get_regions(soup):
+    regions = []
+
+    for region in soup.find("ul").findAll('li'):
+        regions.append(region.text[2:])
+
+    del regions[-1], regions[-1]
+
+    return regions
+
+def get_dataframe_cleaned(df):
+    # Dataset cleaning
+    colonization_df_cleaned = df.replace("Britain", "United Kingdom")
+
+    # Add missing countries
+    colonization_df_cleaned.loc[len(colonization_df_cleaned)+1] = ['Algeria', "DZ", "3", "07", "1945", "France", "/wiki/Algeria"]
+    colonization_df_cleaned.loc[len(colonization_df_cleaned)+1] = ['Syria', "SY", "24", "10", "1945", "France", "/wiki/Syria"]
+    colonization_df_cleaned.loc[len(colonization_df_cleaned)+1] = ['Niger', "NE", "03", "08", "1960", "France", "/wiki/Niger"]
+    colonization_df_cleaned.loc[len(colonization_df_cleaned)+1] = ['Lebanon', "LB", "24", "10", "1945", "France", "/wiki/Lebanon"]
+
+    # Change decolonization date
+    change_date(colonization_df_cleaned, "Namibia", "31", "05", "1910")
+    change_date(colonization_df_cleaned, "Philippines", "12", "06", "1898")
+    change_date(colonization_df_cleaned, "Ukraine", "24", "08", "1991")
+    change_date(colonization_df_cleaned, "Iceland", "17", "06", "1944")
+
+    # Remove countries
+    colonization_df_cleaned = colonization_df_cleaned[colonization_df_cleaned["Colonized Country"] != "Eritrea"]
+    colonization_df_cleaned = colonization_df_cleaned[colonization_df_cleaned["Colonized Country"] != "Ethiopia"]
+    colonization_df_cleaned = colonization_df_cleaned[colonization_df_cleaned["Colonized Country"] != "Kuwait"]
+
+    # Dataframe Saving
+    colonization_df_cleaned.to_csv("datasets/colonies_wikipedia.csv")
+
+    return colonization_df_cleaned
+
+def change_date(df, country, day, month, year):
+    df.loc[df['Colonized Country'] == country, 'Day'] = day
+    df.loc[df['Colonized Country'] == country, 'Month'] = month
+    df.loc[df['Colonized Country'] == country, 'Year'] = year
+
 def get_infobox(soup):
     """Get the infobox of a wikipedia page (infobox contains all important informations)."""
 
@@ -55,7 +141,7 @@ def check_country(df, colonized, colonizer, colonizer_countries, URL, nb_check):
                     colonizer, indep_day, indep_month, indep_year = get_colonizer_and_decoloniz_date(infobox, colonizer, colonizer_countries)
 
                     # Check if the colonized country is not a duplicate
-                    if ID and colonized and len(df[df['ID']== ID]) < 1:
+                    if ID and colonized and colonizer is not np.nan and len(df[df['ID']== ID]) < 1:
                         df.loc[len(df)+1] = [colonized, ID, indep_day, indep_month, indep_year, colonizer, URL]
             else:
                 # If the country don't exist anymore, check the new countries in the "today part of" channel
