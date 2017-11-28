@@ -12,7 +12,7 @@ function get_timeline() {
       timeline_graph.push(new Year(
         year.year,
         year.number_of_conflict
-      ))
+      ))  
     });
 
     timeline_graph.forEach(function(t) {
