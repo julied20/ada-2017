@@ -10,8 +10,8 @@ from datetime import datetime
 
 def clean_ucdp():
 
-    conflict_df = pd.read_csv('../datasets/ucdp-prio-acd-171.csv')
-    countries_codes = pd.read_csv('../datasets/countries_codes_and_coordinates.csv')
+    conflict_df = pd.read_csv('datasets/ucdp-prio-acd-171.csv')
+    countries_codes = pd.read_csv('datasets/countries_codes_and_coordinates.csv')
     
     # Some preprocessing is made on the dataset in order to only have the country name, to facilitate the matching and the visualisation after
     for index, row in conflict_df.iterrows():
@@ -64,7 +64,7 @@ def clean_ucdp():
             iso_conflict.append(0)
 
 
-    clean_filename = '../datasets/clean_conflict.csv'
+    clean_filename = 'datasets/clean_conflict.csv'
     conflict_df = conflict_df.assign(ISO2 = iso_conflict )
     conflict_df.to_csv(clean_filename)
     
