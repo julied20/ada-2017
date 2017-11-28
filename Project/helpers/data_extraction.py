@@ -4,7 +4,7 @@ import re
 import numpy as np
 
 from bs4 import BeautifulSoup
-from data_extraction.data_from_infobox import *
+from helpers.data_from_infobox import *
 
 def get_wikipedia_dataframe():
     colonization_df = pd.DataFrame(columns=['Colonized Country', 'ID', 'Day', 'Month', 'Year', 'Colonizer Country', "URL"])
