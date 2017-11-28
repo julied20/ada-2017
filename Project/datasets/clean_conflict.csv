@@ -39,16 +39,16 @@
 37,205,Iran,Iran,KDPI,164,1,Kurdistan,1990,1,1,3,5,1990-08-17,2,IR
 38,205,Iran,Iran,KDPI,164,1,Kurdistan,1993,1,1,3,5,1993-11-11,2,IR
 39,205,Iran,Iran,KDPI,164,1,Kurdistan,1996,1,1,3,5,1996-07-28,2,IR
-40,206,Iran,Iran,Republic of Azerbaijan,165,1,Azerbaijan,1946,1,0,4,11,1946-12-16,2,IR
+40,206,Iran,Iran,Republic of Azerbaijan,165,1,Azerbaijan,1946,1,0,4,11,1946-12-16,2,AZ
 41,207,Israel,United Kingdom,IZL [Etzel],166,1,Israel,1946,1,0,1,3,1946-12-31,2,IL
-42,208,Laos,France,Lao Issara,167,1,Laos,1946,1,0,1,3,,3,FR
-43,208,Laos,France,Lao Issara,167,1,Laos,1947,1,0,1,3,,3,FR
-44,208,Laos,France,Lao Issara,167,1,Laos,1948,1,0,1,3,,3,FR
-45,208,Laos,France,Lao Issara,167,1,Laos,1949,1,0,1,3,,3,FR
-46,208,Laos,France,Lao Issara,167,1,Laos,1950,1,1,1,3,,3,FR
-47,208,Laos,France,Lao Issara,167,1,Laos,1951,1,1,1,3,,3,FR
-48,208,Laos,France,Lao Issara,167,1,Laos,1952,1,1,1,3,,3,FR
-49,208,Laos,France,Lao Issara,167,1,Laos,1953,1,1,1,3,1953-12-31,3,FR
+42,208,Laos,France,Lao Issara,167,1,Laos,1946,1,0,1,3,,3,LA
+43,208,Laos,France,Lao Issara,167,1,Laos,1947,1,0,1,3,,3,LA
+44,208,Laos,France,Lao Issara,167,1,Laos,1948,1,0,1,3,,3,LA
+45,208,Laos,France,Lao Issara,167,1,Laos,1949,1,0,1,3,,3,LA
+46,208,Laos,France,Lao Issara,167,1,Laos,1950,1,1,1,3,,3,LA
+47,208,Laos,France,Lao Issara,167,1,Laos,1951,1,1,1,3,,3,LA
+48,208,Laos,France,Lao Issara,167,1,Laos,1952,1,1,1,3,,3,LA
+49,208,Laos,France,Lao Issara,167,1,Laos,1953,1,1,1,3,1953-12-31,3,LA
 50,209,Philippines,Philippines,Huk,168,2,Philippines,1946,2,1,3,7,,3,PH
 51,209,Philippines,Philippines,Huk,168,2,Philippines,1947,2,1,3,7,,3,PH
 52,209,Philippines,Philippines,Huk,168,2,Philippines,1948,2,1,3,7,,3,PH
@@ -104,30 +104,30 @@
 102,209,Philippines,Philippines,CPP,169,2,Philippines,2014,1,1,3,7,,3,PH
 103,209,Philippines,Philippines,CPP,169,2,Philippines,2015,1,1,3,7,,3,PH
 104,209,Philippines,Philippines,CPP,169,2,Philippines,2016,1,1,3,7,2016-08-20,3,PH
-105,210,Russia,Russia (Soviet Union),Forest Brothers,171,1,Estonia,1946,1,0,3,12,,1,RU
-106,210,Russia,Russia (Soviet Union),Forest Brothers,171,1,Estonia,1947,1,1,3,12,,1,RU
-107,210,Russia,Russia (Soviet Union),Forest Brothers,171,1,Estonia,1948,1,1,3,12,1948-12-31,1,RU
-108,211,Russia,Russia (Soviet Union),"LNPA, LTS(p)A","172, 173",1,Latvia,1946,1,0,3,12,1946-12-31,1,RU
-109,212,Russia,Russia (Soviet Union),BDPS,174,1,Lithuania,1946,2,1,3,6,,1,RU
-110,212,Russia,Russia (Soviet Union),BDPS,174,1,Lithuania,1947,2,1,3,6,,1,RU
-111,212,Russia,Russia (Soviet Union),BDPS,174,1,Lithuania,1948,1,1,3,6,1948-12-31,1,RU
-112,213,Russia,Russia (Soviet Union),UPA,175,1,Ukraine,1946,2,1,3,12,,1,RU
-113,213,Russia,Russia (Soviet Union),UPA,175,1,Ukraine,1947,2,1,3,12,,1,RU
-114,213,Russia,Russia (Soviet Union),UPA,175,1,Ukraine,1948,2,1,3,12,,1,RU
-115,213,Russia,Russia (Soviet Union),UPA,175,1,Ukraine,1949,1,1,3,12,,1,RU
-116,213,Russia,Russia (Soviet Union),UPA,175,1,Ukraine,1950,1,1,3,12,1950-12-31,1,RU
+105,210,Russia,Russia (Soviet Union),Forest Brothers,171,1,Estonia,1946,1,0,3,12,,1,EE
+106,210,Russia,Russia (Soviet Union),Forest Brothers,171,1,Estonia,1947,1,1,3,12,,1,EE
+107,210,Russia,Russia (Soviet Union),Forest Brothers,171,1,Estonia,1948,1,1,3,12,1948-12-31,1,EE
+108,211,Russia,Russia (Soviet Union),"LNPA, LTS(p)A","172, 173",1,Latvia,1946,1,0,3,12,1946-12-31,1,LV
+109,212,Russia,Russia (Soviet Union),BDPS,174,1,Lithuania,1946,2,1,3,6,,1,LT
+110,212,Russia,Russia (Soviet Union),BDPS,174,1,Lithuania,1947,2,1,3,6,,1,LT
+111,212,Russia,Russia (Soviet Union),BDPS,174,1,Lithuania,1948,1,1,3,6,1948-12-31,1,LT
+112,213,Russia,Russia (Soviet Union),UPA,175,1,Ukraine,1946,2,1,3,12,,1,UA
+113,213,Russia,Russia (Soviet Union),UPA,175,1,Ukraine,1947,2,1,3,12,,1,UA
+114,213,Russia,Russia (Soviet Union),UPA,175,1,Ukraine,1948,2,1,3,12,,1,UA
+115,213,Russia,Russia (Soviet Union),UPA,175,1,Ukraine,1949,1,1,3,12,,1,UA
+116,213,Russia,Russia (Soviet Union),UPA,175,1,Ukraine,1950,1,1,3,12,1950-12-31,1,UA
 117,214,"France, Thailand",France,Government of Thailand,147,1,Northern Cambodia,1946,1,0,2,5,1946-11-17,"1, 3",FR
 118,215,"Albania, United Kingdom",Albania,Government of United Kingdom,28,1,Korfu Channel,1946,1,0,2,10,1946-12-31,1,AL
-119,216,Vietnam,France,Viet minh,176,1,Vietnam,1946,2,1,1,11,,3,FR
-120,216,Vietnam,France,Viet minh,176,1,Vietnam,1947,2,1,1,11,,3,FR
-121,216,Vietnam,France,Viet minh,176,1,Vietnam,1948,2,1,1,11,,3,FR
-122,216,Vietnam,France,Viet minh,176,1,Vietnam,1949,2,1,1,11,,3,FR
-123,216,Vietnam,France,Viet minh,176,1,Vietnam,1950,2,1,1,11,,3,FR
-124,216,Vietnam,France,Viet minh,176,1,Vietnam,1951,2,1,1,11,,3,FR
-125,216,Vietnam,France,Viet minh,176,1,Vietnam,1952,2,1,1,11,,3,FR
-126,216,Vietnam,France,Viet minh,176,1,Vietnam,1953,2,1,1,11,,3,FR
-127,216,Vietnam,France,Viet minh,176,1,Vietnam,1954,2,1,1,11,1954-07-20,3,FR
-128,217,China,China,Taiwanese insurgents,177,1,Taiwan,1947,2,1,3,2,1947-03-24,3,CN
+119,216,Vietnam,France,Viet minh,176,1,Vietnam,1946,2,1,1,11,,3,VN
+120,216,Vietnam,France,Viet minh,176,1,Vietnam,1947,2,1,1,11,,3,VN
+121,216,Vietnam,France,Viet minh,176,1,Vietnam,1948,2,1,1,11,,3,VN
+122,216,Vietnam,France,Viet minh,176,1,Vietnam,1949,2,1,1,11,,3,VN
+123,216,Vietnam,France,Viet minh,176,1,Vietnam,1950,2,1,1,11,,3,VN
+124,216,Vietnam,France,Viet minh,176,1,Vietnam,1951,2,1,1,11,,3,VN
+125,216,Vietnam,France,Viet minh,176,1,Vietnam,1952,2,1,1,11,,3,VN
+126,216,Vietnam,France,Viet minh,176,1,Vietnam,1953,2,1,1,11,,3,VN
+127,216,Vietnam,France,Viet minh,176,1,Vietnam,1954,2,1,1,11,1954-07-20,3,VN
+128,217,China,China,Taiwanese insurgents,177,1,Taiwan,1947,2,1,3,2,1947-03-24,3,TW
 129,218,"India, Pakistan",India,Government of Pakistan,142,1,Kashmir,1948,2,1,2,12,1948-12-31,3,IN
 130,218,"India, Pakistan",India,Government of Pakistan,142,1,Kashmir,1964,1,1,2,12,,3,IN
 131,218,"India, Pakistan",India,Government of Pakistan,142,1,Kashmir,1965,2,1,2,12,1965-12-15,3,IN
@@ -149,7 +149,7 @@
 147,218,"India, Pakistan",India,Government of Pakistan,142,1,Kashmir,2014,1,1,2,12,,3,IN
 148,218,"India, Pakistan",India,Government of Pakistan,142,1,Kashmir,2015,1,1,2,12,,3,IN
 149,218,"India, Pakistan",India,Government of Pakistan,142,1,Kashmir,2016,1,1,2,12,2016-12-30,3,IN
-150,219,Madagascar,France,MDRM,179,1,Malagasy,1947,2,1,1,3,1947-12-31,4,FR
+150,219,Madagascar,France,MDRM,179,1,Malagasy,1947,2,1,1,3,1947-12-31,4,MG
 151,220,Paraguay,Paraguay,"Opposition coalition (Febreristas, Liberals and Communists)",722,2,Paraguay,1947,2,1,3,3,1947-08-21,5,PY
 152,220,Paraguay,Paraguay,Military faction (forces of Alfredo Stroessner),723,2,Paraguay,1954,1,1,3,3,1954-05-05,5,PY
 153,220,Paraguay,Paraguay,Military faction (forces of Andres Rodriguez),724,2,Paraguay,1989,1,1,3,3,1989-02-03,5,PY
@@ -342,8 +342,8 @@
 340,227,India,India,CPI-Maoist,195,2,India,2014,1,1,3,5,,3,IN
 341,227,India,India,CPI-Maoist,195,2,India,2015,1,1,3,5,,3,IN
 342,227,India,India,CPI-Maoist,195,2,India,2016,1,1,3,5,2016-12-23,3,IN
-343,228,"Israel, Egypt, Iraq, Jordan, Lebanon, Syria","Egypt, Iraq, Jordan, Lebanon, Syria",Government of Israel,121,1,Palestine,1948,2,1,2,4,,2,0
-344,228,"Israel, Egypt, Iraq, Jordan, Lebanon, Syria","Egypt, Iraq, Jordan, Lebanon, Syria",Government of Israel,121,1,Palestine,1949,1,1,2,4,1949-01-07,2,0
+343,228,"Israel, Egypt, Iraq, Jordan, Lebanon, Syria","Egypt, Iraq, Jordan, Lebanon, Syria",Government of Israel,121,1,Palestine,1948,2,1,2,4,,2,PS
+344,228,"Israel, Egypt, Iraq, Jordan, Lebanon, Syria","Egypt, Iraq, Jordan, Lebanon, Syria",Government of Israel,121,1,Palestine,1949,1,1,2,4,1949-01-07,2,PS
 345,229,Malaysia,United Kingdom,CPM,196,1,Malaya,1948,1,0,1,6,,3,MY
 346,229,Malaysia,United Kingdom,CPM,196,1,Malaya,1949,1,1,1,6,,3,MY
 347,229,Malaysia,United Kingdom,CPM,196,1,Malaya,1950,2,1,1,6,,3,MY
@@ -454,78 +454,78 @@
 452,233,Guatemala,Guatemala,URNG,732,2,Guatemala,1993,1,1,3,7,,5,GT
 453,233,Guatemala,Guatemala,URNG,732,2,Guatemala,1994,1,1,3,7,,5,GT
 454,233,Guatemala,Guatemala,URNG,732,2,Guatemala,1995,1,1,3,7,1995-12-31,5,GT
-455,234,Israel,Israel,Palestinian insurgents,202,1,Palestine,1949,1,0,3,5,,2,IL
-456,234,Israel,Israel,Palestinian insurgents,202,1,Palestine,1950,1,0,3,5,,2,IL
-457,234,Israel,Israel,Palestinian insurgents,202,1,Palestine,1951,1,0,3,5,,2,IL
-458,234,Israel,Israel,Palestinian insurgents,202,1,Palestine,1952,1,0,3,5,,2,IL
-459,234,Israel,Israel,Palestinian insurgents,202,1,Palestine,1953,1,0,3,5,,2,IL
-460,234,Israel,Israel,Palestinian insurgents,202,1,Palestine,1954,1,0,3,5,,2,IL
-461,234,Israel,Israel,Palestinian insurgents,202,1,Palestine,1955,1,1,3,5,,2,IL
-462,234,Israel,Israel,Palestinian insurgents,202,1,Palestine,1956,1,1,3,5,,2,IL
-463,234,Israel,Israel,Palestinian insurgents,202,1,Palestine,1957,1,1,3,5,,2,IL
-464,234,Israel,Israel,Palestinian insurgents,202,1,Palestine,1958,1,1,3,5,,2,IL
-465,234,Israel,Israel,Palestinian insurgents,202,1,Palestine,1959,1,1,3,5,,2,IL
-466,234,Israel,Israel,Palestinian insurgents,202,1,Palestine,1960,1,1,3,5,,2,IL
-467,234,Israel,Israel,Palestinian insurgents,202,1,Palestine,1961,1,1,3,5,,2,IL
-468,234,Israel,Israel,Palestinian insurgents,202,1,Palestine,1962,1,1,3,5,,2,IL
-469,234,Israel,Israel,Palestinian insurgents,202,1,Palestine,1963,1,1,3,5,,2,IL
-470,234,Israel,Israel,Palestinian insurgents,202,1,Palestine,1964,1,1,3,5,,2,IL
-471,234,Israel,Israel,"Non PLO groups, PLO","203, 204",1,Palestine,1965,1,1,3,5,,2,IL
-472,234,Israel,Israel,"Non PLO groups, PLO","203, 204",1,Palestine,1966,1,1,3,5,,2,IL
-473,234,Israel,Israel,"Non PLO groups, PLO","203, 204",1,Palestine,1967,1,1,3,5,,2,IL
-474,234,Israel,Israel,"Non PLO groups, PLO","203, 204",1,Palestine,1968,1,1,3,5,,2,IL
-475,234,Israel,Israel,"Non PLO groups, PLO","203, 204",1,Palestine,1969,1,1,3,5,,2,IL
-476,234,Israel,Israel,"Non PLO groups, PLO","203, 204",1,Palestine,1970,1,1,3,5,,2,IL
-477,234,Israel,Israel,"Non PLO groups, PLO","203, 204",1,Palestine,1971,1,1,3,5,,2,IL
-478,234,Israel,Israel,"Non PLO groups, PLO","203, 204",1,Palestine,1972,1,1,3,5,,2,IL
-479,234,Israel,Israel,"Non PLO groups, PLO","203, 204",1,Palestine,1973,1,1,3,5,,2,IL
-480,234,Israel,Israel,"PLO, Rejectionist Front","204, 1067",1,Palestine,1974,1,1,3,5,,2,IL
-481,234,Israel,Israel,"PLO, Rejectionist Front","204, 1067",1,Palestine,1975,1,1,3,5,,2,IL
-482,234,Israel,Israel,"PLO, Rejectionist Front","204, 1067",1,Palestine,1976,1,1,3,5,,2,IL
-483,234,Israel,Israel,"PLO, Rejectionist Front","204, 1067",1,Palestine,1977,1,1,3,5,,2,IL
-484,234,Israel,Israel,"PLO, Rejectionist Front","204, 1067",1,Palestine,1978,1,1,3,5,,2,IL
-485,234,Israel,Israel,"PLO, Rejectionist Front","204, 1067",1,Palestine,1979,1,1,3,5,,2,IL
-486,234,Israel,Israel,"PLO, Rejectionist Front","204, 1067",1,Palestine,1980,1,1,3,5,,2,IL
-487,234,Israel,Israel,"PLO, Rejectionist Front","204, 1067",1,Palestine,1981,1,1,3,5,,2,IL
-488,234,Israel,Israel,"PLO, Rejectionist Front","204, 1067",1,Palestine,1982,2,1,4,5,,2,IL
-489,234,Israel,Israel,"PLO, Rejectionist Front","204, 1067",1,Palestine,1983,1,1,3,5,,2,IL
-490,234,Israel,Israel,"PLO, Rejectionist Front","204, 1067",1,Palestine,1984,1,1,3,5,,2,IL
-491,234,Israel,Israel,"PLO, Rejectionist Front","204, 1067",1,Palestine,1985,1,1,3,5,,2,IL
-492,234,Israel,Israel,"PLO, Rejectionist Front","204, 1067",1,Palestine,1986,1,1,3,5,,2,IL
-493,234,Israel,Israel,"PLO, Rejectionist Front","204, 1067",1,Palestine,1987,1,1,3,5,,2,IL
-494,234,Israel,Israel,"PLO, Rejectionist Front","204, 1067",1,Palestine,1988,1,1,3,5,,2,IL
-495,234,Israel,Israel,"PFLP, PFLP-GC","205, 206",1,Palestine,1989,1,1,3,5,,2,IL
-496,234,Israel,Israel,Fatah,207,1,Palestine,1990,1,1,3,5,,2,IL
-497,234,Israel,Israel,Fatah,207,1,Palestine,1991,1,1,3,5,,2,IL
-498,234,Israel,Israel,Fatah,207,1,Palestine,1992,1,1,3,5,,2,IL
-499,234,Israel,Israel,Hamas,209,1,Palestine,1993,1,1,3,5,,2,IL
-500,234,Israel,Israel,Hamas,209,1,Palestine,1994,1,1,3,5,,2,IL
-501,234,Israel,Israel,PIJ,208,1,Palestine,1995,1,1,3,5,,2,IL
-502,234,Israel,Israel,PNA,210,1,Palestine,1996,1,1,3,5,1996-09-30,2,IL
-503,234,Israel,Israel,"Fatah, PNA","207, 210",1,Palestine,2000,1,1,3,5,,2,IL
-504,234,Israel,Israel,"Fatah, Hamas, PFLP, PIJ, PNA","207, 209, 205, 208, 210",1,Palestine,2001,1,1,3,5,,2,IL
-505,234,Israel,Israel,"AMB, Fatah, Hamas, PIJ, PNA","211, 207, 209, 208, 210",1,Palestine,2002,1,1,3,5,,2,IL
-506,234,Israel,Israel,"AMB, Hamas, PIJ","211, 209, 208",1,Palestine,2003,1,1,3,5,,2,IL
-507,234,Israel,Israel,"AMB, Hamas, PIJ","211, 209, 208",1,Palestine,2004,1,1,3,5,,2,IL
-508,234,Israel,Israel,"Fatah, Hamas, PIJ","207, 209, 208",1,Palestine,2005,1,1,3,5,,2,IL
-509,234,Israel,Israel,"Fatah, Hamas, PIJ, PRC","207, 209, 208, 212",1,Palestine,2006,1,1,3,5,,2,IL
-510,234,Israel,Israel,"Fatah, Hamas, PIJ","207, 209, 208",1,Palestine,2007,1,1,3,5,,2,IL
-511,234,Israel,Israel,"Hamas, PIJ","209, 208",1,Palestine,2008,1,1,3,5,,2,IL
-512,234,Israel,Israel,"Hamas, PIJ","209, 208",1,Palestine,2009,1,1,3,5,,2,IL
-513,234,Israel,Israel,PIJ,208,1,Palestine,2010,1,1,3,5,,2,IL
-514,234,Israel,Israel,"Hamas, PIJ","209, 208",1,Palestine,2011,1,1,3,5,,2,IL
-515,234,Israel,Israel,"Hamas, PIJ","209, 208",1,Palestine,2012,1,1,3,5,2012-11-21,2,IL
-516,234,Israel,Israel,"Hamas, PIJ","209, 208",1,Palestine,2014,2,1,3,5,2014-12-24,2,IL
-517,235,"North Korea, South Korea",North Korea,Government of South Korea,139,1,Korea,1949,1,0,2,5,,3,KP
-518,235,"North Korea, South Korea",North Korea,Government of South Korea,139,1,Korea,1950,2,1,2,5,,3,KP
-519,235,"North Korea, South Korea",North Korea,Government of South Korea,139,1,Korea,1951,2,1,2,5,,3,KP
-520,235,"North Korea, South Korea",North Korea,Government of South Korea,139,1,Korea,1952,2,1,2,5,,3,KP
-521,235,"North Korea, South Korea",North Korea,Government of South Korea,139,1,Korea,1953,2,1,2,5,1953-07-27,3,KP
+455,234,Israel,Israel,Palestinian insurgents,202,1,Palestine,1949,1,0,3,5,,2,PS
+456,234,Israel,Israel,Palestinian insurgents,202,1,Palestine,1950,1,0,3,5,,2,PS
+457,234,Israel,Israel,Palestinian insurgents,202,1,Palestine,1951,1,0,3,5,,2,PS
+458,234,Israel,Israel,Palestinian insurgents,202,1,Palestine,1952,1,0,3,5,,2,PS
+459,234,Israel,Israel,Palestinian insurgents,202,1,Palestine,1953,1,0,3,5,,2,PS
+460,234,Israel,Israel,Palestinian insurgents,202,1,Palestine,1954,1,0,3,5,,2,PS
+461,234,Israel,Israel,Palestinian insurgents,202,1,Palestine,1955,1,1,3,5,,2,PS
+462,234,Israel,Israel,Palestinian insurgents,202,1,Palestine,1956,1,1,3,5,,2,PS
+463,234,Israel,Israel,Palestinian insurgents,202,1,Palestine,1957,1,1,3,5,,2,PS
+464,234,Israel,Israel,Palestinian insurgents,202,1,Palestine,1958,1,1,3,5,,2,PS
+465,234,Israel,Israel,Palestinian insurgents,202,1,Palestine,1959,1,1,3,5,,2,PS
+466,234,Israel,Israel,Palestinian insurgents,202,1,Palestine,1960,1,1,3,5,,2,PS
+467,234,Israel,Israel,Palestinian insurgents,202,1,Palestine,1961,1,1,3,5,,2,PS
+468,234,Israel,Israel,Palestinian insurgents,202,1,Palestine,1962,1,1,3,5,,2,PS
+469,234,Israel,Israel,Palestinian insurgents,202,1,Palestine,1963,1,1,3,5,,2,PS
+470,234,Israel,Israel,Palestinian insurgents,202,1,Palestine,1964,1,1,3,5,,2,PS
+471,234,Israel,Israel,"Non PLO groups, PLO","203, 204",1,Palestine,1965,1,1,3,5,,2,PS
+472,234,Israel,Israel,"Non PLO groups, PLO","203, 204",1,Palestine,1966,1,1,3,5,,2,PS
+473,234,Israel,Israel,"Non PLO groups, PLO","203, 204",1,Palestine,1967,1,1,3,5,,2,PS
+474,234,Israel,Israel,"Non PLO groups, PLO","203, 204",1,Palestine,1968,1,1,3,5,,2,PS
+475,234,Israel,Israel,"Non PLO groups, PLO","203, 204",1,Palestine,1969,1,1,3,5,,2,PS
+476,234,Israel,Israel,"Non PLO groups, PLO","203, 204",1,Palestine,1970,1,1,3,5,,2,PS
+477,234,Israel,Israel,"Non PLO groups, PLO","203, 204",1,Palestine,1971,1,1,3,5,,2,PS
+478,234,Israel,Israel,"Non PLO groups, PLO","203, 204",1,Palestine,1972,1,1,3,5,,2,PS
+479,234,Israel,Israel,"Non PLO groups, PLO","203, 204",1,Palestine,1973,1,1,3,5,,2,PS
+480,234,Israel,Israel,"PLO, Rejectionist Front","204, 1067",1,Palestine,1974,1,1,3,5,,2,PS
+481,234,Israel,Israel,"PLO, Rejectionist Front","204, 1067",1,Palestine,1975,1,1,3,5,,2,PS
+482,234,Israel,Israel,"PLO, Rejectionist Front","204, 1067",1,Palestine,1976,1,1,3,5,,2,PS
+483,234,Israel,Israel,"PLO, Rejectionist Front","204, 1067",1,Palestine,1977,1,1,3,5,,2,PS
+484,234,Israel,Israel,"PLO, Rejectionist Front","204, 1067",1,Palestine,1978,1,1,3,5,,2,PS
+485,234,Israel,Israel,"PLO, Rejectionist Front","204, 1067",1,Palestine,1979,1,1,3,5,,2,PS
+486,234,Israel,Israel,"PLO, Rejectionist Front","204, 1067",1,Palestine,1980,1,1,3,5,,2,PS
+487,234,Israel,Israel,"PLO, Rejectionist Front","204, 1067",1,Palestine,1981,1,1,3,5,,2,PS
+488,234,Israel,Israel,"PLO, Rejectionist Front","204, 1067",1,Palestine,1982,2,1,4,5,,2,PS
+489,234,Israel,Israel,"PLO, Rejectionist Front","204, 1067",1,Palestine,1983,1,1,3,5,,2,PS
+490,234,Israel,Israel,"PLO, Rejectionist Front","204, 1067",1,Palestine,1984,1,1,3,5,,2,PS
+491,234,Israel,Israel,"PLO, Rejectionist Front","204, 1067",1,Palestine,1985,1,1,3,5,,2,PS
+492,234,Israel,Israel,"PLO, Rejectionist Front","204, 1067",1,Palestine,1986,1,1,3,5,,2,PS
+493,234,Israel,Israel,"PLO, Rejectionist Front","204, 1067",1,Palestine,1987,1,1,3,5,,2,PS
+494,234,Israel,Israel,"PLO, Rejectionist Front","204, 1067",1,Palestine,1988,1,1,3,5,,2,PS
+495,234,Israel,Israel,"PFLP, PFLP-GC","205, 206",1,Palestine,1989,1,1,3,5,,2,PS
+496,234,Israel,Israel,Fatah,207,1,Palestine,1990,1,1,3,5,,2,PS
+497,234,Israel,Israel,Fatah,207,1,Palestine,1991,1,1,3,5,,2,PS
+498,234,Israel,Israel,Fatah,207,1,Palestine,1992,1,1,3,5,,2,PS
+499,234,Israel,Israel,Hamas,209,1,Palestine,1993,1,1,3,5,,2,PS
+500,234,Israel,Israel,Hamas,209,1,Palestine,1994,1,1,3,5,,2,PS
+501,234,Israel,Israel,PIJ,208,1,Palestine,1995,1,1,3,5,,2,PS
+502,234,Israel,Israel,PNA,210,1,Palestine,1996,1,1,3,5,1996-09-30,2,PS
+503,234,Israel,Israel,"Fatah, PNA","207, 210",1,Palestine,2000,1,1,3,5,,2,PS
+504,234,Israel,Israel,"Fatah, Hamas, PFLP, PIJ, PNA","207, 209, 205, 208, 210",1,Palestine,2001,1,1,3,5,,2,PS
+505,234,Israel,Israel,"AMB, Fatah, Hamas, PIJ, PNA","211, 207, 209, 208, 210",1,Palestine,2002,1,1,3,5,,2,PS
+506,234,Israel,Israel,"AMB, Hamas, PIJ","211, 209, 208",1,Palestine,2003,1,1,3,5,,2,PS
+507,234,Israel,Israel,"AMB, Hamas, PIJ","211, 209, 208",1,Palestine,2004,1,1,3,5,,2,PS
+508,234,Israel,Israel,"Fatah, Hamas, PIJ","207, 209, 208",1,Palestine,2005,1,1,3,5,,2,PS
+509,234,Israel,Israel,"Fatah, Hamas, PIJ, PRC","207, 209, 208, 212",1,Palestine,2006,1,1,3,5,,2,PS
+510,234,Israel,Israel,"Fatah, Hamas, PIJ","207, 209, 208",1,Palestine,2007,1,1,3,5,,2,PS
+511,234,Israel,Israel,"Hamas, PIJ","209, 208",1,Palestine,2008,1,1,3,5,,2,PS
+512,234,Israel,Israel,"Hamas, PIJ","209, 208",1,Palestine,2009,1,1,3,5,,2,PS
+513,234,Israel,Israel,PIJ,208,1,Palestine,2010,1,1,3,5,,2,PS
+514,234,Israel,Israel,"Hamas, PIJ","209, 208",1,Palestine,2011,1,1,3,5,,2,PS
+515,234,Israel,Israel,"Hamas, PIJ","209, 208",1,Palestine,2012,1,1,3,5,2012-11-21,2,PS
+516,234,Israel,Israel,"Hamas, PIJ","209, 208",1,Palestine,2014,2,1,3,5,2014-12-24,2,PS
+517,235,"North Korea, South Korea",North Korea,Government of South Korea,139,1,Korea,1949,1,0,2,5,,3,KR
+518,235,"North Korea, South Korea",North Korea,Government of South Korea,139,1,Korea,1950,2,1,2,5,,3,KR
+519,235,"North Korea, South Korea",North Korea,Government of South Korea,139,1,Korea,1951,2,1,2,5,,3,KR
+520,235,"North Korea, South Korea",North Korea,Government of South Korea,139,1,Korea,1952,2,1,2,5,,3,KR
+521,235,"North Korea, South Korea",North Korea,Government of South Korea,139,1,Korea,1953,2,1,2,5,1953-07-27,3,KR
 522,236,China,China,Tibet,213,1,Tibet,1950,1,0,3,10,1950-10-09,3,CN
 523,236,China,China,Tibet,213,1,Tibet,1956,2,1,3,10,1956-12-31,3,CN
 524,236,China,China,Tibet,213,1,Tibet,1959,2,1,3,10,1959-04-23,3,CN
 525,237,Indonesia,Indonesia,Republic of South Moluccas,214,1,South Moluccas,1950,2,1,3,8,1950-11-15,3,ID
-526,238,United States of America,United States of America,Puerto Rican Nationalist Party,733,1,Puerto Rico,1950,1,0,1,10,1950-11-01,5,US
+526,238,United States of America,United States of America,Puerto Rican Nationalist Party,733,1,Puerto Rico,1950,1,0,1,10,1950-11-01,5,PR
 527,239,"Egypt, United Kingdom",Egypt,Government of United Kingdom,28,1,Suez,1951,1,0,2,10,,"1, 2",EG
 528,239,"Egypt, United Kingdom",Egypt,Government of United Kingdom,28,1,Suez,1952,1,0,2,10,1952-12-31,"1, 2",EG
 529,240,Thailand,Thailand,Military faction (navy),215,2,Thailand,1951,1,0,3,6,1951-07-01,3,TH
@@ -553,14 +553,14 @@
 551,243,Indonesia,Indonesia,"Darul Islam, Permesta Movement, PRRI","217, 218, 219",2,Indonesia,1959,2,1,3,12,,3,ID
 552,243,Indonesia,Indonesia,"Darul Islam, Permesta Movement, PRRI","217, 218, 219",2,Indonesia,1960,1,1,3,12,,3,ID
 553,243,Indonesia,Indonesia,"Darul Islam, Permesta Movement, PRRI","217, 218, 219",2,Indonesia,1961,2,1,3,12,1961-12-31,3,ID
-554,244,Morocco,France,Istiqlal,401,1,Morocco,1953,1,0,1,11,,4,FR
-555,244,Morocco,France,Istiqlal,401,1,Morocco,1954,1,0,1,11,,4,FR
-556,244,Morocco,France,Istiqlal,401,1,Morocco,1955,1,0,1,11,,4,FR
-557,244,Morocco,France,Istiqlal,401,1,Morocco,1956,1,0,1,11,1956-03-02,4,FR
-558,245,Tunisia,France,National Liberation Army,402,1,Tunisia,1953,1,0,1,4,,4,FR
-559,245,Tunisia,France,National Liberation Army,402,1,Tunisia,1954,1,0,1,4,,4,FR
-560,245,Tunisia,France,National Liberation Army,402,1,Tunisia,1955,1,0,1,4,,4,FR
-561,245,Tunisia,France,National Liberation Army,402,1,Tunisia,1956,1,0,1,4,1956-03-20,4,FR
+554,244,Morocco,France,Istiqlal,401,1,Morocco,1953,1,0,1,11,,4,MA
+555,244,Morocco,France,Istiqlal,401,1,Morocco,1954,1,0,1,11,,4,MA
+556,244,Morocco,France,Istiqlal,401,1,Morocco,1955,1,0,1,11,,4,MA
+557,244,Morocco,France,Istiqlal,401,1,Morocco,1956,1,0,1,11,1956-03-02,4,MA
+558,245,Tunisia,France,National Liberation Army,402,1,Tunisia,1953,1,0,1,4,,4,TN
+559,245,Tunisia,France,National Liberation Army,402,1,Tunisia,1954,1,0,1,4,,4,TN
+560,245,Tunisia,France,National Liberation Army,402,1,Tunisia,1955,1,0,1,4,,4,TN
+561,245,Tunisia,France,National Liberation Army,402,1,Tunisia,1956,1,0,1,4,1956-03-20,4,TN
 562,246,Algeria,France,FLN ,403,1,Algeria,1954,1,0,1,11,,4,DZ
 563,246,Algeria,France,"FLN , MNA","403, 404",1,Algeria,1955,2,1,1,11,,4,DZ
 564,246,Algeria,France,"FLN , MNA","403, 404",1,Algeria,1956,2,1,1,11,,4,DZ
@@ -581,16 +581,16 @@
 579,248,Cyprus,United Kingdom,EOKA,220,1,Cyprus,1957,1,0,1,6,,1,CY
 580,248,Cyprus,United Kingdom,EOKA,220,1,Cyprus,1958,1,0,1,6,,1,CY
 581,248,Cyprus,United Kingdom,EOKA,220,1,Cyprus,1959,1,0,1,6,1959-02-19,1,CY
-582,249,South Vietnam,South Vietnam,FNL,221,1,South Vietnam,1955,2,1,3,4,,3,0
-583,249,South Vietnam,South Vietnam,FNL,221,1,South Vietnam,1956,2,1,3,4,,3,0
-584,249,South Vietnam,South Vietnam,FNL,221,1,South Vietnam,1957,2,1,3,4,,3,0
-585,249,South Vietnam,South Vietnam,FNL,221,1,South Vietnam,1958,2,1,3,4,,3,0
-586,249,South Vietnam,South Vietnam,FNL,221,1,South Vietnam,1959,2,1,3,4,,3,0
-587,249,South Vietnam,South Vietnam,FNL,221,1,South Vietnam,1960,2,1,3,4,,3,0
-588,249,South Vietnam,South Vietnam,FNL,221,1,South Vietnam,1961,2,1,3,4,,3,0
-589,249,South Vietnam,South Vietnam,FNL,221,1,South Vietnam,1962,2,1,4,4,,3,0
-590,249,South Vietnam,South Vietnam,FNL,221,1,South Vietnam,1963,2,1,4,4,,3,0
-591,249,South Vietnam,South Vietnam,FNL,221,1,South Vietnam,1964,2,1,4,4,1964-12-31,3,0
+582,249,Vietnam,South Vietnam,FNL,221,1,South Vietnam,1955,2,1,3,4,,3,VN
+583,249,Vietnam,South Vietnam,FNL,221,1,South Vietnam,1956,2,1,3,4,,3,VN
+584,249,Vietnam,South Vietnam,FNL,221,1,South Vietnam,1957,2,1,3,4,,3,VN
+585,249,Vietnam,South Vietnam,FNL,221,1,South Vietnam,1958,2,1,3,4,,3,VN
+586,249,Vietnam,South Vietnam,FNL,221,1,South Vietnam,1959,2,1,3,4,,3,VN
+587,249,Vietnam,South Vietnam,FNL,221,1,South Vietnam,1960,2,1,3,4,,3,VN
+588,249,Vietnam,South Vietnam,FNL,221,1,South Vietnam,1961,2,1,3,4,,3,VN
+589,249,Vietnam,South Vietnam,FNL,221,1,South Vietnam,1962,2,1,4,4,,3,VN
+590,249,Vietnam,South Vietnam,FNL,221,1,South Vietnam,1963,2,1,4,4,,3,VN
+591,249,Vietnam,South Vietnam,FNL,221,1,South Vietnam,1964,2,1,4,4,1964-12-31,3,VN
 592,250,"Hungary, Russia",Hungary,Government of Russia (Soviet Union),57,2,"Hungary, Russia (Soviet Union)",1956,2,1,2,10,1956-11-14,1,HU
 593,251,India,India,NNC,222,1,Nagaland,1956,1,0,3,7,,3,IN
 594,251,India,India,NNC,222,1,Nagaland,1957,1,0,3,7,,3,IN
@@ -824,34 +824,34 @@
 822,273,Brunei,United Kingdom,North Kalimantan Liberation Army,263,1,North Borneo,1962,1,0,1,12,1962-12-31,3,BN
 823,274,"China, India",China,Government of India,141,1,"Aksai Chin, Arunachal Pradesh",1962,2,1,2,8,1962-11-21,3,CN
 824,274,"China, India",China,Government of India,141,1,"Aksai Chin, Arunachal Pradesh",1967,1,1,2,8,1967-12-31,3,CN
-825,275,Ethiopia,Ethiopia,ELF,415,1,Eritrea,1964,1,0,3,9,,4,ET
-826,275,Ethiopia,Ethiopia,ELF,415,1,Eritrea,1965,1,0,3,9,,4,ET
-827,275,Ethiopia,Ethiopia,ELF,415,1,Eritrea,1966,1,0,3,9,,4,ET
-828,275,Ethiopia,Ethiopia,ELF,415,1,Eritrea,1967,1,0,3,9,,4,ET
-829,275,Ethiopia,Ethiopia,ELF,415,1,Eritrea,1968,1,0,3,9,,4,ET
-830,275,Ethiopia,Ethiopia,ELF,415,1,Eritrea,1969,1,0,3,9,,4,ET
-831,275,Ethiopia,Ethiopia,ELF,415,1,Eritrea,1970,1,0,3,9,,4,ET
-832,275,Ethiopia,Ethiopia,ELF,415,1,Eritrea,1971,1,0,3,9,,4,ET
-833,275,Ethiopia,Ethiopia,ELF,415,1,Eritrea,1972,1,0,3,9,,4,ET
-834,275,Ethiopia,Ethiopia,"ELF, EPLF","415, 416",1,Eritrea,1973,1,0,3,9,,4,ET
-835,275,Ethiopia,Ethiopia,ELF,415,1,Eritrea,1974,1,0,3,9,,4,ET
-836,275,Ethiopia,Ethiopia,"ELF, EPLF","415, 416",1,Eritrea,1975,2,1,3,9,,4,ET
-837,275,Ethiopia,Ethiopia,"ELF, EPLF","415, 416",1,Eritrea,1976,2,1,3,9,,4,ET
-838,275,Ethiopia,Ethiopia,"ELF, EPLF","415, 416",1,Eritrea,1977,2,1,4,9,,4,ET
-839,275,Ethiopia,Ethiopia,"ELF, EPLF","415, 416",1,Eritrea,1978,2,1,4,9,,4,ET
-840,275,Ethiopia,Ethiopia,"ELF, EPLF","415, 416",1,Eritrea,1979,2,1,3,9,,4,ET
-841,275,Ethiopia,Ethiopia,"ELF, EPLF","415, 416",1,Eritrea,1980,1,1,3,9,,4,ET
-842,275,Ethiopia,Ethiopia,EPLF,416,1,Eritrea,1981,1,1,3,9,,4,ET
-843,275,Ethiopia,Ethiopia,EPLF,416,1,Eritrea,1982,2,1,3,9,,4,ET
-844,275,Ethiopia,Ethiopia,EPLF,416,1,Eritrea,1983,2,1,3,9,,4,ET
-845,275,Ethiopia,Ethiopia,EPLF,416,1,Eritrea,1984,2,1,3,9,,4,ET
-846,275,Ethiopia,Ethiopia,EPLF,416,1,Eritrea,1985,2,1,3,9,,4,ET
-847,275,Ethiopia,Ethiopia,EPLF,416,1,Eritrea,1986,1,1,3,9,,4,ET
-848,275,Ethiopia,Ethiopia,EPLF,416,1,Eritrea,1987,2,1,3,9,,4,ET
-849,275,Ethiopia,Ethiopia,EPLF,416,1,Eritrea,1988,2,1,3,9,,4,ET
-850,275,Ethiopia,Ethiopia,EPLF,416,1,Eritrea,1989,2,1,3,9,,4,ET
-851,275,Ethiopia,Ethiopia,EPLF,416,1,Eritrea,1990,2,1,3,9,,4,ET
-852,275,Ethiopia,Ethiopia,EPLF,416,1,Eritrea,1991,2,1,3,9,1991-05-31,4,ET
+825,275,Ethiopia,Ethiopia,ELF,415,1,Eritrea,1964,1,0,3,9,,4,ER
+826,275,Ethiopia,Ethiopia,ELF,415,1,Eritrea,1965,1,0,3,9,,4,ER
+827,275,Ethiopia,Ethiopia,ELF,415,1,Eritrea,1966,1,0,3,9,,4,ER
+828,275,Ethiopia,Ethiopia,ELF,415,1,Eritrea,1967,1,0,3,9,,4,ER
+829,275,Ethiopia,Ethiopia,ELF,415,1,Eritrea,1968,1,0,3,9,,4,ER
+830,275,Ethiopia,Ethiopia,ELF,415,1,Eritrea,1969,1,0,3,9,,4,ER
+831,275,Ethiopia,Ethiopia,ELF,415,1,Eritrea,1970,1,0,3,9,,4,ER
+832,275,Ethiopia,Ethiopia,ELF,415,1,Eritrea,1971,1,0,3,9,,4,ER
+833,275,Ethiopia,Ethiopia,ELF,415,1,Eritrea,1972,1,0,3,9,,4,ER
+834,275,Ethiopia,Ethiopia,"ELF, EPLF","415, 416",1,Eritrea,1973,1,0,3,9,,4,ER
+835,275,Ethiopia,Ethiopia,ELF,415,1,Eritrea,1974,1,0,3,9,,4,ER
+836,275,Ethiopia,Ethiopia,"ELF, EPLF","415, 416",1,Eritrea,1975,2,1,3,9,,4,ER
+837,275,Ethiopia,Ethiopia,"ELF, EPLF","415, 416",1,Eritrea,1976,2,1,3,9,,4,ER
+838,275,Ethiopia,Ethiopia,"ELF, EPLF","415, 416",1,Eritrea,1977,2,1,4,9,,4,ER
+839,275,Ethiopia,Ethiopia,"ELF, EPLF","415, 416",1,Eritrea,1978,2,1,4,9,,4,ER
+840,275,Ethiopia,Ethiopia,"ELF, EPLF","415, 416",1,Eritrea,1979,2,1,3,9,,4,ER
+841,275,Ethiopia,Ethiopia,"ELF, EPLF","415, 416",1,Eritrea,1980,1,1,3,9,,4,ER
+842,275,Ethiopia,Ethiopia,EPLF,416,1,Eritrea,1981,1,1,3,9,,4,ER
+843,275,Ethiopia,Ethiopia,EPLF,416,1,Eritrea,1982,2,1,3,9,,4,ER
+844,275,Ethiopia,Ethiopia,EPLF,416,1,Eritrea,1983,2,1,3,9,,4,ER
+845,275,Ethiopia,Ethiopia,EPLF,416,1,Eritrea,1984,2,1,3,9,,4,ER
+846,275,Ethiopia,Ethiopia,EPLF,416,1,Eritrea,1985,2,1,3,9,,4,ER
+847,275,Ethiopia,Ethiopia,EPLF,416,1,Eritrea,1986,1,1,3,9,,4,ER
+848,275,Ethiopia,Ethiopia,EPLF,416,1,Eritrea,1987,2,1,3,9,,4,ER
+849,275,Ethiopia,Ethiopia,EPLF,416,1,Eritrea,1988,2,1,3,9,,4,ER
+850,275,Ethiopia,Ethiopia,EPLF,416,1,Eritrea,1989,2,1,3,9,,4,ER
+851,275,Ethiopia,Ethiopia,EPLF,416,1,Eritrea,1990,2,1,3,9,,4,ER
+852,275,Ethiopia,Ethiopia,EPLF,416,1,Eritrea,1991,2,1,3,9,1991-05-31,4,ER
 853,276,"Indonesia, Netherlands",Indonesia,Government of Netherlands,30,1,West New Guinea,1962,1,0,2,1,1962-09-21,"1, 3",ID
 854,277,Venezuela,Venezuela,Military faction (navy),740,2,Venezuela,1962,1,0,3,6,1962-12-31,5,VE
 855,277,Venezuela,Venezuela,Bandera Roja,741,2,Venezuela,1982,1,0,3,6,1982-10-04,5,VE
@@ -916,10 +916,10 @@
 914,285,Mozambique,Portugal,Frelimo,428,1,Mozambique,1972,2,1,1,11,,4,MZ
 915,285,Mozambique,Portugal,Frelimo,428,1,Mozambique,1973,2,1,1,11,,4,MZ
 916,285,Mozambique,Portugal,Frelimo,428,1,Mozambique,1974,1,1,1,11,1974-09-07,4,MZ
-917,286,South Yemen,United Kingdom,FLOSY,265,1,Aden/South Yemen,1964,1,0,1,11,,2,GB
-918,286,South Yemen,United Kingdom,FLOSY,265,1,Aden/South Yemen,1965,1,0,1,11,,2,GB
-919,286,South Yemen,United Kingdom,FLOSY,265,1,Aden/South Yemen,1966,1,0,1,11,,2,GB
-920,286,South Yemen,United Kingdom,FLOSY,265,1,Aden/South Yemen,1967,1,0,1,11,1967-11-29,2,GB
+917,286,Yemen,United Kingdom,FLOSY,265,1,Aden/South Yemen,1964,1,0,1,11,,2,YE
+918,286,Yemen,United Kingdom,FLOSY,265,1,Aden/South Yemen,1965,1,0,1,11,,2,YE
+919,286,Yemen,United Kingdom,FLOSY,265,1,Aden/South Yemen,1966,1,0,1,11,,2,YE
+920,286,Yemen,United Kingdom,FLOSY,265,1,Aden/South Yemen,1967,1,0,1,11,1967-11-29,2,YE
 921,287,Burundi,Burundi,Military faction (forces loyal to Gervais Nyangoma),429,2,Burundi,1965,1,0,3,10,1965-10-19,4,BI
 922,287,Burundi,Burundi,Palipehutu,430,2,Burundi,1991,1,0,3,10,,4,BI
 923,287,Burundi,Burundi,Palipehutu,430,2,Burundi,1992,1,0,3,10,1992-04-14,4,BI
@@ -1062,17 +1062,17 @@
 1060,292,Peru,Peru,Sendero Luminoso,750,2,Peru,2008,1,1,3,5,,5,PE
 1061,292,Peru,Peru,Sendero Luminoso,750,2,Peru,2009,1,1,3,5,,5,PE
 1062,292,Peru,Peru,Sendero Luminoso,750,2,Peru,2010,1,1,3,5,2010-12-30,5,PE
-1063,293,"South Vietnam, Vietnam",South Vietnam,Government of Vietnam (North Vietnam),150,1,South Vietnam,1965,2,1,2,12,,3,0
-1064,293,"South Vietnam, Vietnam",South Vietnam,Government of Vietnam (North Vietnam),150,1,South Vietnam,1966,2,1,2,12,,3,0
-1065,293,"South Vietnam, Vietnam",South Vietnam,Government of Vietnam (North Vietnam),150,1,South Vietnam,1967,2,1,2,12,,3,0
-1066,293,"South Vietnam, Vietnam",South Vietnam,Government of Vietnam (North Vietnam),150,1,South Vietnam,1968,2,1,2,12,,3,0
-1067,293,"South Vietnam, Vietnam",South Vietnam,Government of Vietnam (North Vietnam),150,1,South Vietnam,1969,2,1,2,12,,3,0
-1068,293,"South Vietnam, Vietnam",South Vietnam,Government of Vietnam (North Vietnam),150,1,South Vietnam,1970,2,1,2,12,,3,0
-1069,293,"South Vietnam, Vietnam",South Vietnam,Government of Vietnam (North Vietnam),150,1,South Vietnam,1971,2,1,2,12,,3,0
-1070,293,"South Vietnam, Vietnam",South Vietnam,Government of Vietnam (North Vietnam),150,1,South Vietnam,1972,2,1,2,12,,3,0
-1071,293,"South Vietnam, Vietnam",South Vietnam,Government of Vietnam (North Vietnam),150,1,South Vietnam,1973,2,1,2,12,,3,0
-1072,293,"South Vietnam, Vietnam",South Vietnam,Government of Vietnam (North Vietnam),150,1,South Vietnam,1974,2,1,2,12,,3,0
-1073,293,"South Vietnam, Vietnam",South Vietnam,Government of Vietnam (North Vietnam),150,1,South Vietnam,1975,2,1,2,12,1975-04-30,3,0
+1063,293,Vietnam,South Vietnam,Government of Vietnam (North Vietnam),150,1,South Vietnam,1965,2,1,2,12,,3,VN
+1064,293,Vietnam,South Vietnam,Government of Vietnam (North Vietnam),150,1,South Vietnam,1966,2,1,2,12,,3,VN
+1065,293,Vietnam,South Vietnam,Government of Vietnam (North Vietnam),150,1,South Vietnam,1967,2,1,2,12,,3,VN
+1066,293,Vietnam,South Vietnam,Government of Vietnam (North Vietnam),150,1,South Vietnam,1968,2,1,2,12,,3,VN
+1067,293,Vietnam,South Vietnam,Government of Vietnam (North Vietnam),150,1,South Vietnam,1969,2,1,2,12,,3,VN
+1068,293,Vietnam,South Vietnam,Government of Vietnam (North Vietnam),150,1,South Vietnam,1970,2,1,2,12,,3,VN
+1069,293,Vietnam,South Vietnam,Government of Vietnam (North Vietnam),150,1,South Vietnam,1971,2,1,2,12,,3,VN
+1070,293,Vietnam,South Vietnam,Government of Vietnam (North Vietnam),150,1,South Vietnam,1972,2,1,2,12,,3,VN
+1071,293,Vietnam,South Vietnam,Government of Vietnam (North Vietnam),150,1,South Vietnam,1973,2,1,2,12,,3,VN
+1072,293,Vietnam,South Vietnam,Government of Vietnam (North Vietnam),150,1,South Vietnam,1974,2,1,2,12,,3,VN
+1073,293,Vietnam,South Vietnam,Government of Vietnam (North Vietnam),150,1,South Vietnam,1975,2,1,2,12,1975-04-30,3,VN
 1074,294,"Cambodia , Thailand",Cambodia (Kampuchea),Government of Thailand,147,1,Common Border,1977,1,0,2,12,,3,0
 1075,294,"Cambodia , Thailand",Cambodia (Kampuchea),Government of Thailand,147,1,Common Border,1978,1,0,2,12,1978-12-31,3,0
 1076,294,"Cambodia , Thailand",Cambodia (Kampuchea),Government of Thailand,147,1,Common Border,2011,1,0,2,12,2011-05-02,3,0
@@ -1090,29 +1090,29 @@
 1088,297,Nigeria,Nigeria,Jama'atu Ahlis Sunna Lidda'awati wal-Jihad,1051,2,Nigeria,2014,2,1,4,1,,4,NG
 1089,297,Nigeria,Nigeria,Jama'atu Ahlis Sunna Lidda'awati wal-Jihad,1051,2,Nigeria,2015,2,1,4,1,,4,NG
 1090,297,Nigeria,Nigeria,Jama'atu Ahlis Sunna Lidda'awati wal-Jihad,1051,2,Nigeria,2016,1,1,4,1,,4,NG
-1091,298,South Africa,South Africa,SWAPO,461,1,Namibia,1966,1,0,3,8,,4,ZA
-1092,298,South Africa,South Africa,SWAPO,461,1,Namibia,1967,1,0,3,8,,4,ZA
-1093,298,South Africa,South Africa,SWAPO,461,1,Namibia,1968,1,0,3,8,,4,ZA
-1094,298,South Africa,South Africa,SWAPO,461,1,Namibia,1969,1,0,3,8,,4,ZA
-1095,298,South Africa,South Africa,SWAPO,461,1,Namibia,1970,1,0,3,8,,4,ZA
-1096,298,South Africa,South Africa,SWAPO,461,1,Namibia,1971,1,0,3,8,,4,ZA
-1097,298,South Africa,South Africa,SWAPO,461,1,Namibia,1972,1,0,3,8,,4,ZA
-1098,298,South Africa,South Africa,SWAPO,461,1,Namibia,1973,1,0,3,8,,4,ZA
-1099,298,South Africa,South Africa,SWAPO,461,1,Namibia,1974,1,0,3,8,,4,ZA
-1100,298,South Africa,South Africa,SWAPO,461,1,Namibia,1975,1,0,3,8,,4,ZA
-1101,298,South Africa,South Africa,SWAPO,461,1,Namibia,1976,1,0,3,8,,4,ZA
-1102,298,South Africa,South Africa,SWAPO,461,1,Namibia,1977,1,0,3,8,,4,ZA
-1103,298,South Africa,South Africa,SWAPO,461,1,Namibia,1978,2,1,3,8,,4,ZA
-1104,298,South Africa,South Africa,SWAPO,461,1,Namibia,1979,1,1,3,8,,4,ZA
-1105,298,South Africa,South Africa,SWAPO,461,1,Namibia,1980,2,1,3,8,,4,ZA
-1106,298,South Africa,South Africa,SWAPO,461,1,Namibia,1981,2,1,3,8,,4,ZA
-1107,298,South Africa,South Africa,SWAPO,461,1,Namibia,1982,2,1,3,8,,4,ZA
-1108,298,South Africa,South Africa,SWAPO,461,1,Namibia,1983,2,1,3,8,,4,ZA
-1109,298,South Africa,South Africa,SWAPO,461,1,Namibia,1984,1,1,3,8,,4,ZA
-1110,298,South Africa,South Africa,SWAPO,461,1,Namibia,1985,1,1,3,8,,4,ZA
-1111,298,South Africa,South Africa,SWAPO,461,1,Namibia,1986,2,1,3,8,,4,ZA
-1112,298,South Africa,South Africa,SWAPO,461,1,Namibia,1987,2,1,3,8,,4,ZA
-1113,298,South Africa,South Africa,SWAPO,461,1,Namibia,1988,2,1,3,8,1988-08-08,4,ZA
+1091,298,South Africa,South Africa,SWAPO,461,1,Namibia,1966,1,0,3,8,,4,
+1092,298,South Africa,South Africa,SWAPO,461,1,Namibia,1967,1,0,3,8,,4,
+1093,298,South Africa,South Africa,SWAPO,461,1,Namibia,1968,1,0,3,8,,4,
+1094,298,South Africa,South Africa,SWAPO,461,1,Namibia,1969,1,0,3,8,,4,
+1095,298,South Africa,South Africa,SWAPO,461,1,Namibia,1970,1,0,3,8,,4,
+1096,298,South Africa,South Africa,SWAPO,461,1,Namibia,1971,1,0,3,8,,4,
+1097,298,South Africa,South Africa,SWAPO,461,1,Namibia,1972,1,0,3,8,,4,
+1098,298,South Africa,South Africa,SWAPO,461,1,Namibia,1973,1,0,3,8,,4,
+1099,298,South Africa,South Africa,SWAPO,461,1,Namibia,1974,1,0,3,8,,4,
+1100,298,South Africa,South Africa,SWAPO,461,1,Namibia,1975,1,0,3,8,,4,
+1101,298,South Africa,South Africa,SWAPO,461,1,Namibia,1976,1,0,3,8,,4,
+1102,298,South Africa,South Africa,SWAPO,461,1,Namibia,1977,1,0,3,8,,4,
+1103,298,South Africa,South Africa,SWAPO,461,1,Namibia,1978,2,1,3,8,,4,
+1104,298,South Africa,South Africa,SWAPO,461,1,Namibia,1979,1,1,3,8,,4,
+1105,298,South Africa,South Africa,SWAPO,461,1,Namibia,1980,2,1,3,8,,4,
+1106,298,South Africa,South Africa,SWAPO,461,1,Namibia,1981,2,1,3,8,,4,
+1107,298,South Africa,South Africa,SWAPO,461,1,Namibia,1982,2,1,3,8,,4,
+1108,298,South Africa,South Africa,SWAPO,461,1,Namibia,1983,2,1,3,8,,4,
+1109,298,South Africa,South Africa,SWAPO,461,1,Namibia,1984,1,1,3,8,,4,
+1110,298,South Africa,South Africa,SWAPO,461,1,Namibia,1985,1,1,3,8,,4,
+1111,298,South Africa,South Africa,SWAPO,461,1,Namibia,1986,2,1,3,8,,4,
+1112,298,South Africa,South Africa,SWAPO,461,1,Namibia,1987,2,1,3,8,,4,
+1113,298,South Africa,South Africa,SWAPO,461,1,Namibia,1988,2,1,3,8,1988-08-08,4,
 1114,299,Syria,Syria,Military faction (forces loyal to Nureddin Atassi and Youssef Zeayen),268,2,Syria,1966,1,0,3,2,1966-02-23,2,SY
 1115,299,Syria,Syria,Muslim Brotherhood,269,2,Syria,1979,1,0,3,2,,2,SY
 1116,299,Syria,Syria,Muslim Brotherhood,269,2,Syria,1980,1,0,3,2,,2,SY
@@ -1472,21 +1472,21 @@
 1470,330,Indonesia,Indonesia,Fretilin,290,1,East Timor,1997,1,1,3,12,,3,ID
 1471,330,Indonesia,Indonesia,Fretilin,290,1,East Timor,1998,1,1,3,12,,3,ID
 1472,330,Indonesia,Indonesia,Fretilin,290,1,East Timor,1999,1,1,3,12,1999-09-22,3,ID
-1473,331,Morocco,Morocco,POLISARIO,563,1,Western Sahara,1975,1,0,3,9,,4,MA
-1474,331,Morocco,Morocco,POLISARIO,563,1,Western Sahara,1976,1,0,4,9,,4,MA
-1475,331,Morocco,Morocco,POLISARIO,563,1,Western Sahara,1977,1,0,3,9,,4,MA
-1476,331,Morocco,Morocco,POLISARIO,563,1,Western Sahara,1978,1,0,3,9,,4,MA
-1477,331,Morocco,Morocco,POLISARIO,563,1,Western Sahara,1979,2,1,3,9,,4,MA
-1478,331,Morocco,Morocco,POLISARIO,563,1,Western Sahara,1980,2,1,3,9,,4,MA
-1479,331,Morocco,Morocco,POLISARIO,563,1,Western Sahara,1981,1,1,3,9,,4,MA
-1480,331,Morocco,Morocco,POLISARIO,563,1,Western Sahara,1982,1,1,3,9,,4,MA
-1481,331,Morocco,Morocco,POLISARIO,563,1,Western Sahara,1983,1,1,3,9,,4,MA
-1482,331,Morocco,Morocco,POLISARIO,563,1,Western Sahara,1984,1,1,3,9,,4,MA
-1483,331,Morocco,Morocco,POLISARIO,563,1,Western Sahara,1985,1,1,3,9,,4,MA
-1484,331,Morocco,Morocco,POLISARIO,563,1,Western Sahara,1986,1,1,3,9,,4,MA
-1485,331,Morocco,Morocco,POLISARIO,563,1,Western Sahara,1987,1,1,3,9,,4,MA
-1486,331,Morocco,Morocco,POLISARIO,563,1,Western Sahara,1988,1,1,3,9,,4,MA
-1487,331,Morocco,Morocco,POLISARIO,563,1,Western Sahara,1989,1,1,3,9,1989-11-16,4,MA
+1473,331,Morocco,Morocco,POLISARIO,563,1,Western Sahara,1975,1,0,3,9,,4,EH
+1474,331,Morocco,Morocco,POLISARIO,563,1,Western Sahara,1976,1,0,4,9,,4,EH
+1475,331,Morocco,Morocco,POLISARIO,563,1,Western Sahara,1977,1,0,3,9,,4,EH
+1476,331,Morocco,Morocco,POLISARIO,563,1,Western Sahara,1978,1,0,3,9,,4,EH
+1477,331,Morocco,Morocco,POLISARIO,563,1,Western Sahara,1979,2,1,3,9,,4,EH
+1478,331,Morocco,Morocco,POLISARIO,563,1,Western Sahara,1980,2,1,3,9,,4,EH
+1479,331,Morocco,Morocco,POLISARIO,563,1,Western Sahara,1981,1,1,3,9,,4,EH
+1480,331,Morocco,Morocco,POLISARIO,563,1,Western Sahara,1982,1,1,3,9,,4,EH
+1481,331,Morocco,Morocco,POLISARIO,563,1,Western Sahara,1983,1,1,3,9,,4,EH
+1482,331,Morocco,Morocco,POLISARIO,563,1,Western Sahara,1984,1,1,3,9,,4,EH
+1483,331,Morocco,Morocco,POLISARIO,563,1,Western Sahara,1985,1,1,3,9,,4,EH
+1484,331,Morocco,Morocco,POLISARIO,563,1,Western Sahara,1986,1,1,3,9,,4,EH
+1485,331,Morocco,Morocco,POLISARIO,563,1,Western Sahara,1987,1,1,3,9,,4,EH
+1486,331,Morocco,Morocco,POLISARIO,563,1,Western Sahara,1988,1,1,3,9,,4,EH
+1487,331,Morocco,Morocco,POLISARIO,563,1,Western Sahara,1989,1,1,3,9,1989-11-16,4,EH
 1488,332,Mozambique,Mozambique,Renamo,498,2,Mozambique,1977,1,0,3,12,,4,MZ
 1489,332,Mozambique,Mozambique,Renamo,498,2,Mozambique,1978,1,0,3,12,,4,MZ
 1490,332,Mozambique,Mozambique,Renamo,498,2,Mozambique,1979,1,0,3,12,,4,MZ
@@ -1659,7 +1659,7 @@
 1657,345,South Africa,South Africa,ANC,513,2,South Africa,1986,1,0,3,2,,4,ZA
 1658,345,South Africa,South Africa,ANC,513,2,South Africa,1987,1,0,3,2,,4,ZA
 1659,345,South Africa,South Africa,ANC,513,2,South Africa,1988,1,0,3,2,1988-12-31,4,ZA
-1660,346,"Argentina, United Kingdom",Argentina,Government of United Kingdom,28,1,Malvinas/Falkland Islands,1982,1,0,2,4,1982-06-14,"1, 5",AR
+1660,346,"Argentina, United Kingdom",Argentina,Government of United Kingdom,28,1,Malvinas/Falkland Islands,1982,1,0,2,4,1982-06-14,"1, 5",FK
 1661,347,India,India,PLA,314,1,Manipur,1982,1,0,3,4,,3,IN
 1662,347,India,India,PLA,314,1,Manipur,1983,1,0,3,4,,3,IN
 1663,347,India,India,PLA,314,1,Manipur,1984,1,0,3,4,,3,IN
@@ -1762,7 +1762,7 @@
 1760,356,"Laos, Thailand",Laos,Government of Thailand,147,1,Common Border,1988,1,0,2,6,1988-02-17,3,LA
 1761,357,Suriname,Suriname,SLA,760,2,Suriname,1987,1,0,3,8,1987-12-31,5,SR
 1762,358,Togo,Togo,MTD,516,2,Togo,1986,1,0,3,9,1986-09-24,4,TG
-1763,359,South Yemen,South Yemen,Yemenite Socialist Party - Abdul Fattah Ismail faction,324,2,South Yemen,1986,2,1,3,1,1986-01-20,2,0
+1763,359,Yemen,South Yemen,Yemenite Socialist Party - Abdul Fattah Ismail faction,324,2,South Yemen,1986,2,1,3,1,1986-01-20,2,YE
 1764,360,Burkina Faso,Burkina Faso,Popular Front,517,2,Burkina Faso,1987,1,0,3,10,1987-10-15,4,BF
 1765,361,"Chad, Libya",Chad,Government of Libya,111,1,Aozou strip,1987,2,1,2,8,1987-09-12,4,TD
 1766,362,Comoros,Comoros,Presidential guard,518,2,Comoros,1989,1,0,3,11,1989-11-29,4,KM
@@ -1832,8 +1832,8 @@
 1830,369,Papua New Guinea,Papua New Guinea,BRA,328,1,Bougainville,1995,1,0,3,4,,3,PG
 1831,369,Papua New Guinea,Papua New Guinea,BRA,328,1,Bougainville,1996,1,0,3,4,1996-11-28,3,PG
 1832,370,Romania,Romania,"Military faction (forces of Nicolae Ceausescu), NSF","6137, 329",2,Romania,1989,1,0,3,12,1989-12-29,1,RO
-1833,371,"Iraq, Kuwait",Iraq,Government of Kuwait,125,1,Kuwait,1990,2,1,2,8,,2,IQ
-1834,371,"Iraq, Kuwait",Iraq,Government of Kuwait,125,1,Kuwait,1991,2,1,2,8,1991-03-01,2,IQ
+1833,371,"Iraq, Kuwait",Iraq,Government of Kuwait,125,1,Kuwait,1990,2,1,2,8,,2,KW
+1834,371,"Iraq, Kuwait",Iraq,Government of Kuwait,125,1,Kuwait,1991,2,1,2,8,1991-03-01,2,KW
 1835,372,Mali,Mali,MPA,521,1,Azawad,1990,1,0,3,6,1990-09-04,4,ML
 1836,372,Mali,Mali,FIAA,522,1,Azawad,1994,1,0,3,6,1994-12-18,4,ML
 1837,372,Mali,Mali,ATNMC,523,1,Azawad,2007,1,0,3,6,,4,ML
@@ -1872,7 +1872,7 @@
 1870,375,Senegal,Senegal,MFDC,529,1,Casamance,2011,1,1,3,12,2011-12-30,4,SN
 1871,376,Russia,Russia (Soviet Union),Republic of Armenia,330,1,Nagorno-Karabakh,1990,1,0,3,1,,1,RU
 1872,376,Russia,Russia (Soviet Union),Republic of Armenia,330,1,Nagorno-Karabakh,1991,1,0,3,1,1991-12-21,1,RU
-1873,377,Russia,Russia (Soviet Union),APF,331,1,Azerbaijan,1990,1,0,3,1,1990-01-27,1,RU
+1873,377,Russia,Russia (Soviet Union),APF,331,1,Azerbaijan,1990,1,0,3,1,1990-01-27,1,AZ
 1874,378,Trinidad and Tobago,Trinidad and Tobago,Jamaat al-Muslimeen,762,2,Trinidad and Tobago,1990,1,0,3,7,1990-08-02,5,TT
 1875,379,Djibouti,Djibouti,FRUD,530,2,Djibouti,1991,1,0,3,11,,4,DJ
 1876,379,Djibouti,Djibouti,FRUD,530,2,Djibouti,1992,1,0,3,11,,4,DJ
@@ -1900,9 +1900,9 @@
 1898,383,Turkey,Turkey,Devrimci Sol,334,2,Turkey,1992,1,0,3,12,1992-12-07,2,TR
 1899,383,Turkey,Turkey,MKP,335,2,Turkey,2005,1,0,3,12,2005-10-17,2,TR
 1900,383,Turkey,Turkey,"TAK, YSK","2034, 6689",2,Turkey,2016,1,0,3,12,2016-12-17,2,TR
-1901,384,Serbia,Serbia (Yugoslavia),Republic of Slovenia,336,1,Slovenia,1991,1,0,3,6,1991-07-03,1,RS
-1902,385,Serbia,Serbia (Yugoslavia),"Croatian irregulars, Republic of Croatia","370, 337",1,Croatia,1991,2,1,3,7,,1,RS
-1903,385,Serbia,Serbia (Yugoslavia),Republic of Croatia,337,1,Croatia,1992,1,1,3,7,1992-04-06,1,RS
+1901,384,Serbia,Serbia (Yugoslavia),Republic of Slovenia,336,1,Slovenia,1991,1,0,3,6,1991-07-03,1,SI
+1902,385,Serbia,Serbia (Yugoslavia),"Croatian irregulars, Republic of Croatia","370, 337",1,Croatia,1991,2,1,3,7,,1,HR
+1903,385,Serbia,Serbia (Yugoslavia),Republic of Croatia,337,1,Croatia,1992,1,1,3,7,1992-04-06,1,HR
 1904,386,Algeria,Algeria,Takfir wa'l Hijra,536,2,Algeria,1991,1,0,3,8,,4,DZ
 1905,386,Algeria,Algeria,AIS,537,2,Algeria,1992,1,0,3,8,,4,DZ
 1906,386,Algeria,Algeria,"AIS, GIA","537, 538",2,Algeria,1993,1,1,3,8,,4,DZ
@@ -2148,10 +2148,10 @@
 2146,426,Israel,Israel,Hezbollah,366,1,Southern Lebanon,1999,1,0,3,9,1999-12-30,2,IL
 2147,426,Israel,Israel,Hezbollah,366,1,Southern Lebanon,2006,1,1,3,9,2006-08-23,2,IL
 2148,427,"Tanzania, Uganda",Tanzania,Government of Uganda,90,1,Kagera Salient,1978,1,0,2,11,1978-11-16,4,TZ
-2149,428,Mauritania,Mauritania,POLISARIO,563,1,Western Sahara,1975,1,0,3,12,,4,MR
-2150,428,Mauritania,Mauritania,POLISARIO,563,1,Western Sahara,1976,1,0,3,12,,4,MR
-2151,428,Mauritania,Mauritania,POLISARIO,563,1,Western Sahara,1977,1,1,3,12,,4,MR
-2152,428,Mauritania,Mauritania,POLISARIO,563,1,Western Sahara,1978,1,1,3,12,1978-12-31,4,MR
+2149,428,Mauritania,Mauritania,POLISARIO,563,1,Western Sahara,1975,1,0,3,12,,4,EH
+2150,428,Mauritania,Mauritania,POLISARIO,563,1,Western Sahara,1976,1,0,3,12,,4,EH
+2151,428,Mauritania,Mauritania,POLISARIO,563,1,Western Sahara,1977,1,1,3,12,,4,EH
+2152,428,Mauritania,Mauritania,POLISARIO,563,1,Western Sahara,1978,1,1,3,12,1978-12-31,4,EH
 2153,429,DR Congo,DR Congo (Zaire),BDK,561,1,Kongo Kingdom,2007,1,0,3,7,,4,CD
 2154,429,DR Congo,DR Congo (Zaire),BDK,561,1,Kongo Kingdom,2008,1,0,3,7,2008-03-31,4,CD
 2155,430,Niger,Niger,FLAA,524,2,Niger,1991,1,0,3,10,,4,NE
