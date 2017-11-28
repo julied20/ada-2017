@@ -16,7 +16,6 @@ def clean_ucdp():
         conflict_df.loc[index, 'location'] = conflict_df.loc[index, 'location'].rstrip()
         conflict_df.loc[index, 'sidea'] = conflict_df.loc[index, 'sidea'].replace('Government of ', '')
         conflict_df.loc[index, 'startdate'] = datetime.strptime(conflict_df.loc[index, 'startdate'], '%Y-%m-%d').month
-        #conflict_df.loc[index, 'ependdate'] = datetime.strptime(conflict_df.loc[index, 'ependdate'], '%Y-%m-%d').month
 
         # If the column territory is empty, we can assume that the conflict happens at the same place than the variable 'location'. So we set the 'terr' variable with the 'location' value to avoid NaN. 
         if pd.isnull(row['terr']) :
@@ -43,9 +42,8 @@ def clean_ucdp():
     sidea = conflict_df['sidea'].tolist()
     location  = conflict_df['location'].tolist()
 
-    iso_conflict = []
     
-    # The location of the conflict should be in the variable location. Sometimes, in this variable, a specific region of a country is named, which doesn't have an  ISO. In this case, the choice is made to set the ISO from the sidea country, as the sidea represent the primary party to a conflict
+    # The location of the conflict should be in the variable location. Sometimes, in this variable, a specific region of a country is named, which doesn't have an  ISO. In this case, the choice is made to set the ISO from the the location country, as the location represent the name of the country/ies that have a primary claim to the conflict. As it can have several countries in the variable location, we look into the variable sidea, which represent the primary party to a conflict. If we don't find anything, we set the ISO to 0
     iso_conflict = []
 
     for i in range(0, len(sidea)):
