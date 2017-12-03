@@ -3,21 +3,25 @@ let current_year = 1960;
 
 
 class Country {
-    constructor(country, ISO3, ISO2, latitude, longitude, numeric_code) {
+    constructor(country, ISO3, ISO2, latitude, longitude) {
       this.country = country;
       this.ISO3 = ISO3;
       this.ISO2 = ISO2;
       this.latitude = latitude;
       this.longitude = longitude;
+
+
     }
 }
 
 class Conflict {
-    constructor(location, ISO2, year, month) {
+    constructor(location, ISO2, year, month, colonizer, year_decolonisation) {
         this.location = location;
         this.ISO2 = ISO2;
         this.year = year;
         this.month = month;
+        this.colonizer = colonizer;
+        this.year_decolonisation = year_decolonisation;
     }
 
     set_data(data) {
@@ -47,7 +51,7 @@ function update_year(new_year) {
 function get_timeline_graph() {
   let t = [];
 
-  d3.csv("datasets/timeline.csv", function(years) {
+  d3.csv("datasets/timeline_colonies.csv", function(years) {
 
 
 

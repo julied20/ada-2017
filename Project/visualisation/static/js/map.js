@@ -37,10 +37,22 @@ function get_area(current_year) {
     current_year_conflicts = get_current_year_conflicts(current_year)
 
     current_year_conflicts.forEach(function(area) {
+      let country_color;
+      if (area.year_decolonisation < current_year){
+        country_color =  "#67b7dc";
+        console.log(area);
+
+      }else {
+        console.log(current_year);
+        console.log(area.year_decolonisation);
+        console.log(area.location);
+        console.log(area);
+        country_color =  "#000000";
+      }
       areas.push({
         "title" : area.location,
         "id" : area.ISO2,
-        "color": "#67b7dc"
+        "color": country_color
       })
     });
 

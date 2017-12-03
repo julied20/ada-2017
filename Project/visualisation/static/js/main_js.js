@@ -8,7 +8,7 @@ let timeline_graph = [];
 
 
 
-d3.csv("datasets/clean_conflict.csv", function(conflict) {
+d3.csv("datasets/clean_conflict_of_colonized_countries.csv", function(conflict) {
 
 
 
@@ -18,7 +18,9 @@ d3.csv("datasets/clean_conflict.csv", function(conflict) {
       conflict_.location,
       conflict_.ISO2,
       conflict_.year,
-      conflict_.start_month
+      conflict_.start_month,
+      conflict_.colonizer,
+      conflict_.decolonisation_year
     ))
   });
 
@@ -38,6 +40,7 @@ d3.csv("datasets/countries_codes_and_coordinates.csv", function(country_coordina
       country_co.ISO2,
       country_co.Latitude,
       country_co.Longitude
+
     ))
   });
 

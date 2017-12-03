@@ -3,7 +3,7 @@ function get_timeline() {
   let data_provider = [];
   let timeline_graph = [];
 
-  d3.csv("datasets/timeline.csv", function(years) {
+  d3.csv("datasets/timeline_colonies.csv", function(years) {
 
 
 
@@ -12,7 +12,7 @@ function get_timeline() {
       timeline_graph.push(new Year(
         year.year,
         year.number_of_conflict
-      ))  
+      ))
     });
 
     timeline_graph.forEach(function(t) {
