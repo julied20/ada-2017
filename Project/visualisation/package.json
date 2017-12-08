@@ -1,0 +1,14 @@
+{
+  "name": "visualisation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Julie",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack --watch",
+    "build": "webpack"
+  },
+  "dependencies": {
+    "webpack": "^3.9.1"
+  }
+}
