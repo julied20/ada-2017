@@ -3,7 +3,6 @@ function get_area(current_year, current_colonizer) {
     const current_year_conflicts = get_current_year_conflicts(current_year);
     const conflicts = get_colonizer_conflicts(current_year_conflicts);
 
-    console.log(conflicts);
     conflicts.forEach(function(area) {
       let country_color;
       if (area.year_decolonisation < current_year){
