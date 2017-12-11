@@ -9,7 +9,7 @@ d3.csv("Project/datasets/timeline_decolonisation.csv", function(decolonisation) 
     data.push(d.number_of_decolonization);
   }
 
-  new Chart(document.getElementById("nb_colonizers"), {
+  new Chart(document.getElementById("decolonisation"), {
       type: 'bar',
       data: {
         labels: labels,
