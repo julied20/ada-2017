@@ -58,3 +58,8 @@ function update_current_year(c, colonizers){
   current_year  = d3.min(colonizers[c].conflict_years);
 
 }
+
+function loading_finished() {
+    d3.select("#loader").attr("class", "invisible");
+    d3.select("#content").attr("class", "");
+}

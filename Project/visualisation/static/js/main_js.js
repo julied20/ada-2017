@@ -93,6 +93,8 @@ d3.csv("Project/datasets/clean_conflict_of_colonized_countries.csv", function(co
         country_co.Longitude
       ))
     });
+    loading_finished();
+
   });
 
   // Create navbar with colonizers
@@ -120,24 +122,11 @@ d3.csv("Project/datasets/clean_conflict_of_colonized_countries.csv", function(co
     .text(colonizer.country);
   });
 
-
   // Set first list elem as active
   nav_ul.select('li')
   .attr('class', 'nav-item active')
 
-
   update_timeline(current_colonizer, colonizers);
   get_area(current_year, current_colonizer);
-
-  /*const change_year = new_year => {
-    const year_conflicts = conflicts.filter(x => x.Year == new_year);
-    paths = map_group.selectAll("path")
-    .data(countries);
-
-    update_paths(paths);
-    update_paths(paths.enter().append("path"));
-
-    update_graph();
-  }*/
 
 });
