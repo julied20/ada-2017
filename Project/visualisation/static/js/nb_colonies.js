@@ -6,9 +6,7 @@ new Chart(document.getElementById("nb_colonizers"), {
       datasets: [
         {
           label: "Number of colonies",
-          backgroundColor: ["rgba(255, 206, 86, 1)", "rgba(255, 206, 86, 1)","rgba(255, 206, 86, 1)",
-          "rgba(255, 206, 86, 1)", "rgba(255, 206, 86, 1)", "rgba(255, 206, 86, 1)",
-          "rgba(255, 206, 86, 1)", "rgba(255, 206, 86, 1)"],
+          backgroundColor: "rgba(255, 206, 86, 1)",
           data: [46, 28, 20, 13, 6, 5, 3, 1, 1]
         }
       ]

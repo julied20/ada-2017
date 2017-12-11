@@ -2,16 +2,22 @@
 // Number of decolonisation per years
 function get_graph() {
 d3.csv("Project/datasets/timeline_decolonisation.csv", function(decolonisation) {
-  console.log(decolonisation);
+  let labels = [];
+  let data = [];
+  for (let d of decolonisation) {
+    labels.push(d.year);
+    data.push(d.number_of_decolonization);
+  }
+
   new Chart(document.getElementById("nb_colonizers"), {
       type: 'bar',
       data: {
-        labels: decolonisation.year,
+        labels: labels,
         datasets: [
           {
             label: "Number of decolonisation",
-            backgroundColor: "3e95cd",
-            data: decolonisation.number_of_decolonization
+            backgroundColor: "rgba(255, 206, 86, 1)",
+            data: data
           }
         ]
       },
