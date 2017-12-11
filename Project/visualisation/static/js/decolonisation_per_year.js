@@ -1,7 +1,7 @@
 /*************************************/
 // Number of decolonisation per years
 function get_graph() {
-d3.csv("datasets/timeline_decolonisation.csv", function(decolonisation) {
+d3.csv("Project/datasets/timeline_decolonisation.csv", function(decolonisation) {
   console.log(decolonisation);
   new Chart(document.getElementById("nb_colonizers"), {
       type: 'bar',

@@ -53,7 +53,7 @@ let colonizers = [
 ];
 
 //A reprendre c'est pas très beau ça
-d3.csv("datasets/timeline_colonies.csv", function(a) {
+d3.csv("Project/datasets/timeline_colonies.csv", function(a) {
 
   for(let c of colonizers) {
     let years = [];
@@ -69,7 +69,7 @@ d3.csv("datasets/timeline_colonies.csv", function(a) {
   }
 });
 
-d3.csv("datasets/clean_conflict_of_colonized_countries.csv", function(conflict) {
+d3.csv("Project/datasets/clean_conflict_of_colonized_countries.csv", function(conflict) {
 
   conflict.forEach(function(conflict_) {
 
@@ -83,7 +83,7 @@ d3.csv("datasets/clean_conflict_of_colonized_countries.csv", function(conflict) 
     ))
   });
 
-  d3.csv("datasets/countries_codes_and_coordinates.csv", function(country_coordinates) {
+  d3.csv("Project/datasets/countries_codes_and_coordinates.csv", function(country_coordinates) {
     country_coordinates.forEach(function(country_co) {
       countries.push(new Country(
         country_co.Country,
