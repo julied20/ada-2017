@@ -7,29 +7,45 @@
 
 }
 
-#navbar {
-  position: center;
+#container {
+  position: relative;
   width: 100%;
 }
 
+#navbar{
+  list-style-type: none;
+  margin: 0 2px;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+li {float: left;
+  list-style-type:none;
+  margin: 0 10px;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  }
+
 #map_div {
   position: relative;
-  width: 70%;
+  width: 100%;
   height: 70vh;
 }
 
 
 #timeline_row {
   position: relative;
-    height:35vh;
+  height:55vh;
 }
 
 #nb_colonies {
   position: relative;
-  width: 100%;
-    height:40vh;
+  height:55vh;
 }
 
 #decolonisation_per_year {
-    height:35vh;
+  position: relative;
+  height:55vh;
 }

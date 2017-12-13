@@ -25,6 +25,10 @@ function get_area(current_year, current_colonizer) {
         "zoomLongitude": 46,
         "zoomLatitude": 2,
         "areas": areas,
+        "zoomControl": {
+      		"zoomControlEnabled": false,
+          "panControleEnable": false,
+      	}
       },
 
       "areasSettings": {

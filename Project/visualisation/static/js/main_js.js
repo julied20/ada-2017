@@ -106,7 +106,6 @@ d3.csv("Project/datasets/clean_conflict_of_colonized_countries.csv", function(co
     .attr('class', 'nav-item')
     .append('a')
     .attr('class', 'nav-link')
-    .attr('href', '#')
     .attr('id', index)
     .on('click', function() {
       // Remove active for all stories
@@ -118,6 +117,7 @@ d3.csv("Project/datasets/clean_conflict_of_colonized_countries.csv", function(co
       update_current_year(current_colonizer, colonizers);
       update_timeline(current_colonizer, colonizers);
       get_area(current_year, colonizers);
+
     })
     .text(colonizer.country);
   });
