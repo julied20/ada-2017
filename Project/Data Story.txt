@@ -1,0 +1,101 @@
+
+ADA-Project
+Decolonization Data Story
+
+Introduction
+
+Colonialism is often associated with the European Empires that expanded in the last three centuries. However, it is not a modern phenomenon as many ancient civilizations relied on colonies to expand their influence on the world. Among them, one can cite the Greeks and Romans, the Ottomans and the Moors. The first massive colonial expansion happened in the Americas with Spain and Portugal mastering the new navigation techniques. Those colonizing empires were then able to extend their political sovereignty on foreign lands by sending large numbers of colons. (source: https://plato.stanford.edu/entries/colonialism/) The following centuries then saw the European empires expand on all continents, this culmination ending with the national liberation movements of the 1960s.
+We will try to understand if by gaining their sovereignty, the former colonies truly achieved the freedom they expected. And more precisely, if the way the decolonization was handled is having influences on the current stability of the former colony.
+To better understand the variations in the current state of former colonies, we first need to look at who were their colonizers. From there, we can observe the variations in the decolonization process. We finally look at the conflicts post-decolonization to better assess the political stability of the former colonies.
+
+Datasets
+
+As the UCDP dataset focuses on conflicts in the period after the Second World War, we will look at the decolonization process of the former European Colonial Empires during the XIXth and XXth centuries. 
+The Dataset comes from a joint project between the Uppsala Conflict Data Program (UCDP) and the Peace Research Institute in Oslo (PRIO). It contains information on armed conflicts where at least one party is the government of a state in the time period 1946-2016. UCDP defines conflict as: “a contested incompatibility that concerns government and/or territory where the use of armed force between two parties, of which at least one is the government of a state, results in at least 25 battle-related deaths in a calendar year.”
+This Dataset regroups all the conflicts informations, like the countries or political parties involved, or the date of the conflict. But in order to interpret these information and answer the research questions, more material is needed. This additional material is extracted from Wikidata. Wikidata is a central storage for the structured data of Wikipedia, Wikisource and others. Therefore, it links the different European powers to their colonies.
+For our analysis, we will mix two different definitions: colonialism and imperialism. Colonialism comes from the latin ‘colonus’, a farmer. While imperialism comes from the latin ‘imperium’ that refers to command. The main difference comes from the aspect of sending colons to a new land for colonialism, and those are expected to remain their allegiance to their homeland. Whereas imperialism is focusing on the way how a country is exercising is power and influence over another one. The close relationship between those cases is not the topic of our research, as we will study the states that separated from their country of influence.
+
+ Colonial Empires
+
+Graph 1 . Most Colonizing countries
+
+We begin our analysis by looking at the biggest colonial empires, looking at the number of colonies rather than their sizes. The barplot above shows us that the United Kingdom was the biggest Empire of this era, comforted by literature as it was the biggest empire in human history. All of the countries presented above are European, comforting the notion of European Colonial Empires.
+
+Graph 2 . Map of Colonies
+
+The map of colonies per European powers shadows the colonial policies of the different superpowers. 
+Russia was always focused on neighboring colonies for boundary expansion. It began through the XV to XVII centuries to expand their territory up to the Sea of Okhotsk, on the Asian side of the Pacific Ocean. In the scope of our analysis, the Soviet Union continued to establish its boundaries by taking control of various countries from the balkans up to Eastern Europe.
+On another hand, Portuguese and Spanish colonies established first their influence over the American continent after the discovery of new techniques for fast-sailing travels. They brought their languages and religions to the natives of those countries. 
+Finally the British and French Empire were the one that expanded the most, through North America, to Africa and even to Asia. Both countries still possess up to this day territories in various continents and in various oceans. 
+To Do: Talk more about the process and goals of the colonies
+
+
+Decolonization
+
+Graph 1. Decolonization over time
+
+The independence process began during the XVIIIth century and continues up to this day with the separation of Sudan and South Sudan in 2011. Other than this independence, most of them will come from the decolonization of European empires. The temporal evolution of the number of independence declared shadows interesting causes for those movements. We observe various waves of independencies, with a first one happening during the first half of the XIXth century. To do : study more the independency of former Spanish and Portuguese territories. 
+Then the movement slew down during the second half of this century. The First World War manifests a new spike of independencies, before the biggest wave that occurred after the Second World War. It began as a first batch directly after the war, until a second that occurred in the 1960s. The main decolonization finished at the fall of the Soviet Union in 1991.
+
+Graph 2. Map of Decolonization
+
+It is informative to link major historic events to the process of decolonization as it could explain some of the pattern that we observe. However, another interaction needs to be taken into account to better understand the wave process: spatial interaction. The map presented above regroup the different dates of decolonization through the years. One can first observe that the first decolonization mainly occurred in the Americas during the end of the XVIIIth and the first half of the XIXth century. Then came a wave of english independencies with Canada, Australia, South America and Egypt during the second half of the XIXth century.
+It appears that Africa declared its independence after the Second World War almost as a block. The different empires fell down in a short amount of time, as big administrative regions were cut into different countries. 
+The last independencies happened at the fall of the Soviet Union, with the independence of Ukraine, the Balkans, Kazakhstan, Uzbekistan and Turkmenistan.
+To Do : Examples of decolonization processes for different foreign powers
+
+Conflicts post-decolonization
+
+Our problematic wants to overview the stability of the former colonies. For our analysis as we are using the UCDP dataset, we will mainly look at the conflicts in which the former colonies are implicated. With this mindset, an unstable colony would be one with many conflicts happening on its territory. To have a better visualization, we also include a second UCDP dataset that also takes into account more regional conflicts. It will then be able to show civil war conflicts inside a country.
+
+Graph 1. Number of conflicts per year and per continent
+
+The graph presented above present the number of conflicts per year and per continent. Some tendencies can be assessed from there. The number of conflicts grew after the second world war to reach a maximum at the end of the Cold War in 1991, then went down until 2013 that led us to the higher number of conflicts since the Second World War. 
+
+Graph 2. Number of conflicts per year in Europe (Maybe be able to choose the continents in this graph?Et avoir seulement le texte en relation qui s’affiche???)
+
+By beginning our observations by the 'old-continent' Europe, we observe that the number of conflicts is declining after the end of the IInd World War, to stagnate to almost no-conflicts for a long period. The Yugoslav war that begun in 1991 broke this period of peace that we continue to live with the recent conflicts in Eastern Europe with Russia.
+
+Graph 3. Number of conflicts per year in Africa
+
+The most important observation is that the conflicts seemed almost non-existant in Africa after the World War and began to took importance on the continent starting in 1952. This date also corresponds to the independence of Libya, the first country to achieve independence through the United Nations and one of the first former European possessions in Africa to gain independence. The number of conflicts reached a threshold around 1976, to which it stayed since then.
+
+Graph 4. Number of conflicts per year in Asia
+
+Asia appears as being consistently in conflicts since the end of the Second World War. Those may come from different origins: the former colonies of the Imperial Japan regaining independence, the Korean War, China’s expansion program through Nepal or disputed islands, the India-Pakistan war that is still alive today since the independence, and so on.
+
+Graph 5. Number of conflicts per year in the Middle East
+
+Conflicts in the Middle East are marked by waves of war and peace. The Six-Day War with Israel against other Arab countries can be observed in 1967. The Soviet-Afghan war can be observed in 1979, all the way to 1989. And now an escalation of tensions since the beginning of the war on Terrorism in 2001 and the instability it brought on the region.
+
+
+Graph 6. Origin of conflicts in the World
+
+The decolonization process often excluded the history of the previous state entities. They ignored the territorial claims and tribes divisions to draw lines on maps (mainly in Africa). Thus, we observe that in both 'colonized' continents, most of the conflicts emerge from territorial claims. Then, the instability of the local states and governments is highlighted by the high level of governmental conflicts, with new groups trying to reach powers in former colonies.
+
+Graph 7. Conflicts per year and per colonizers (relier le pays où intervient le conflit avec le pays colonisateur -> la moyenne dont Jean parlait)
+
+Different colonizers adopted different policies for the decolonization process. Without looking precisely at those policies, we try to observe the differences that occurred in the security stability of the former colonies. To Do: What do we observe?
+
+ Sovereignty in former colonies
+
+The European Empires domination on those colonies still leaves some hints up to this day. The American continents still speaks mainly in English, Spanish and Portuguese. Whereas the African continent speaks English and French. Architecture in central cities of former colonies is often influenced by the former colonizer, with Haussmannian buildings in Alger and Spanish architecture in southern America. 
+
+Graph 1. Francophonie Map (on github)
+
+France established new political systems to keep its influence in its territories. Overseas territories and regions (DOM-TOM) were created in order to offer the autonomy asked from the locals, while keeping a french sovereignty over the lands. France also established strong relationships with its former colonies. To promote and protect the french language, the Francophonie was created in 1970. 
+To Do : Talk about the Franc CFA?
+
+The United-Kingdom created the Commonwealth
+To Do: Look at english influence over former territories
+
+Graph 2. Barplot of average GDP per capita over colonies per colonizers?
+To Do: Observe the results / Perform Statistical Analysis on the results (Student)
+
+Graph 3. Barplot of average GNH per capita over colonies per colonizers?
+To Do: Observe the results / Perform Statistical Analysis on the results (Student)
+
+Conclusion
+
+It is nearly impossible to observe the complete influence of different decolonization patterns for the current state of the former colonies. Even countries that declared their independence two centuries ago can present up to this day political instability and corruption, as in Brazil with the impeachment of Dilma Roussef in 2016. 
+However, those countries were now able to take their destiny in their own hands, and not being ruled by a foreign government. Even through all of those difficulties, the freedom of those colonies is established by implementing their own policies 
