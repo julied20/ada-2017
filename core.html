@@ -75,22 +75,95 @@
   </div>
 
   <div class="section-container">
+
+
+
+
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-md-8 col-md-offset-2">
           <div class="text-center">
-            <h2>About Us</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas luctus at sem quis varius.
-              <br>
-              Class aptent taciti sociosqu ad litora torquent per conubia
-              nostra, per inceptos himenaeos. Phasellus iaculis magna sagittis
-              elit sagittis, at hendrerit lorem venenatis. Morbi accumsan
-              iaculis blandit. Cras ultrices hendrerit nisl.
+            <h2> Introduction </h2>
+            <p>
+Colonialism is often associated with the European Empires that were expanded in the last three centuries. However, it is not a modern phenomenon as many ancient civilizations relied on colonies to expand their influence on the world. Among them, one can cite the Greeks and Romans, the Ottomans and the Moors. The first massive colonial expansion happened in the Americas with Spain and Portugal mastering the new navigation techniques. Those colonizing empires were then able to extend their political sovereignty on foreign lands by sending large numbers of colons. (source: https://plato.stanford.edu/entries/colonialism/) We will try to understand if by gaining their sovereignty, the former colonies truly achieved the freedom they expected. To better understand the variations in the current state of former colonies, we first need to look at who were their colonizers. From there, we can observe the variations in the decolonization process. We finally look at the conflicts post-decolonization to better assess the political stability of the former colonies.
             </p>
           </div>
         </div>
       </div>
     </div>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-8 col-md-offset-2">
+          <div class="text-center">
+            <h2> Datasets </h2>
+            <p>
+As the UCDP dataset focuses on conflicts in the period after the Second World War, we will look at the decolonization process of the former European Colonial Empires during the XIXth and XXth centuries. 
+We are creating our own dataset for the European colonies using this list [hyperlien : https://en.wikipedia.org/wiki/List_of_former_European_colonies]. Therefore, it links the different European powers to their colonies. By scraping the linked wikipedia pages of the colonized countries, the independence date and other meaningful values can be used to extend our current dataset.
+To Do : More details to add / Precise that we confond colonialism with Imperialism for our study           
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <div class="container" id="container_map">
+    <div class="row">
+      <div class="col-xs-12 col-md-8 col-md-offset-2">
+        <div class="text-center">
+          <h2> Colonial Empires </h2>
+            <div class="row" >
+              <div class="col-sm" id="nb_colonies">
+                 <canvas id="nb_colonizers"></canvas>
+             </div>
+           </div>
+	<p> We begin our analysis by looking at the biggest colonial empires, looking at the number of colonies rather than their sizes. The barplot above shows us that the United Kingdom was the biggest Empire of this era, comforted by literature as it was the biggest empire in human history.
+</p>
+          </div>
+       </div>
+    </div>
+</div>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-8 col-md-offset-2">
+          <div class="text-center">
+            <p>
+TODO: ADD ABOVE MAP OF COLONIES
+The map is helping to better visualize what were the colonial interests of the different superpowers. 
+Russia was always focused on limitrophe colonies for boundary expansion. It began through the XV to XVII centuries to expand the territory up to the Sea of Okhotsk, up to the Pacific Ocean on the Asian side. The Soviet Union continued to eatables its boundaries by taking control of various countries from the balkans up to Eastern Europe, as can be seen on the map above.
+On another hand, Portuguese and Spanish colonies established influence over the American continent, bringing their languages and religions to the locals. 
+Finally the British and French Empire were the one that expanded the most, through North America, to Africa and even to Asia. Both countries still possess up to this day territories in various continents. France established new political systems to keep its influence in its territories, with the overseas territories and regions (DOM-TOM), and even in its former colonies with the Francophonie and the Franc CFA. TO DO -> EXTEND THIS PART
+The United-Kingdom created the Commonwealth TO DO -> EXTEND THIS PART
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  <div class="container" id="contenair_map">
+    <div class="row">
+      <div class="col-xs-12 col-md-8 col-md-offset-2">
+      <div class="text-center">
+          <h2> Decolonization </h2>
+        <div class="row" >
+          <div class="col-sm" id="decolonisation_per_year">
+            <canvas id="decolonisation"></canvas>
+          </div>
+        </div>
+	<p> The decolonization process began during the XVIIIth century and continues up to this day with the separation of Sudan and South Sudan in 2011. The temporal evolution of the number of independence declared brings important informations about the tendencies that initiated them. We observe various waves of independencies, a first one happening during the first half of the XIXth century. To do : LOOK TO WHAT BROUGHT THE INDEPENDANCIES IN THE FORMER SPANISH TERRITORIES. 
+Then the movement slew down during the second half of this century. The First World War begins manifests a new spike of independencies, before the biggest wave that occurred after the Second World War. It began as a first batch directly after the war, until a second that occurred in the 1960s. The main decolonization finished at the fall of the Soviet Union in 1991.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 
   <!--<div class="section-container">-->
     <div class="row">
@@ -143,35 +216,9 @@
     </div>
   </div>
 
-  <div class="container" id="container_map">
-    <div class="row">
-      <div class="col-xs-12 col-md-8 col-md-offset-2">
 
-      <div class="text-center">
-        <div class="row" >
-          <div class="col-sm" id="nb_colonies">
-            <canvas id="nb_colonizers"></canvas>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
-  <div class="container" id="contenair_map">
-    <div class="row">
-      <div class="col-xs-12 col-md-8 col-md-offset-2">
 
-      <div class="text-center">
-        <div class="row" >
-          <div class="col-sm" id="decolonisation_per_year">
-            <canvas id="decolonisation"></canvas>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
 
 </div>
