@@ -75,7 +75,6 @@ def get_dataframe_cleaned(df):
     colonization_df_cleaned = df.replace("Britain", "United Kingdom")
 
     # Add missing countries due to a not homogenous infobox in wikipedia page
-    colonization_df_cleaned.loc[len(colonization_df_cleaned)+1] = ['Algeria', "DZ", "3", "07", "1945", "France", "/wiki/Algeria"]
     colonization_df_cleaned.loc[len(colonization_df_cleaned)+1] = ['Syria', "SY", "24", "10", "1945", "France", "/wiki/Syria"]
     colonization_df_cleaned.loc[len(colonization_df_cleaned)+1] = ['Niger', "NE", "03", "08", "1960", "France", "/wiki/Niger"]
     colonization_df_cleaned.loc[len(colonization_df_cleaned)+1] = ['Lebanon', "LB", "24", "10", "1945", "France", "/wiki/Lebanon"]
@@ -91,6 +90,13 @@ def get_dataframe_cleaned(df):
     colonization_df_cleaned = colonization_df_cleaned[colonization_df_cleaned["Colonized Country"] != "Ethiopia"]
     colonization_df_cleaned = colonization_df_cleaned[colonization_df_cleaned["Colonized Country"] != "Kuwait"]
 
+    colonization_df_cleaned.loc[colonization_df_cleaned['Colonized Country'] == 'Moldova', 'Year'] = "1991"
+    colonization_df_cleaned.loc[colonization_df_cleaned['Colonized Country'] == 'Cisplatina (Uruguay)', 'Colonized Country'] = 'Uruguay'
+    
+    colonization_df_cleaned.loc[colonization_df_cleaned['Colonized Country'] == 'Republic of Tunisia', 'Colonized Country'] = 'Tunisia'
+    
+    colonization_df_cleaned.loc[colonization_df_cleaned['Colonized Country'] == 'Independent State of Papua New Guinea', 'Colonized Country'] = 'Papua New Guinea'
+    
     return colonization_df_cleaned
 
 def change_date(df, country, day, month, year):
