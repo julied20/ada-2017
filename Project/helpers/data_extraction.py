@@ -4,7 +4,7 @@ import re
 import numpy as np
 
 from bs4 import BeautifulSoup
-from data_extraction.data_from_infobox import *
+from helpers.data_from_infobox import *
 
 def get_wikipedia_dataframe():
     colonization_df = pd.DataFrame(columns=['Colonized Country', 'ID', 'Day', 'Month', 'Year', 'Colonizer Country', "URL"])
@@ -39,6 +39,7 @@ def get_wikipedia_dataframe():
 
     return colonization_df_cleaned
 
+
 def get_colonizer_countries(soup):
     """ Find all colonizer countries in the wikipedia webpage"""
     colonizer_countries = []
@@ -58,6 +59,7 @@ def get_colonizer_countries(soup):
 
     return colonizer_countries
 
+
 def get_regions(soup):
     """ Find all continents in the wikipedia webpage"""
     regions = []
@@ -68,6 +70,7 @@ def get_regions(soup):
     del regions[-1], regions[-1]
 
     return regions
+
 
 def get_dataframe_cleaned(df):
     """ Clean the colonized countries dataframe"""
@@ -84,20 +87,22 @@ def get_dataframe_cleaned(df):
     change_date(colonization_df_cleaned, "Philippines", "12", "06", "1898")
     change_date(colonization_df_cleaned, "Ukraine", "24", "08", "1991")
     change_date(colonization_df_cleaned, "Iceland", "17", "06", "1944")
+    change_date(colonization_df_cleaned, "Kuwait", "19", "06", "1961")
+    change_date(colonization_df_cleaned, "Eritrea", "01", "06", "1941")
+    change_date(colonization_df_cleaned, "Ethiopia", "05", "05", "1941")
 
-    # Remove countries which are not realy a colony (they are more occuped coutries)
-    colonization_df_cleaned = colonization_df_cleaned[colonization_df_cleaned["Colonized Country"] != "Eritrea"]
-    colonization_df_cleaned = colonization_df_cleaned[colonization_df_cleaned["Colonized Country"] != "Ethiopia"]
-    colonization_df_cleaned = colonization_df_cleaned[colonization_df_cleaned["Colonized Country"] != "Kuwait"]
-
+    # Small correction of some countries
     colonization_df_cleaned.loc[colonization_df_cleaned['Colonized Country'] == 'Moldova', 'Year'] = "1991"
     colonization_df_cleaned.loc[colonization_df_cleaned['Colonized Country'] == 'Cisplatina (Uruguay)', 'Colonized Country'] = 'Uruguay'
-    
     colonization_df_cleaned.loc[colonization_df_cleaned['Colonized Country'] == 'Republic of Tunisia', 'Colonized Country'] = 'Tunisia'
-    
     colonization_df_cleaned.loc[colonization_df_cleaned['Colonized Country'] == 'Independent State of Papua New Guinea', 'Colonized Country'] = 'Papua New Guinea'
-    
+    colonization_df_cleaned.loc[colonization_df_cleaned['Colonized Country'] == 'United States', 'Colonizer Country'] = 'United Kingdom'
+    colonization_df_cleaned.loc[colonization_df_cleaned['Colonized Country'] == 'United States', 'Colonized Country'] = 'United States of America'
+    colonization_df_cleaned = colonization_df_cleaned[colonization_df_cleaned['Colonized Country'] != 'Iran']
+    colonization_df_cleaned.loc[colonization_df_cleaned['Colonized Country'] == 'The Gambia', 'Colonized Country'] = 'Gambia'
+
     return colonization_df_cleaned
+
 
 def change_date(df, country, day, month, year):
     """ Change the date in the colonized countries dataframe"""
@@ -105,6 +110,7 @@ def change_date(df, country, day, month, year):
     df.loc[df['Colonized Country'] == country, 'Month'] = month
     df.loc[df['Colonized Country'] == country, 'Year'] = year
 
+    
 def get_infobox(soup):
     """Get the infobox of a wikipedia page (infobox contains all important informations)."""
     infobox = soup.find("table", class_="infobox geography")
@@ -114,6 +120,7 @@ def get_infobox(soup):
     if not infobox: return False
 
     return infobox.extract()
+
 
 def check_country(df, colonized, colonizer, colonizer_countries, URL, nb_check):
     """ Chack all informations of a country (colonizer, independance date, etc)"""
