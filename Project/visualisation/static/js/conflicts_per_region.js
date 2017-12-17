@@ -1,29 +1,19 @@
 /*************************************/
 // Number of conflicts per years
-function get_graph_per_region() {
-d3.csv('Project/datasets/colonization_conflict_general.csv', function(conflicts) {
+function get_conflicts_per_region(years, middle_east, africa, europe, asia, america) {
+
   let labels = [];
   let data = [];
-  europe_conflict = conflicts.filter(c => c.region == '1');
-  middle_east_conflict = conflicts.filter(c => c.region == '2');
-  asia_conflict = conflicts.filter(c => c.region == '3');
-  africa_conflict = conflicts.filter(c => c.region == '4');
-  americas_conflict = conflicts.filter(c => c.region == '5');
 
-  for (let d of conflicts) {
-    labels.push(d.year);
-    data.push(d.number_of_decolonization);
-  }
-
-  new Chart(document.getElementById("conflicts"), {
+  new Chart(document.getElementById("conflicts_eur"), {
       type: 'bar',
       data: {
-        labels: labels,
+        labels: years,
         datasets: [
           {
             label: "Number of conflicts",
             backgroundColor: "rgba(255, 206, 86, 1)",
-            data: data
+            data: europe
           }
         ]
       },
@@ -31,7 +21,7 @@ d3.csv('Project/datasets/colonization_conflict_general.csv', function(conflicts)
         legend: { display: false },
         title: {
           display: true,
-          text: 'Number of colonies per colonizaters'
+          text: 'Conflicts in Europe'
         },
         legend: {
           onClick: null
@@ -39,7 +29,104 @@ d3.csv('Project/datasets/colonization_conflict_general.csv', function(conflicts)
         maintainAspectRatio: false
       }
   });
-});
-}
 
-get_graph();
+  new Chart(document.getElementById("conflicts_afr"), {
+      type: 'bar',
+      data: {
+        labels: years,
+        datasets: [
+          {
+            label: "Number of conflicts",
+            backgroundColor: "rgba(255, 206, 86, 1)",
+            data: africa
+          }
+        ]
+      },
+      options: {
+        legend: { display: false },
+        title: {
+          display: true,
+          text: 'Conflicts in Africa'
+        },
+        legend: {
+          onClick: null
+        },
+        maintainAspectRatio: false
+      }
+  });
+
+  new Chart(document.getElementById("conflicts_asia"), {
+      type: 'bar',
+      data: {
+        labels: years,
+        datasets: [
+          {
+            label: "Number of conflicts",
+            backgroundColor: "rgba(255, 206, 86, 1)",
+            data: asia
+          }
+        ]
+      },
+      options: {
+        legend: { display: false },
+        title: {
+          display: true,
+          text: 'Conflicts in Asia'
+        },
+        legend: {
+          onClick: null
+        },
+        maintainAspectRatio: false
+      }
+  });
+
+  new Chart(document.getElementById("conflicts_midl"), {
+      type: 'bar',
+      data: {
+        labels: years,
+        datasets: [
+          {
+            label: "Number of conflicts",
+            backgroundColor: "rgba(255, 206, 86, 1)",
+            data: middle_east
+          }
+        ]
+      },
+      options: {
+        legend: { display: false },
+        title: {
+          display: true,
+          text: 'Conflicts in Middle East'
+        },
+        legend: {
+          onClick: null
+        },
+        maintainAspectRatio: false
+      }
+  });
+
+  new Chart(document.getElementById("conflicts_am"), {
+      type: 'bar',
+      data: {
+        labels: years,
+        datasets: [
+          {
+            label: "Number of conflicts",
+            backgroundColor: "rgba(255, 206, 86, 1)",
+            data: america
+          }
+        ]
+      },
+      options: {
+        legend: { display: false },
+        title: {
+          display: true,
+          text: 'Conflicts in Americas'
+        },
+        legend: {
+          onClick: null
+        },
+        maintainAspectRatio: false
+      }
+  });
+}

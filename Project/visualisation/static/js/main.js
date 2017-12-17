@@ -56,13 +56,27 @@ d3.queue()
 .defer(d3.csv, "Project/datasets/timeline_colonies.csv" )
 .defer(d3.csv, "Project/datasets/colonization_conflict_pre.csv" )
 .defer(d3.csv, "Project/datasets/countries_codes_and_coordinates.csv")
+.defer(d3.csv, "Project/datasets/colonization_conflict_year_regions.csv")
 .await(load_data);
 
-function load_data(error, colonies, timeline_colonies, conflict, country_coordinates) {//first param is error and not data
-    //colonies_data = colonies;
+function load_data(error, colonies, timeline_colonies, conflict, country_coordinates, conflicts_year_region) {//first param is error and not data
 
-    //A reprendre c'est pas très beau ça
-    //d3.csv("Project/datasets/timeline_colonies.csv", function(a) {
+    let years = [];//conflicts_year_region.Year;
+    let middle_east = [];//conflicts_year_region.Middle_East;
+    let africa = [];//conflicts_year_region.Africa;
+    let europe = [];//conflicts_year_region.Europe;
+    let asia = [];//conflicts_year_region.Asia;
+    let america = [];//conflicts_year_region.America;
+    for(let c_y_r of conflicts_year_region) {
+        years.push(c_y_r.Year);
+        middle_east.push(c_y_r.Middle_East);
+        africa.push(c_y_r.Africa);
+        europe.push(c_y_r.Europe);
+        asia.push(c_y_r.Asia);
+        america.push(c_y_r.America);
+
+    }
+
 
     for(let c of colonizers) {
         let years = [];
@@ -77,20 +91,14 @@ function load_data(error, colonies, timeline_colonies, conflict, country_coordin
         c.set_data(years, nb_conflicts);
     }
 
-
-    //d3.csv("Project/datasets/clean_conflict_of_colonized_countries.csv", function(conflict) {
-
     conflict.forEach(function(conflict_) {
         pre_conflicts.push(new Conflict(
             conflict_.location,
             conflict_.ID,
             conflict_.year,
             conflict_.colonizer
-            //conflict_.indep_date
         ))
     });
-
-    //d3.csv("Project/datasets/countries_codes_and_coordinates.csv", function(country_coordinates) {
     country_coordinates.forEach(function(country_co) {
         countries.push(new Country(
             country_co.Country,
@@ -99,9 +107,6 @@ function load_data(error, colonies, timeline_colonies, conflict, country_coordin
             country_co.Longitude
         ))
     });
-    loading_finished();
-
-
 
 // Create navbar with colonizers
 nav_ul = d3.select('#navbarUL');
@@ -159,6 +164,9 @@ $(function(){
 
   } else if($('body').is('.pre_dec')) {
       get_map_colonies(colonizers);
+  } else if($('body').is('.post_dec')) {
+      get_conflicts_per_region(years, middle_east, africa, europe, asia, america);
+
   }
 });
 
