@@ -22,11 +22,6 @@ function get_map_colonies(colonizers) {
 
     });
 
-    console.log(areas);
-
-
-
-
     let colonies_map = AmCharts.makeChart( "colonies_map_div", {
         "type": "map",
         "dataProvider": {
