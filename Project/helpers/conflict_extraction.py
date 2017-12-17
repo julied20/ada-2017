@@ -7,6 +7,7 @@ from tqdm._tqdm_notebook import tqdm_notebook
 def get_colonization_conflicts_df():
     """ Process conflict df to obtain the cleaned pre and post colonization df """
 
+
     # Import conflict dataframe
     conflict_df = pd.read_csv('datasets/ucdp-prio-acd-171.csv')
 
@@ -16,10 +17,14 @@ def get_colonization_conflicts_df():
     # Resolve issues with row where is multiple locations
     conflict_df = get_reorganized_rows_df(conflict_df)
 
+    # Create the years/region dataset
+    yr_conflict_df = get_year_regions_conflict_df(conflict_df)
+    
     # Create the pre/post colonization conflict dataframe
     pre_colonization_conflict_df, post_colonization_conflict_df = get_pre_post_colonization_df(conflict_df)
 
-    return conflict_df, pre_colonization_conflict_df, post_colonization_conflict_df
+
+    return conflict_df, pre_colonization_conflict_df, post_colonization_conflict_df, yr_conflict_df 
 
 
 def get_cleaned_conflict_df(df):
@@ -107,7 +112,7 @@ def get_pre_post_colonization_df(conflict_df):
     colonized_countries = list(colonized_df["Colonized Country"])
 
     # Create two empty dataframe
-    columns = ["location", "ID", "sidea", "side b", "incomp", "year", "intensity", 
+    columns = ["location", "ID", "Colonizer Country", "Indep Date", "sidea", "side b", "incomp", "year", "intensity", 
                "cumint", "type", "startdate", "startdate2", "ependdate", "region"]
     pre_colonization_conflict_df = pd.DataFrame(columns=columns)
     post_colonization_conflict_df = pd.DataFrame(columns=columns)
@@ -121,13 +126,22 @@ def get_pre_post_colonization_df(conflict_df):
         # Check if the country is a ex colony
         if country in colonized_countries:
             # Get information from colonies dataframe
-            indep_year = int(colonized_df[colonized_df['Colonized Country']==country]['Year'])
-            ID = list(colonized_df[colonized_df['Colonized Country']==country]['ID'])[0]
+            indep_year = colonized_df.loc[colonized_df['Colonized Country'] == country, 'Year'].values[0]
+            indep_month = colonized_df.loc[colonized_df['Colonized Country'] == country, 'Month'].values[0]
+            indep_day = colonized_df.loc[colonized_df['Colonized Country'] == country, 'Day'].values[0]
+            indep_date = str(indep_day) + "/" + str(indep_month) + "/" + str(indep_year)
 
-            start_year = int(conflict_df.loc[index, 'startdate'].split("-")[0])
-
+            ID = colonized_df.loc[colonized_df['Colonized Country'] == country, 'ID'].values[0]
+            colonizer_country = colonized_df.loc[colonized_df['Colonized Country'] == country, 'Colonizer Country'].values[0]
+            
+            # Creation of the temporary row 
             conflict_df_tmp = conflict_df.loc[index:index,]
+            conflict_df_tmp.set_value(index, 'Indep Date', indep_date)
             conflict_df_tmp.set_value(index, 'ID', ID)
+            conflict_df_tmp.set_value(index, 'Colonizer Country', colonizer_country)
+            
+            start_date = conflict_df.loc[index, 'startdate']
+            start_year = int(start_date.split("-")[0])
 
             # Check when happend the conflict (before or after independence)
             if start_year > indep_year:
@@ -151,3 +165,29 @@ def get_pre_post_colonization_df(conflict_df):
     post_colonization_conflict_df.to_csv("datasets/colonization_conflict_post.csv")
 
     return pre_colonization_conflict_df, post_colonization_conflict_df
+
+def get_year_regions_conflict_df(clean_conflict):
+    """ Create the regions in functions of the year number of conflict dataframe """
+    columns = ["Year", "Europe", "Middle East", "Asia", "Africa", "America"]
+    years = np.linspace(1945, 2016, num=2016-1945+1, dtype=int)
+    years = np.reshape(years, (len(years), 1))
+    regions = np.zeros((len(years), 5), dtype=int)
+    years_regions = np.concatenate((years,regions),axis=1)
+
+    yr_conflict_df = pd.DataFrame(years_regions, columns=columns)
+    yr_conflict_df = yr_conflict_df.set_index('Year')
+
+    for index in range(len(clean_conflict)):
+        year = clean_conflict.get_value(index,'year')
+        region = clean_conflict.get_value(index,'region')
+
+        if region == 1: yr_conflict_df.set_value(year, 'Europe', yr_conflict_df.get_value(year, 'Europe')+1)
+        if region == 2: yr_conflict_df.set_value(year, 'Middle East', yr_conflict_df.get_value(year, 'Middle East')+1)
+        if region == 3: yr_conflict_df.set_value(year, 'Asia', yr_conflict_df.get_value(year, 'Asia')+1)
+        if region == 4: yr_conflict_df.set_value(year, 'Africa', yr_conflict_df.get_value(year, 'Africa')+1)
+        if region == 5: yr_conflict_df.set_value(year, 'America', yr_conflict_df.get_value(year, 'America')+1)
+            
+    yr_conflict_df.to_csv("datasets/colonization_conflict_year_regions.csv")
+            
+    return yr_conflict_df
+
