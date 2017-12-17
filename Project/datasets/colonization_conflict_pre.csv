@@ -1,4 +1,4 @@
-,location,ID,Colonizer Country,Indep Date,sidea,side b,incomp,year,intensity,cumint,type,startdate,startdate2,ependdate,region
+,location,ID,colonizer,indep_date,sidea,side b,incomp,year,intensity,cumint,type,startdate,startdate2,ependdate,region
 3,Cambodia ,KH,France,9/11/1953,France,Khmer Issarak,1,1946,1,0,1,1946-08-31,1946-08-31,,3
 4,Cambodia ,KH,France,9/11/1953,France,Khmer Issarak,1,1947,1,0,1,1946-08-31,1946-08-31,,3
 5,Cambodia ,KH,France,9/11/1953,France,Khmer Issarak,1,1948,1,0,1,1946-08-31,1946-08-31,,3

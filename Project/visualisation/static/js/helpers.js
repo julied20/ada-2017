@@ -35,13 +35,12 @@ class Country {
 }
 
 class Conflict {
-  constructor(location, ISO2, year, month, colonizer, year_decolonisation) {
+  constructor(location, ISO2, year, colonizer) {
     this.location = location;
     this.ISO2 = ISO2;
     this.year = year;
-    this.month = month;
     this.colonizer = colonizer;
-    this.year_decolonisation = year_decolonisation;
+    //this.year_decolonisation = year_decolonisation;
   }
   set_data(data) {
     this.data = data;
@@ -55,13 +54,13 @@ class Year {
   }
 }
 
-function get_colonizer_conflicts(conflicts) {
-  colonizer_conflicts = conflicts.filter(x => x.colonizer == colonizers[current_colonizer].country);
+function get_colonizer_conflicts(confl) {
+  colonizer_conflicts = confl.filter(x => x.colonizer == colonizers[current_colonizer].country);
   return colonizer_conflicts;
 }
 
-function get_current_year_conflicts(current_year) {
-  current_year_conflicts = conflicts.filter(x => x.year == current_year)
+function get_current_year_conflicts(current_year, confl) {
+  current_year_conflicts = confl.filter(x => x.year == current_year)
   return current_year_conflicts;
 }
 

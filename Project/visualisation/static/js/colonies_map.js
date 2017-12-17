@@ -1,6 +1,7 @@
 function get_map_colonies(colonizers) {
     let areas = [];
 
+
     colonizers.forEach(function(area) {
 
         country_color = d3.color(area.color);

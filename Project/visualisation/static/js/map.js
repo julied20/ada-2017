@@ -1,18 +1,18 @@
-function get_area(current_year, current_colonizer) {
+function get_area(current_year, current_colonizer, pre_conflicts) {
     let areas = [];
-    const current_year_conflicts = get_current_year_conflicts(current_year);
+    const current_year_conflicts = get_current_year_conflicts(current_year, pre_conflicts);
     const conflicts = get_colonizer_conflicts(current_year_conflicts);
 
     conflicts.forEach(function(area) {
       let country_color;
-      if (area.year_decolonisation < current_year){
+      //if (area.year_decolonisation < current_year){
         country_color =  "rgba(255, 206, 86, 1)";
-      }else {
+      /*}else {
         country_color =  "#000000";
-      }
+    }*/
       areas.push({
         "title" : area.location,
-        "id" : area.ISO3,
+        "id" : area.ISO2,
         "color": country_color
       })
     });

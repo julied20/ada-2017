@@ -33,7 +33,7 @@ let my_chart = new Chart(ctx, {
         const element = this.getElementAtEvent(e);
         if (element[0] != undefined) {
             const new_year = element[0]._model.label;
-            get_area(new_year);
+            get_area(new_year, current_colonizer, pre_conflicts);
             year_changed(new_year);
         }
     },

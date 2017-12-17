@@ -1,6 +1,7 @@
-let conflicts = [];
 let countries = [];
 let current_year_conflicts = [];
+let pre_conflicts = [];
+
 
 let colonizers = [
     new Colonizer(
@@ -53,7 +54,7 @@ let colonizers = [
 d3.queue()
 .defer(d3.csv, "Project/datasets/colonies_wikipedia.csv")
 .defer(d3.csv, "Project/datasets/timeline_colonies.csv" )
-.defer(d3.csv, "Project/datasets/clean_conflict_of_colonized_countries.csv" )
+.defer(d3.csv, "Project/datasets/colonization_conflict_pre.csv" )
 .defer(d3.csv, "Project/datasets/countries_codes_and_coordinates.csv")
 .await(load_data);
 
@@ -80,14 +81,12 @@ function load_data(error, colonies, timeline_colonies, conflict, country_coordin
     //d3.csv("Project/datasets/clean_conflict_of_colonized_countries.csv", function(conflict) {
 
     conflict.forEach(function(conflict_) {
-
-        conflicts.push(new Conflict(
-            conflict_.terr,
-            conflict_.ISO2,
+        pre_conflicts.push(new Conflict(
+            conflict_.location,
+            conflict_.ID,
             conflict_.year,
-            conflict_.start_month,
-            conflict_.colonizer,
-            conflict_.decolonisation_year
+            conflict_.colonizer
+            //conflict_.indep_date
         ))
     });
 
@@ -123,7 +122,7 @@ colonizers.forEach((colonizer, index) => {
         current_colonizer = this.id;
         update_current_year(current_colonizer, colonizers);
         update_timeline(current_colonizer, colonizers);
-        get_area(current_year, colonizers);
+        get_area(current_year, colonizers, pre_conflicts);
 
     })
     .text(colonizer.country);
@@ -152,8 +151,16 @@ colonizers[7].set_colonies(add_country_to_colony(it_col));
 const be_col = colonies.filter(c => c.colonizer_country == "Belgium");
 colonizers[8].set_colonies(add_country_to_colony(be_col));
 
-//update_timeline(current_colonizer, colonizers);
-//get_area(current_year, current_colonizer);
-get_map_colonies(colonizers);
+
+$(function(){
+  if($('body').is('.dec')){
+      update_timeline(current_colonizer, colonizers);
+      get_area(current_year, current_colonizer, pre_conflicts);
+
+  } else if($('body').is('.pre_dec')) {
+      get_map_colonies(colonizers);
+  }
+});
+
 
 };
