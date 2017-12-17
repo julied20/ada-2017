@@ -89,17 +89,38 @@ function loading_finished() {
     d3.select("#content").attr("class", "");
 }
 
+function roll_years(duration=300, first_year=null, last_year=null, last_year_callback=null) {
 
-// Text animated, not sure it's working
-let animateBox = function() {
-		if ( $('.animate-box').length > 0 ) {
-			$('.animate-box').waypoint( function( direction ) {
+    clearInterval(year_interval);
+    year_interval = setInterval(next_year_callback, duration);
+    let year_i = 0;
 
-				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
+    function next_year_callback() {
+        if (first_year == null) {
+            first_year = parseInt(years[0]);
+        }
 
-					$(this.element).addClass('fadeIn animated');
+        if (last_year == null) {
+            last_year = parseInt(years[years.length - 1]);
+        }
 
-				}
-			} , { offset: '80%' } );
-		}
-	};
+        year_i += 1;
+        change_year(first_year + year_i);
+
+        if (first_year + year_i == last_year) {
+            clearInterval(year_interval);
+
+            // Run callback if provided
+            if (last_year_callback != null) {
+                last_year_callback();
+            }
+
+            // Show control buttons if they were hidden
+            if (hide_control_buttons) {
+                console.log('yea');
+                d3.select('#control_buttons_div').attr('class', '');
+            }
+        }
+    }
+
+}
