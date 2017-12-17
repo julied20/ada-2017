@@ -1,5 +1,4 @@
 let conflicts = [];
-let stories_data = [];
 let countries = [];
 let current_year_conflicts = [];
 let timeline_graph = [];
@@ -7,50 +6,90 @@ let timeline_graph = [];
 let colonizers = [
   new Colonizer(
     "France",
-    "FRA",
+    "FR",
     "rgba(255, 206, 86, 1)"
   ),
   new Colonizer(
     "United Kingdom",
-    "Quinoa",
+    "GB",
     "rgba(147, 159, 92, 1)"
   ),
-  /*new Colonizer(
+  new Colonizer(
     "Denmark",
-    "DEN",
+    "DK",
     "rgba(14, 119, 225, 1)"
   ),
   new Colonizer(
     "Netherland",
-    "NLD",
+    "NL",
     "rgba(203, 56, 85, 1)"
-  ),*/
+  ),
   new Colonizer(
     "Portugal",
-    "POR",
+    "PT",
     "rgba(147, 159, 92, 1)"
   ),
   new Colonizer(
     "Russia",
-    "RUS",
+    "RU",
     "rgba(112, 74, 44, 1)"
   ),
   new Colonizer(
     "Spain",
-    "ESP",
+    "ES",
     "rgba(63, 191, 63, 1)"
   ),
-  /*new Colonizer(
+  new Colonizer(
     "Italy",
-    "ITA",
+    "IT",
     "rgba(63, 191, 63, 1)"
   ),
   new Colonizer(
     "Belgium",
-    "BEL",
+    "BE",
     "rgba(63, 191, 63, 1)"
-  ),*/
+  ),
 ];
+
+
+let colonies_data = [];
+let timeline_data = [];
+d3.queue()
+.defer(d3.csv, "Project/datasets/colonies_wikipedia.csv")
+.defer(d3.csv, "Project/datasets/timeline_colonies.csv" )
+.await(load_data);
+
+function load_data(error, colonies, timeline_colonies) {//first param is error and not data
+  //colonies_data = colonies;
+  const fr_col = colonies.filter(c => c.colonizer_country == "France");
+  colonizers[0].set_colonies(add_country_to_colony(fr_col));
+
+  const uk_col = colonies.filter(c => c.colonizer_country == "United Kingdom");
+  colonizers[1].set_colonies(add_country_to_colony(uk_col));
+
+  const de_col = colonies.filter(c => c.colonizer_country == "Denmark");
+  colonizers[2].set_colonies(add_country_to_colony(de_col));
+
+  const ne_col = colonies.filter(c => c.colonizer_country == "Netherlands");
+  colonizers[3].set_colonies(add_country_to_colony(ne_col));
+
+  const pr_col = colonies.filter(c => c.colonizer_country == "Portugal");
+  colonizers[4].set_colonies(add_country_to_colony(pr_col));
+
+  const ru_col = colonies.filter(c => c.colonizer_country == "Russia");
+  colonizers[5].set_colonies(add_country_to_colony(ru_col));
+
+  const es_col = colonies.filter(c => c.colonizer_country == "Spain");
+  colonizers[6].set_colonies(add_country_to_colony(es_col));
+
+  const it_col = colonies.filter(c => c.colonizer_country == "Italy");
+  colonizers[7].set_colonies(add_country_to_colony(it_col));
+
+  const be_col = colonies.filter(c => c.colonizer_country == "Belgium");
+  colonizers[8].set_colonies(add_country_to_colony(be_col));
+
+  timeline_data = timeline_colonies;
+ };
 
 //A reprendre c'est pas très beau ça
 d3.csv("Project/datasets/timeline_colonies.csv", function(a) {
@@ -87,7 +126,6 @@ d3.csv("Project/datasets/clean_conflict_of_colonized_countries.csv", function(co
     country_coordinates.forEach(function(country_co) {
       countries.push(new Country(
         country_co.Country,
-        country_co.ISO3,
         country_co.ISO2,
         country_co.Latitude,
         country_co.Longitude
@@ -128,5 +166,7 @@ d3.csv("Project/datasets/clean_conflict_of_colonized_countries.csv", function(co
 
   update_timeline(current_colonizer, colonizers);
   get_area(current_year, current_colonizer);
+  get_map_colonies(colonizers);
+
 
 });
