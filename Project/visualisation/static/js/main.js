@@ -57,10 +57,21 @@ d3.queue()
 .defer(d3.csv, "Project/datasets/colonization_conflict_pre.csv" )
 .defer(d3.csv, "Project/datasets/countries_codes_and_coordinates.csv")
 .defer(d3.csv, "Project/datasets/colonization_conflict_year_regions.csv")
+.defer(d3.csv, "Project/datasets/timeline_decolonisation.csv")
 .await(load_data);
 
-function load_data(error, colonies, timeline_colonies, conflict, country_coordinates, conflicts_year_region) {//first param is error and not data
+function load_data(error, colonies, timeline_colonies, conflict, country_coordinates, conflicts_year_region, dec_years) {//first param is error and not data
 
+    //For Number of decolonisation per graph
+    let nb_dec = [];
+    let years_dec = []
+    for (let d of dec_years) {
+        years_dec.push(d.year)
+        nb_dec.push(d.number_of_decolonization);
+    }
+    console.log(years_dec);
+
+    // For Number of conflicts per region
     let years = [];//conflicts_year_region.Year;
     let middle_east = [];//conflicts_year_region.Middle_East;
     let africa = [];//conflicts_year_region.Africa;
@@ -159,6 +170,7 @@ colonizers[8].set_colonies(add_country_to_colony(be_col));
 
 $(function(){
   if($('body').is('.dec')){
+      get_graph(years_dec, nb_dec);
       update_timeline(current_colonizer, colonizers);
       get_area(current_year, current_colonizer, pre_conflicts);
 
