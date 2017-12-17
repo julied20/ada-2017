@@ -1,12 +1,3 @@
-.jumbotron {
-  position: relative;
-  margin: 0;
-  width: 100%;
-  height: 400px;
-  background-color: rgba(255, 206, 86, 0.4) !important;
-
-}
-
 #container {
   position: relative;
   width: 100%;
@@ -31,21 +22,25 @@ li {float: left;
 #map_div {
   position: relative;
   width: 100%;
-  height: 30vh;
+  height: 80vh;
 }
 
+#colonies_map_div {
+  width: 100%;
+  height: 500px;
+}
 
 #timeline_row {
   position: relative;
-  height:55vh;
+  height:35vh;
 }
 
 #nb_colonies {
   position: relative;
-  height:55vh;
+  height:35vh;
 }
 
 #decolonisation_per_year {
   position: relative;
-  height:55vh;
+  height:35vh;
 }

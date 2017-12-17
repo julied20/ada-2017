@@ -1,4 +1,4 @@
-,Colonized Country,ID,Day,Month,Year,Colonizer Country,URL
+,colonized_country,ID,Day,Month,Year,colonizer_country,URL
 1,Iceland,IS,17,06,1944,Denmark,/wiki/Iceland
 2,Canada,CA,1,07,1867,United Kingdom,/wiki/Canada
 3,United States of America,US,4,07,1776,United Kingdom,/wiki/United_States

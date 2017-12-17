@@ -12,7 +12,7 @@ function get_area(current_year, current_colonizer) {
       }
       areas.push({
         "title" : area.location,
-        "id" : area.ISO2,
+        "id" : area.ISO3,
         "color": country_color
       })
     });
