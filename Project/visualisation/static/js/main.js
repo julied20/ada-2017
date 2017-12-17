@@ -69,7 +69,6 @@ function load_data(error, colonies, timeline_colonies, conflict, country_coordin
         years_dec.push(d.year)
         nb_dec.push(d.number_of_decolonization);
     }
-    console.log(years_dec);
 
     // For Number of conflicts per region
     let years = [];//conflicts_year_region.Year;
@@ -136,6 +135,8 @@ colonizers.forEach((colonizer, index) => {
         // Add active for new story
         this.parentElement.setAttribute('class', 'nav-item active')
         current_colonizer = this.id;
+
+
         update_current_year(current_colonizer, colonizers);
         update_timeline(current_colonizer, colonizers);
         get_area(current_year, colonizers, pre_conflicts);
@@ -167,18 +168,15 @@ colonizers[7].set_colonies(add_country_to_colony(it_col));
 const be_col = colonies.filter(c => c.colonizer_country == "Belgium");
 colonizers[8].set_colonies(add_country_to_colony(be_col));
 
-
 $(function(){
   if($('body').is('.dec')){
       get_graph(years_dec, nb_dec);
       update_timeline(current_colonizer, colonizers);
       get_area(current_year, current_colonizer, pre_conflicts);
-
   } else if($('body').is('.pre_dec')) {
       get_map_colonies(colonizers);
   } else if($('body').is('.post_dec')) {
       get_conflicts_per_region(years, middle_east, africa, europe, asia, america);
-
   }
 });
 

@@ -64,9 +64,9 @@ function get_current_year_conflicts(current_year, confl) {
   return current_year_conflicts;
 }
 
+// Reset the current year to min
 function update_current_year(c, colonizers){
   current_year  = d3.min(colonizers[c].conflict_years);
-
 }
 
 // Add the list of colonized countries to the coloniser
