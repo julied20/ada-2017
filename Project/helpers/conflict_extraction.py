@@ -181,12 +181,13 @@ def get_year_regions_conflict_df(clean_conflict):
         year = clean_conflict.get_value(index,'year')
         region = clean_conflict.get_value(index,'region')
 
-        if region == 1: yr_conflict_df.set_value(year, 'Europe', yr_conflict_df.get_value(year, 'Europe')+1)
-        if region == 2: yr_conflict_df.set_value(year, 'Middle East', yr_conflict_df.get_value(year, 'Middle East')+1)
-        if region == 3: yr_conflict_df.set_value(year, 'Asia', yr_conflict_df.get_value(year, 'Asia')+1)
-        if region == 4: yr_conflict_df.set_value(year, 'Africa', yr_conflict_df.get_value(year, 'Africa')+1)
-        if region == 5: yr_conflict_df.set_value(year, 'America', yr_conflict_df.get_value(year, 'America')+1)
-            
+        if int(region) == 1: yr_conflict_df.set_value(year, 'Europe', yr_conflict_df.get_value(year, 'Europe')+1)
+        if int(region) == 2: yr_conflict_df.set_value(year, 'Middle East', yr_conflict_df.get_value(year, 'Middle East')+1)
+        if int(region) == 3: yr_conflict_df.set_value(year, 'Asia', yr_conflict_df.get_value(year, 'Asia')+1)
+        if int(region) == 4: yr_conflict_df.set_value(year, 'Africa', yr_conflict_df.get_value(year, 'Africa')+1)
+        if int(region) == 5: yr_conflict_df.set_value(year, 'America', yr_conflict_df.get_value(year, 'America')+1)
+
+
     yr_conflict_df.to_csv("datasets/colonization_conflict_year_regions.csv")
             
     return yr_conflict_df
