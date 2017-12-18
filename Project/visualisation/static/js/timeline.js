@@ -50,37 +50,33 @@ let my_chart = new Chart(ctx, {
 });
 
 
-function update_timeline(current_colonizer, conflict_pre) {
+function update_timeline(current_colonizer, colonizers, pre) {
+
     let years = [];
     let nb_conflicts = [];
 
-    /*for(let c of conflict_pre) {
-
-
-        timeline_colonies.forEach(function(y) {
-            if(y.colonizer == c.country) {
-                years.push(y.year)
-                nb_conflicts.push(y.number_of_conflict)
-            }
-        });
-        c.set_dec_years(years, nb_conflicts);
-    }*/
-
-
-
-
-
+    if(pre) {
+        console.log('On est avant');
+        years = colonizers[current_colonizer].conflict_pre_years;
+        nb_conflicts = colonizers[current_colonizer].nb_pre_conflicts;
+        console.log(nb_conflicts);
+    } else if (!pre) {
+        console.log('On est en post_dec');
+        years = colonizers[current_colonizer].conflict_post_years;
+        nb_conflicts = colonizers[current_colonizer].nb_post_conflicts;
+        console.log(nb_conflicts);
+    }
     //console.log(colonizers[current_colonizer].conflict_years);
     let colors = [];
     colors.push(border_color);
-    for(let i = 1; i < colonizers[current_colonizer].conflict_years.length; ++i){
+    for(let i = 1; i <years.length; ++i){
       colors.push(background_color);
     }
     my_chart.data = {
-      labels: [],
+      labels: years,
       datasets: [{
         label: 'Number of Conflicts',
-        data: [],
+        data: nb_conflicts,
         backgroundColor: colors,
         borderColor: border_color,
         borderWidth: 1,

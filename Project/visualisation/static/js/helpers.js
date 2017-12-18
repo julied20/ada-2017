@@ -9,9 +9,14 @@ class Colonizer {
     this.ISO3 = ISO3;
     this.color = color;
   }
-  set_conflicts(conflict_years, nb_conflicts) {
-    this.conflict_years = conflict_years;
-    this.nb_conflicts = nb_conflicts;
+  set_conflicts_pre(conflict_years, nb_conflicts) {
+    this.conflict_pre_years = conflict_years;
+    this.nb_pre_conflicts = nb_conflicts;
+  }
+
+  set_conflicts_post(conflict_years, nb_conflicts) {
+    this.conflict_post_years = conflict_years;
+    this.nb_post_conflicts = nb_conflicts;
   }
 
   //Take a list of countries
@@ -66,7 +71,7 @@ function get_current_year_conflicts(current_year, confl) {
 
 // Reset the current year to min
 function update_current_year(c, colonizers){
-  current_year  = d3.min(colonizers[c].conflict_years);
+  current_year  = d3.min(colonizers[c].conflict_pre_years);
 }
 
 // Add the list of colonized countries to the coloniser
