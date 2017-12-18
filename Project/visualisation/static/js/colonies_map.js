@@ -1,4 +1,4 @@
-function get_map_colonies(colonizers) {
+function get_map_colonies(colonizers, col) {
     let areas = [];
 
 
@@ -6,9 +6,10 @@ function get_map_colonies(colonizers) {
 
         let country_color = d3.color(area.color);
 
-        country_color.opacity = 0.5
+        if(area != col) {
+            country_color.opacity = 0.4
+        }
         for (let i = 0; i < area.colonies.length; i++) {
-
             areas.push({
                 "title" : area.colonies[i].country,
                 "id" : area.colonies[i].ISO2,
