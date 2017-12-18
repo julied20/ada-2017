@@ -9,7 +9,7 @@ class Colonizer {
     this.ISO3 = ISO3;
     this.color = color;
   }
-  set_data(conflict_years, nb_conflicts) {
+  set_conflicts(conflict_years, nb_conflicts) {
     this.conflict_years = conflict_years;
     this.nb_conflicts = nb_conflicts;
   }

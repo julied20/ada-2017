@@ -54,7 +54,7 @@ let colonizers = [
 
 d3.queue()
 .defer(d3.csv, "Project/datasets/colonies_wikipedia.csv")
-.defer(d3.csv, "Project/datasets/timeline_colonies.csv" )
+//.defer(d3.csv, "Project/datasets/timeline_colonies.csv" )
 .defer(d3.csv, "Project/datasets/colonization_conflict_pre.csv" )
 .defer(d3.csv, "Project/datasets/colonization_conflict_post.csv" )
 .defer(d3.csv, "Project/datasets/countries_codes_and_coordinates.csv")
@@ -62,7 +62,7 @@ d3.queue()
 .defer(d3.csv, "Project/datasets/timeline_decolonisation.csv")
 .await(load_data);
 
-function load_data(error, colonies, timeline_colonies, conflict_pre, conflict_post, country_coordinates, conflicts_year_region, dec_years) {//first param is error and not data
+function load_data(error, colonies, conflict_pre, conflict_post, country_coordinates, conflicts_year_region, dec_years) {//first param is error and not data
 
     //For Number of decolonisation per graph
     let nb_dec = [];
@@ -90,7 +90,7 @@ function load_data(error, colonies, timeline_colonies, conflict_pre, conflict_po
     }
 
 
-    for(let c of colonizers) {
+    /*for(let c of colonizers) {
         let years = [];
         let nb_conflicts = [];
 
@@ -100,8 +100,8 @@ function load_data(error, colonies, timeline_colonies, conflict_pre, conflict_po
                 nb_conflicts.push(y.number_of_conflict)
             }
         });
-        c.set_data(years, nb_conflicts);
-    }
+        c.set_dec_years(years, nb_conflicts);
+    }*/
 
     conflict_pre.forEach(function(conflict_) {
         pre_conflicts.push(new Conflict(
@@ -182,21 +182,15 @@ colonizers[8].set_colonies(add_country_to_colony(be_col));
 $(function(){
   if($('body').is('.dec')){
       get_graph(years_dec, nb_dec);
-      update_timeline(current_colonizer, colonizers);
-      get_area(current_year, current_colonizer, pre_conflicts);
+      //update_timeline(current_colonizer, conflict_pre);
+      //get_area(current_year, current_colonizer, pre_conflicts);
   } else if($('body').is('.pre_dec')) {
       get_map_colonies(colonizers);
-      get_graph_colonies(colonizers)
-  } else if($('body').is('.post_dec_am')) {
-      get_conflicts_per_region(years, america);
-  }else if($('body').is('.post_dec_eur')) {
-      get_conflicts_per_region(years, europe);
-  }else if($('body').is('.post_dec_afr')) {
-      get_conflicts_per_region(years, africa);
-  }else if($('body').is('.post_dec_midl')) {
-      get_conflicts_per_region(years, middle_east);
-  }else if($('body').is('.post_dec_asia')) {
-      get_conflicts_per_region(years, asia);
+      get_graph_colonies(colonizers);
+  } else if($('body').is('.post_dec')) {
+      //update_timeline(current_colonizer, colonizers);
+      //get_area(current_year, current_colonizer, post_conflicts);
+      get_conflicts_per_region(years, america, europe, africa, middle_east, asia);
   }
 });
 

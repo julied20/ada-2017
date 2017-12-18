@@ -50,17 +50,36 @@ let my_chart = new Chart(ctx, {
 });
 
 
-function update_timeline(current_colonizer, colonizers) {
-    let colors = [];
+function update_timeline(current_colonizer, conflict_pre) {
+
+    /*for(let c of conflict_pre) {
+        let years = [];
+        let nb_conflicts = [];
+
+        timeline_colonies.forEach(function(y) {
+            if(y.colonizer == c.country) {
+                years.push(y.year)
+                nb_conflicts.push(y.number_of_conflict)
+            }
+        });
+        c.set_dec_years(years, nb_conflicts);
+    }*/
+
+
+
+
+
+    //console.log(colonizers[current_colonizer].conflict_years);
+    /*let colors = [];
     colors.push(border_color);
     for(let i = 1; i < colonizers[current_colonizer].conflict_years.length; ++i){
       colors.push(background_color);
-    }
+  }*/
     my_chart.data = {
-      labels: colonizers[current_colonizer].conflict_years,
+      labels: [],
       datasets: [{
         label: 'Number of Conflicts',
-        data: colonizers[current_colonizer].nb_conflicts,
+        data: [],
         backgroundColor: colors,
         borderColor: border_color,
         borderWidth: 1,
