@@ -11,11 +11,15 @@
   justify-content: space-around;
 }
 
+#navbarUL{
+    display: inline-block;
+}
+
 li {float: left;
+  display: inline-block;
   list-style-type:none;
-  margin: 0 10px;
+  margin: 0 4px;
   padding: 0;
-  display: flex;
   justify-content: space-around;
   }
 
@@ -50,7 +54,27 @@ li {float: left;
   height:35vh;
 }
 
-.side {
+#conflicts_am {
+  position: relative;
+  height:35vh;
+}
+
+#conflicts_asia {
+  position: relative;
+  height:35vh;
+}
+
+#conflicts_afr {
+  position: relative;
+  height:35vh;
+}
+
+#conflicts_midl {
+  position: relative;
+  height:35vh;
+}
+
+.col-lg-4 {
     max-width: 10vh;
     max-height: 10vh;
 }
