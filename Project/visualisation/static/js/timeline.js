@@ -51,10 +51,11 @@ let my_chart = new Chart(ctx, {
 
 
 function update_timeline(current_colonizer, conflict_pre) {
+    let years = [];
+    let nb_conflicts = [];
 
     /*for(let c of conflict_pre) {
-        let years = [];
-        let nb_conflicts = [];
+
 
         timeline_colonies.forEach(function(y) {
             if(y.colonizer == c.country) {
@@ -70,11 +71,11 @@ function update_timeline(current_colonizer, conflict_pre) {
 
 
     //console.log(colonizers[current_colonizer].conflict_years);
-    /*let colors = [];
+    let colors = [];
     colors.push(border_color);
     for(let i = 1; i < colonizers[current_colonizer].conflict_years.length; ++i){
       colors.push(background_color);
-  }*/
+    }
     my_chart.data = {
       labels: [],
       datasets: [{
