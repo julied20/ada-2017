@@ -6,29 +6,19 @@ let post_conflicts = [];
 
 let colonizers = [
     new Colonizer(
-        "France",
-        "FR",
-        "rgba(255, 206, 86, 1)"
-    ),
-    new Colonizer(
         "United Kingdom",
         "GB",
         "rgba(147, 159, 92, 1)"
     ),
     new Colonizer(
-        "Denmark",
-        "DK",
-        "rgba(14, 119, 225, 1)"
+        "France",
+        "FR",
+        "rgba(255, 206, 86, 1)"
     ),
     new Colonizer(
-        "Netherlands",
-        "NL",
-        "rgba(203, 56, 85, 1)"
-    ),
-    new Colonizer(
-        "Portugal",
-        "PT",
-        "rgba(147, 159, 92, 1)"
+        "Spain",
+        "ES",
+        "rgba(0, 191, 255, 1)"
     ),
     new Colonizer(
         "Russia",
@@ -36,9 +26,14 @@ let colonizers = [
         "rgba(112, 74, 44, 1)"
     ),
     new Colonizer(
-        "Spain",
-        "ES",
-        "rgba(0, 191, 255, 1)"
+        "Portugal",
+        "PT",
+        "rgba(147, 159, 92, 1)"
+    ),
+    new Colonizer(
+        "Netherlands",
+        "NL",
+        "rgba(203, 56, 85, 1)"
     ),
     new Colonizer(
         "Italy",
@@ -49,6 +44,11 @@ let colonizers = [
         "Belgium",
         "BE",
         "rgba(249, 5, 40, 1)"
+    ),
+    new Colonizer(
+        "Denmark",
+        "DK",
+        "rgba(14, 119, 225, 1)"
     ),
 ];
 
@@ -90,21 +90,6 @@ function load_data(error, colonies, conflict_pre, conflict_post, country_coordin
         america.push(c_y_r.America);
 
     }
-
-
-
-    /*for(let c of colonizers) {
-        let years = [];
-        let nb_conflicts = [];
-
-        timeline_colonies.forEach(function(y) {
-            if(y.colonizer == c.country) {
-                years.push(y.year)
-                nb_conflicts.push(y.number_of_conflict)
-            }
-        });
-        c.set_dec_years(years, nb_conflicts);
-    }*/
 
     conflict_pre.forEach(function(conflict_) {
         pre_conflicts.push(new Conflict(
@@ -168,24 +153,24 @@ colonizers.forEach((colonizer, index) => {
 nav_ul.select('li')
 .attr('class', 'nav-item active')
 
-const fr_col = colonies.filter(c => c.colonizer_country == "France");
+const fr_col = colonies.filter(c => c.colonizer_country == "United Kingdom");
 colonizers[0].set_colonies(add_country_to_colony(fr_col));
-const uk_col = colonies.filter(c => c.colonizer_country == "United Kingdom");
+const uk_col = colonies.filter(c => c.colonizer_country == "France");
 colonizers[1].set_colonies(add_country_to_colony(uk_col));
 const de_col = colonies.filter(c => c.colonizer_country == "Denmark");
-colonizers[2].set_colonies(add_country_to_colony(de_col));
+colonizers[8].set_colonies(add_country_to_colony(de_col));
 const ne_col = colonies.filter(c => c.colonizer_country == "Netherlands");
-colonizers[3].set_colonies(add_country_to_colony(ne_col));
+colonizers[5].set_colonies(add_country_to_colony(ne_col));
 const pr_col = colonies.filter(c => c.colonizer_country == "Portugal");
 colonizers[4].set_colonies(add_country_to_colony(pr_col));
 const ru_col = colonies.filter(c => c.colonizer_country == "Russia");
-colonizers[5].set_colonies(add_country_to_colony(ru_col));
+colonizers[3].set_colonies(add_country_to_colony(ru_col));
 const es_col = colonies.filter(c => c.colonizer_country == "Spain");
-colonizers[6].set_colonies(add_country_to_colony(es_col));
+colonizers[2].set_colonies(add_country_to_colony(es_col));
 const it_col = colonies.filter(c => c.colonizer_country == "Italy");
-colonizers[7].set_colonies(add_country_to_colony(it_col));
+colonizers[6].set_colonies(add_country_to_colony(it_col));
 const be_col = colonies.filter(c => c.colonizer_country == "Belgium");
-colonizers[8].set_colonies(add_country_to_colony(be_col));
+colonizers[7].set_colonies(add_country_to_colony(be_col));
 
 // To have the diff timelines
 let years_pre_post_conflicts = []
@@ -230,24 +215,24 @@ for(let i = 0; i< timeline_pre.length; ++i) {
     nb_confl_post_po.push(timeline_post[i].Portugal);
 }
 
-colonizers[0].set_conflicts_pre(years_pre_post_conflicts, nb_confl_pre_fr);
-colonizers[0].set_conflicts_post(years_pre_post_conflicts, nb_confl_post_fr);
-colonizers[1].set_conflicts_pre(years_pre_post_conflicts, nb_confl_pre_uk);
-colonizers[1].set_conflicts_post(years_pre_post_conflicts, nb_confl_post_uk);
-colonizers[2].set_conflicts_pre(years_pre_post_conflicts, nb_confl_pre_da);
-colonizers[2].set_conflicts_post(years_pre_post_conflicts, nb_confl_post_da);
-colonizers[3].set_conflicts_pre(years_pre_post_conflicts, nb_confl_pre_ne);
-colonizers[3].set_conflicts_post(years_pre_post_conflicts, nb_confl_post_ne);
+colonizers[1].set_conflicts_pre(years_pre_post_conflicts, nb_confl_pre_fr);
+colonizers[1].set_conflicts_post(years_pre_post_conflicts, nb_confl_post_fr);
+colonizers[0].set_conflicts_pre(years_pre_post_conflicts, nb_confl_pre_uk);
+colonizers[0].set_conflicts_post(years_pre_post_conflicts, nb_confl_post_uk);
+colonizers[8].set_conflicts_pre(years_pre_post_conflicts, nb_confl_pre_da);
+colonizers[8].set_conflicts_post(years_pre_post_conflicts, nb_confl_post_da);
+colonizers[5].set_conflicts_pre(years_pre_post_conflicts, nb_confl_pre_ne);
+colonizers[5].set_conflicts_post(years_pre_post_conflicts, nb_confl_post_ne);
 colonizers[4].set_conflicts_pre(years_pre_post_conflicts, nb_confl_pre_po);
 colonizers[4].set_conflicts_post(years_pre_post_conflicts, nb_confl_post_po);
-colonizers[5].set_conflicts_pre(years_pre_post_conflicts, nb_confl_pre_rus);
-colonizers[5].set_conflicts_post(years_pre_post_conflicts, nb_confl_post_rus);
-colonizers[6].set_conflicts_pre(years_pre_post_conflicts, nb_confl_pre_esp);
-colonizers[6].set_conflicts_post(years_pre_post_conflicts, nb_confl_post_esp);
-colonizers[7].set_conflicts_pre(years_pre_post_conflicts, nb_confl_pre_it);
-colonizers[7].set_conflicts_post(years_pre_post_conflicts, nb_confl_post_it);
-colonizers[8].set_conflicts_pre(years_pre_post_conflicts, nb_confl_pre_bel);
-colonizers[8].set_conflicts_post(years_pre_post_conflicts, nb_confl_post_bel);
+colonizers[3].set_conflicts_pre(years_pre_post_conflicts, nb_confl_pre_rus);
+colonizers[3].set_conflicts_post(years_pre_post_conflicts, nb_confl_post_rus);
+colonizers[2].set_conflicts_pre(years_pre_post_conflicts, nb_confl_pre_esp);
+colonizers[2].set_conflicts_post(years_pre_post_conflicts, nb_confl_post_esp);
+colonizers[6].set_conflicts_pre(years_pre_post_conflicts, nb_confl_pre_it);
+colonizers[6].set_conflicts_post(years_pre_post_conflicts, nb_confl_post_it);
+colonizers[7].set_conflicts_pre(years_pre_post_conflicts, nb_confl_pre_bel);
+colonizers[7].set_conflicts_post(years_pre_post_conflicts, nb_confl_post_bel);
 
 
 

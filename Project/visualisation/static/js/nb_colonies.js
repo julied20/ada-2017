@@ -4,9 +4,10 @@ function get_graph_colonies(colonizers) {
     let countries = []
     let background_colors = []
     let border_colors = []
-
+    let nb_of_col = []
     colonizers.forEach(function(area) {
         let country_color = d3.color(area.color);
+        nb_of_col.push(area.colonies.length);
         countries.push(area.country);
         background_colors.push(country_color);
         country_color.opacity = 0.5;
@@ -24,7 +25,7 @@ function get_graph_colonies(colonizers) {
                     label: "Number of colonies",
                     backgroundColor: background_colors,
                     borderColor: border_colors,
-                    data: [46, 28, 20, 13, 6, 5, 3, 1, 1]
+                    data: nb_of_col
                 }
             ]
         },
