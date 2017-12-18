@@ -1,3 +1,5 @@
+const background_color = "rgba(255, 206, 86, 0.2)";
+const  border_color = "rgba(255, 206, 86, 1)";
 
 let ctx = document.getElementById("timeline").getContext('2d');
 let my_chart = new Chart(ctx, {
@@ -50,9 +52,6 @@ let my_chart = new Chart(ctx, {
 
 function update_timeline(current_colonizer, colonizers) {
     let colors = [];
-    const background_color = "rgba(255, 206, 86, 0.2)";
-    const  border_color = "rgba(255, 206, 86, 1)";
-    console.log(colonizers[current_colonizer]);
     colors.push(border_color);
     for(let i = 1; i < colonizers[current_colonizer].conflict_years.length; ++i){
       colors.push(background_color);

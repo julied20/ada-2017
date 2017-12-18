@@ -1,25 +1,43 @@
 // Number of colonies per countries
-new Chart(document.getElementById("nb_colonizers"), {
-    type: 'bar',
-    data: {
-      labels: ["United Kingdom", "France", "Spain", "Russia", "Portugal", "Netherland", "Belgium", "Denmark", "Italy"],
-      datasets: [
-        {
-          label: "Number of colonies",
-          backgroundColor: "rgba(255, 206, 86, 1)",
-          data: [46, 28, 20, 13, 6, 5, 3, 1, 1]
+function get_graph_colonies(colonizers) {
+
+    let countries = []
+    let background_colors = []
+    let border_colors = []
+
+    colonizers.forEach(function(area) {
+        let country_color = d3.color(area.color);
+        countries.push(area.country);
+        background_colors.push(country_color);
+        country_color.opacity = 0.5;
+        border_colors.push(country_color);
+
+    });
+
+    new Chart(document.getElementById("nb_colonizers"), {
+
+        type: 'bar',
+        data: {
+            labels: countries,
+            datasets: [
+                {
+                    label: "Number of colonies",
+                    backgroundColor: background_colors,
+                    borderColor: border_colors,
+                    data: [46, 28, 20, 13, 6, 5, 3, 1, 1]
+                }
+            ]
+        },
+        options: {
+            legend: { display: false },
+            title: {
+                display: true,
+                text: 'Number of colonies per colonizaters'
+            },
+            legend: {
+                onClick: null
+            },
+            maintainAspectRatio: false
         }
-      ]
-    },
-    options: {
-      legend: { display: false },
-      title: {
-        display: true,
-        text: 'Number of colonies per colonizaters'
-      },
-      legend: {
-        onClick: null
-      },
-      maintainAspectRatio: false
-    }
-});
+    });
+}
