@@ -57,6 +57,9 @@ let my_chart = new Chart(ctx, {
 
 function update_timeline(current_colonizer, colonizers, pre) {
 
+    console.log(pre);
+    console.log(colonizers);
+    console.log(current_colonizer);
     let years = [];
     let nb_conflicts = [];
 

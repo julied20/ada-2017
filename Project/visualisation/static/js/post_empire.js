@@ -692,7 +692,7 @@ const post_empire = AmCharts.makeChart( "post_empire_map_div", {
     "left": 0,
     "horizontalGap": 10,
     "data": [ {
-      "title": "Common Wealth of Independent State",
+      "title": "CW of Independent State",
       "color": "#947CB0"
     }, {
       "title": "Common Wealth",

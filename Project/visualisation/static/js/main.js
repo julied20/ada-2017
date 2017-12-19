@@ -126,6 +126,8 @@ function load_data(error, colonies, conflict_pre, conflict_post, country_coordin
         ))
     });
 
+    console.log(pre_conflicts);
+
 // Create navbar with colonizers
 nav_ul = d3.select('#navbarUL');
 
@@ -151,7 +153,7 @@ colonizers.forEach((colonizer, index) => {
         } else if ($('body').is('.post_dec')){
             update_current_year(current_colonizer, colonizers);
             update_timeline(current_colonizer, colonizers, false);
-            get_area(current_year, colonizers, post_conflicts);            
+            get_area(current_year, colonizers, post_conflicts);
         }
 
     })
@@ -202,6 +204,8 @@ let nb_confl_post_bel = []
 let nb_confl_pre_po = []
 let nb_confl_post_po = []
 
+console.log(timeline_pre);
+
 for(let i = 0; i< timeline_pre.length; ++i) {
     years_pre_post_conflicts.push(timeline_pre[i].Year);
     nb_confl_pre_uk.push(timeline_pre[i].United_Kingdom);
@@ -223,7 +227,7 @@ for(let i = 0; i< timeline_pre.length; ++i) {
     nb_confl_pre_po.push(timeline_pre[i].Portugal);
     nb_confl_post_po.push(timeline_post[i].Portugal);
 }
-
+console.log(nb_confl_pre_uk);
 colonizers[1].set_conflicts_pre(years_pre_post_conflicts, nb_confl_pre_fr);
 colonizers[1].set_conflicts_post(years_pre_post_conflicts, nb_confl_post_fr);
 colonizers[0].set_conflicts_pre(years_pre_post_conflicts, nb_confl_pre_uk);
