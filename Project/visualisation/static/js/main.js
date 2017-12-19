@@ -62,6 +62,7 @@ d3.queue()
 .defer(d3.csv, "Project/datasets/timeline_decolonisation.csv")
 .defer(d3.csv, "Project/datasets/colonization_conflict_year_colon_countries_pre.csv")
 .defer(d3.csv, "Project/datasets/colonization_conflict_year_colon_countries_post.csv")
+//.defer(d3.csv, "Project/datasets/timeline_deco.csv")
 .await(load_data);
 
 function load_data(error, colonies, conflict_pre, conflict_post, country_coordinates, conflicts_year_region, dec_years, timeline_pre, timeline_post) {//first param is error and not data
@@ -73,6 +74,7 @@ function load_data(error, colonies, conflict_pre, conflict_post, country_coordin
         years_dec.push(d.year)
         nb_dec.push(d.number_of_decolonization);
     }
+
     // For Number of conflicts per region
     let years = [];//conflicts_year_region.Year;
     let middle_east = [];//conflicts_year_region.Middle_East;
