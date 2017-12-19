@@ -31,8 +31,13 @@ let my_chart = new Chart(ctx, {
         const element = this.getElementAtEvent(e);
         if (element[0] != undefined) {
             const new_year = element[0]._model.label;
-            get_area(new_year, current_colonizer, pre_conflicts);
             year_changed(new_year);
+            current_year = new_year;
+            if($('body').is('.dec')){
+                get_area(current_year, colonizers, pre_conflicts);
+            } else if ($('body').is('.post_dec')){
+                get_area(current_year, colonizers, post_conflicts);
+            }
         }
     },
     onHover: function(e){
@@ -59,12 +64,10 @@ function update_timeline(current_colonizer, colonizers, pre) {
         console.log('On est avant');
         years = colonizers[current_colonizer].conflict_pre_years;
         nb_conflicts = colonizers[current_colonizer].nb_pre_conflicts;
-        console.log(nb_conflicts);
     } else if (!pre) {
         console.log('On est en post_dec');
         years = colonizers[current_colonizer].conflict_post_years;
         nb_conflicts = colonizers[current_colonizer].nb_post_conflicts;
-        console.log(nb_conflicts);
     }
     //console.log(colonizers[current_colonizer].conflict_years);
     let colors = [];

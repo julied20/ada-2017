@@ -73,7 +73,6 @@ function load_data(error, colonies, conflict_pre, conflict_post, country_coordin
         years_dec.push(d.year)
         nb_dec.push(d.number_of_decolonization);
     }
-
     // For Number of conflicts per region
     let years = [];//conflicts_year_region.Year;
     let middle_east = [];//conflicts_year_region.Middle_East;
@@ -96,7 +95,7 @@ function load_data(error, colonies, conflict_pre, conflict_post, country_coordin
             conflict_.location,
             conflict_.ID,
             conflict_.year,
-            conflict_.colonizer
+            conflict_.colonizer_country
         ))
     });
     conflict_post.forEach(function(conflict_) {
@@ -104,7 +103,7 @@ function load_data(error, colonies, conflict_pre, conflict_post, country_coordin
             conflict_.location,
             conflict_.ID,
             conflict_.year,
-            conflict_.colonizer
+            conflict_.colonizer_country
         ))
     });
 
@@ -142,7 +141,7 @@ colonizers.forEach((colonizer, index) => {
         } else if ($('body').is('.post_dec')){
             update_current_year(current_colonizer, colonizers);
             update_timeline(current_colonizer, colonizers, false);
-            get_area(current_year, colonizers, pre_conflicts);
+            get_area(current_year, colonizers, post_conflicts);
         }
 
     })

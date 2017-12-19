@@ -1,7 +1,6 @@
 /*************************************/
 // Number of conflicts per years
 function get_conflicts_per_region(years, america, europe, africa, middle_east, asia) {
-
   let labels = [];
   let data = [];
 
@@ -22,7 +21,7 @@ function get_conflicts_per_region(years, america, europe, africa, middle_east, a
           legend: { display: false },
           title: {
             display: true,
-            text: 'Conflicts in Africa'
+            text: 'Conflicts in Americas'
           },
           legend: {
             onClick: null
@@ -47,7 +46,7 @@ function get_conflicts_per_region(years, america, europe, africa, middle_east, a
           legend: { display: false },
           title: {
             display: true,
-            text: 'Conflicts in Africa'
+            text: 'Conflicts in Europe'
           },
           legend: {
             onClick: null
@@ -97,7 +96,7 @@ function get_conflicts_per_region(years, america, europe, africa, middle_east, a
           legend: { display: false },
           title: {
             display: true,
-            text: 'Conflicts in Africa'
+            text: 'Conflicts in Middle East'
           },
           legend: {
             onClick: null
@@ -122,7 +121,7 @@ function get_conflicts_per_region(years, america, europe, africa, middle_east, a
           legend: { display: false },
           title: {
             display: true,
-            text: 'Conflicts in Africa'
+            text: 'Conflicts in Asia'
           },
           legend: {
             onClick: null

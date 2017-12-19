@@ -65,7 +65,7 @@ function get_colonizer_conflicts(confl) {
 }
 
 function get_current_year_conflicts(current_year, confl) {
-  current_year_conflicts = confl.filter(x => x.year == current_year);
+    current_year_conflicts = confl.filter(x => x.year == current_year);
   return current_year_conflicts;
 }
 
