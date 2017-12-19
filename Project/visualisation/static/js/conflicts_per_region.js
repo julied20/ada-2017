@@ -40,8 +40,18 @@ function get_conflicts_per_region(years, america, europe, africa, middle_east, a
                 yAxes: [{ stacked: true }]
             },
             legend: {
-                onClick: null
+                onClick: function(e, legendItem) {
+                const index = legendItem.datasetIndex;
+                const ci = this.chart;
+                const meta = ci.getDatasetMeta(index);
+
+                // See controller.isDatasetVisible comment
+                meta.hidden = meta.hidden === null? !ci.data.datasets[index].hidden : null;
+
+                // We hid a dataset ... rerender the chart
+                ci.update();
             },
+        },
             maintainAspectRatio: false
         }
     });
