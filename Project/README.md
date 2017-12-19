@@ -6,7 +6,7 @@ The last milestone aimed at producing a datastory to answer our problematic: how
 
 [One can find our datastory here](https://julied20.github.io/ada-2017/core.html).
 
-It is divided in four chapters, distributed on different webpages. Most maps are interactive and will display some informations only after selecting the desired data on the barplots.
+It is divided in four chapters, distributed on different webpages. Most maps are interactive and will display some informations only after selecting the desired data on the barplots. The main_notebook.ipynb hasn't been updated with our new analysis as the results can solely be found on the datastory, coded in javascript. However, all datasets created for this purpose can be found in the correct folder, with all of their python scripts to create them.
 
 Jean Gschwind : Data cleaning and handling, production of usefull csv files
 
