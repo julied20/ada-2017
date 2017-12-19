@@ -9,7 +9,9 @@ The last milestone aimed at producing a datastory to answer our problematic: how
 It is divided in four chapters, distributed on different webpages. Most maps are interactive and will display some informations only after selecting the desired data on the barplots.
 
 Jean Gschwind : Data cleaning and handling, production of usefull csv files
+
 Julie Djeffal : Graph and Maps production, website code
+
 Tristan Besson : Data Story Writing & Exploratory Analysis
 
 ## Milestone I
