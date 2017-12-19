@@ -1,245 +1,289 @@
-let post_empire = AmCharts.makeChart( "post_empire", {
+const post_empire = AmCharts.makeChart( "post_empire_map_div", {
   "type": "map",
   "theme": "light",
+  "type": "map",
   "dataProvider": {
-    "map": "worldHigh",
-    "zoomLevel": 3.5,
-    "zoomLongitude": 10,
-    "zoomLatitude": 52,
-    "areas": [ {
+      "map": "worldLow",
+      "zoomLevel": 1,
+      "zoomLongitude": 46,
+      "zoomLatitude": 2,
+      "areas": [ {
         "title": "Armenia",
         "id": "AM",
-        "color": "#67b7dc",
+        "color": "#947CB0",
+        "customData": "Common Wealth of Independent States",
         "groupId": "commonwealth_indep"
       }, {
         "title": "Azerbaijan",
         "id": "AZ",
-        "color": "#67b7dc",
+        "color": "#947CB0",
+        "customData": "Common Wealth of Independent States",
         "groupId": "commonwealth_indep"
       }, {
         "title": "Belarus",
         "id": "BY",
-        "color": "#67b7dc",
+        "color": "#947CB0",
+        "customData": "Common Wealth of Independent States",
         "groupId": "commonwealth_indep"
       }, {
         "title": "Kazakhstan",
         "id": "KZ",
-        "color": "#67b7dc",
+        "color": "#947CB0",
+        "customData": "Common Wealth of Independent States",
         "groupId": "commonwealth_indep"
       }, {
         "title": "Kyrgyzstan",
         "id": "KG",
-        "color": "#67b7dc",
+        "color": "#947CB0",
+        "customData": "Common Wealth of Independent States",
         "groupId": "commonwealth_indep"
       }, {
         "title": "Moldova",
         "id": "MD",
-        "color": "#67b7dc",
+        "color": "#947CB0",
+        "customData": "Common Wealth of Independent States",
         "groupId": "commonwealth_indep"
       }, {
         "title": "Russia",
         "id": "RU",
-        "color": "#67b7dc",
-        "customData": "1957",
+        "color": "#947CB0",
+        "customData": "Common Wealth of Independent States",
         "groupId": "commonwealth_indep"
       }, {
         "title": "Tajikistan",
         "id": "TJ",
-        "color": "#67b7dc",
+        "color": "#947CB0",
+        "customData": "Common Wealth of Independent States",
         "groupId": "commonwealth_indep"
       }, {
         "title": "Uzbekistan",
         "id": "UZ",
-        "color": "#67b7dc",
+        "color": "#947CB0",
+        "customData": "Common Wealth of Independent States",
         "groupId": "commonwealth_indep"
       },{
-
-
         "title": "Australia",
         "id": "AU",
-        "color": "#67b7dc",
+        "color": "#EC644B",
+        "customData": "Common Wealth",
         "groupId": "commonwealth"
       }, {
         "title": "Bahamas",
         "id": "BS",
-        "color": "#67b7dc",
+        "color": "#EC644B",
+        "customData": "Common Wealth",
         "groupId": "commonwealth"
       }, {
         "title": "Bangladesh",
         "id": "BD",
-        "color": "#67b7dc",
+        "color": "#EC644B",
+        "customData": "Common Wealth",
         "groupId": "commonwealth"
       }, {
         "title": "Belize",
         "id": "BZ",
-        "color": "#67b7dc",
+        "color": "#EC644B",
+        "customData": "Common Wealth",
         "groupId": "commonwealth"
       }, {
         "title": "Botswana",
         "id": "BW",
-        "color": "#67b7dc",
+        "color": "#EC644B",
+        "customData": "Common Wealth",
         "groupId": "commonwealth"
       }, {
         "title": "Brunei",
         "id": "BN",
-        "color": "#67b7dc",
+        "color": "#EC644B",
+        "customData": "Common Wealth",
         "groupId": "commonwealth"
       }, {
         "title": "Cameroon",
         "id": "CM",
-        "color": "#67b7dc",
+        "color": "#EC644B",
         "customData": "1957",
+        "customData": "Common Wealth",
         "groupId": "commonwealth"
       }, {
         "title": "Canada",
         "id": "CA",
-        "color": "#67b7dc",
+        "color": "#EC644B",
+        "customData": "Common Wealth",
         "groupId": "commonwealth"
       }, {
         "title": "Cyprus",
         "id": "CY",
-        "color": "#67b7dc",
+        "color": "#EC644B",
+        "customData": "Common Wealth",
         "groupId": "commonwealth"
       },{
         "title": "Fiji",
         "id": "FJ",
-        "color": "#67b7dc",
+        "color": "#EC644B",
+        "customData": "Common Wealth",
         "groupId": "commonwealth"
       },{
         "title": "Ghana",
         "id": "GH",
-        "color": "#67b7dc",
+        "color": "#EC644B",
+        "customData": "Common Wealth",
         "groupId": "commonwealth"
       },{
         "title": "Guyana",
         "id": "GY",
-        "color": "#67b7dc",
+        "color": "#EC644B",
+        "customData": "Common Wealth",
         "groupId": "commonwealth"
       },{
         "title": "India",
         "id": "IN",
-        "color": "#67b7dc",
+        "color": "#EC644B",
+        "customData": "Common Wealth",
         "groupId": "commonwealth"
       },{
         "title": "Jamaica",
         "id": "JM",
-        "color": "#67b7dc",
+        "color": "#EC644B",
+        "customData": "Common Wealth",
         "groupId": "commonwealth"
       },{
         "title": "Kenya",
         "id": "KE",
-        "color": "#67b7dc",
+        "color": "#EC644B",
+        "customData": "Common Wealth",
         "groupId": "commonwealth"
       },{
         "title": "Malawi",
         "id": "MW",
-        "color": "#67b7dc",
+        "color": "#EC644B",
+        "customData": "Common Wealth",
         "groupId": "commonwealth"
       },{
         "title": "Malaysia",
         "id": "MY",
-        "color": "#67b7dc",
+        "color": "#EC644B",
+        "customData": "Common Wealth",
         "groupId": "commonwealth"
       },{
         "title": "Malta",
         "id": "MT",
-        "color": "#67b7dc",
+        "color": "#EC644B",
+        "customData": "Common Wealth",
         "groupId": "commonwealth"
       },{
         "title": "Mauritius",
         "id": "MU",
-        "color": "#67b7dc",
+        "color": "#EC644B",
+        "customData": "Common Wealth",
         "groupId": "commonwealth"
       },{
         "title": "Mozambique",
         "id": "MZ",
-        "color": "#67b7dc",
+        "color": "#EC644B",
+        "customData": "Common Wealth",
         "groupId": "commonwealth"
       },{
         "title": "Namibia",
         "id": "NA",
-        "color": "#67b7dc",
+        "color": "#EC644B",
+        "customData": "Common Wealth",
         "groupId": "commonwealth"
       },{
         "title": "New Zealand",
         "id": "NZ",
-        "color": "#67b7dc",
+        "color": "#EC644B",
+        "customData": "Common Wealth",
         "groupId": "commonwealth"
       },{
         "title": "Nigeria",
         "id": "NG",
-        "color": "#67b7dc",
+        "color": "#EC644B",
+        "customData": "Common Wealth",
         "groupId": "commonwealth"
       },{
         "title": "Pakistan",
         "id": "PK",
-        "color": "#67b7dc",
+        "color": "#EC644B",
+        "customData": "Common Wealth",
         "groupId": "commonwealth"
       },{
         "title": "Rwanda",
         "id": "RW",
-        "color": "#67b7dc",
+        "color": "#EC644B",
+        "customData": "Common Wealth",
         "groupId": "commonwealth"
       },{
         "title": "Samoa",
         "id": "WS",
-        "color": "#67b7dc",
+        "color": "#EC644B",
+        "customData": "Common Wealth",
         "groupId": "commonwealth"
       },{
         "title": "Seychelles",
         "id": "SC",
-        "color": "#67b7dc",
+        "color": "#EC644B",
+        "customData": "Common Wealth",
         "groupId": "commonwealth"
       },{
         "title": "Sierra Leone",
         "id": "SL",
-        "color": "#67b7dc",
+        "color": "#EC644B",
+        "customData": "Common Wealth",
         "groupId": "commonwealth"
       },{
         "title": "Singapore",
         "id": "SG",
-        "color": "#67b7dc",
+        "color": "#EC644B",
+        "customData": "Common Wealth",
         "groupId": "commonwealth"
       },{
         "title": "South Africa",
         "id": "ZA",
-        "color": "#67b7dc",
+        "color": "#EC644B",
+        "customData": "Common Wealth",
         "groupId": "commonwealth"
       },{
         "title": "Sri Lanka",
         "id": "LK",
-        "color": "#67b7dc",
+        "color": "#EC644B",
+        "customData": "Common Wealth",
         "groupId": "commonwealth"
       },{
         "title": "Swaziland",
         "id": "SZ",
-        "color": "#67b7dc",
+        "color": "#EC644B",
+        "customData": "Common Wealth",
         "groupId": "commonwealth"
       },{
         "title": "Tanzania",
         "id": "TZ",
-        "color": "#67b7dc",
+        "color": "#EC644B",
+        "customData": "Common Wealth",
         "groupId": "commonwealth"
       },{
         "title": "Uganda",
         "id": "UG",
-        "color": "#67b7dc",
+        "color": "#EC644B",
+        "customData": "Common Wealth",
         "groupId": "commonwealth"
       },
       {
         "title": "United Kingdom",
         "id": "GB",
-        "color": "#67b7dc",
+        "color": "#EC644B",
+        "customData": "Common Wealth",
         "groupId": "commonwealth"
       },{
         "title": "Vanuatu",
         "id": "VU",
-        "color": "#67b7dc",
+        "color": "#EC644B",
+        "customData": "Common Wealth",
         "groupId": "commonwealth"
       },{
         "title": "Zambia",
         "id": "ZM",
-        "color": "#67b7dc",
+        "color": "#EC644B",
+        "customData": "Common Wealth",
         "groupId": "commonwealth"
       },
 
@@ -247,320 +291,383 @@ let post_empire = AmCharts.makeChart( "post_empire", {
         "title": "Albania",
         "id": "AL",
         "color": "#67b7dc",
+        "customData": "La Francophonie",
         "groupId": "francophonie"
       },
       {
         "title": "Andorra",
         "id": "AD",
         "color": "#67b7dc",
+        "customData": "La Francophonie",
         "groupId": "francophonie"
       },{
         "title": "Armenia",
         "id": "AM",
         "color": "#67b7dc",
+        "customData": "La Francophonie",
         "groupId": "francophonie"
       },{
         "title": "Belgium",
         "id": "BE",
         "color": "#67b7dc",
+        "customData": "La Francophonie",
         "groupId": "francophonie"
       },{
         "title": "Benin",
         "id": "BJ",
         "color": "#67b7dc",
+        "customData": "La Francophonie",
         "groupId": "francophonie"
       },{
         "title": "Bulgaria",
         "id": "BG",
         "color": "#67b7dc",
+        "customData": "La Francophonie",
         "groupId": "francophonie"
       },{
         "title": "Burkina Faso",
         "id": "BF",
         "color": "#67b7dc",
+        "customData": "La Francophonie",
         "groupId": "francophonie"
       },{
         "title": "Burundi",
         "id": "BI",
         "color": "#67b7dc",
+        "customData": "La Francophonie",
         "groupId": "francophonie"
       },{
         "title": "Cambodia",
         "id": "KH",
         "color": "#67b7dc",
+        "customData": "La Francophonie",
         "groupId": "francophonie"
       },{
         "title": "Cameroon",
         "id": "CM",
         "color": "#67b7dc",
+        "customData": "La Francophonie",
         "groupId": "francophonie"
       },{
         "title": "Canada",
         "id": "CA",
         "color": "#67b7dc",
+        "customData": "La Francophonie",
         "groupId": "francophonie"
       },{
         "title": "Chad",
         "id": "TD",
         "color": "#67b7dc",
+        "customData": "La Francophonie",
         "groupId": "francophonie"
       },
       {
         "title": "Congo",
         "id": "CG",
         "color": "#67b7dc",
+        "customData": "La Francophonie",
         "groupId": "francophonie"
       },{
         "title": "Côte d'Ivoire",
         "id": "CI",
         "color": "#67b7dc",
+        "customData": "La Francophonie",
         "groupId": "francophonie"
       },{
         "title": "Djibouti",
         "id": "DJ",
         "color": "#67b7dc",
+        "customData": "La Francophonie",
         "groupId": "francophonie"
       },{
         "title": "Egypt",
         "id": "EG",
         "color": "#67b7dc",
+        "customData": "La Francophonie",
         "groupId": "francophonie"
       },{
         "title": "France",
         "id": "FR",
         "color": "#67b7dc",
+        "customData": "La Francophonie",
         "groupId": "francophonie"
       },{
         "title": "Gabon",
         "id": "GA",
         "color": "#67b7dc",
+        "customData": "La Francophonie",
         "groupId": "francophonie"
       },{
         "title": "Greece",
         "id": "GR",
         "color": "#67b7dc",
+        "customData": "La Francophonie",
         "groupId": "francophonie"
       },{
         "title": "Guinea",
         "id": "GN",
         "color": "#67b7dc",
+        "customData": "La Francophonie",
         "groupId": "francophonie"
       },{
         "title": "Guinea-Bissau",
         "id": "GW",
         "color": "#67b7dc",
+        "customData": "La Francophonie",
         "groupId": "francophonie"
       },{
         "title": "Haiti",
         "id": "HT",
         "color": "#67b7dc",
+        "customData": "La Francophonie",
         "groupId": "francophonie"
       },{
         "title": "Laos",
         "id": "LA",
         "color": "#67b7dc",
+        "customData": "La Francophonie",
         "groupId": "francophonie"
       },{
         "title": "Lebanon",
         "id": "LB",
         "color": "#67b7dc",
+        "customData": "La Francophonie",
         "groupId": "francophonie"
       },{
         "title": "Luxembourg",
         "id": "LU",
         "color": "#67b7dc",
+        "customData": "La Francophonie",
         "groupId": "francophonie"
       },{
         "title": "Madagascar",
         "id": "MG",
         "color": "#67b7dc",
+        "customData": "La Francophonie",
         "groupId": "francophonie"
       },{
         "title": "Mali",
         "id": "ML",
         "color": "#67b7dc",
+        "customData": "La Francophonie",
         "groupId": "francophonie"
       },{
         "title": "Mauritania",
         "id": "MR",
         "color": "#67b7dc",
+        "customData": "La Francophonie",
         "groupId": "francophonie"
       },{
         "title": "Moldova",
         "id": "MD",
         "color": "#67b7dc",
+        "customData": "La Francophonie",
         "groupId": "francophonie"
       },{
         "title": "Monaco",
         "id": "MC",
         "color": "#67b7dc",
+        "customData": "La Francophonie",
         "groupId": "francophonie"
       },{
         "title": "Morocco",
         "id": "MA",
         "color": "#67b7dc",
+        "customData": "La Francophonie",
         "groupId": "francophonie"
       },{
         "title": "Niger",
         "id": "NE",
         "color": "#67b7dc",
+        "customData": "La Francophonie",
         "groupId": "francophonie"
       },{
         "title": "Romania",
         "id": "RO",
         "color": "#67b7dc",
+        "customData": "La Francophonie",
         "groupId": "francophonie"
       },{
         "title": "Rwanda",
         "id": "RW",
         "color": "#67b7dc",
+        "customData": "La Francophonie",
         "groupId": "francophonie"
       },{
         "title": "Senegal",
         "id": "SN",
         "color": "#67b7dc",
+        "customData": "La Francophonie",
         "groupId": "francophonie"
       },{
         "title": "Seychelles",
         "id": "SC",
         "color": "#67b7dc",
+        "customData": "La Francophonie",
         "groupId": "francophonie"
       },{
         "title": "Switzerland",
         "id": "CH",
         "color": "#67b7dc",
+        "customData": "La Francophonie",
         "groupId": "francophonie"
       },{
         "title": "Togo",
         "id": "TG",
         "color": "#67b7dc",
+        "customData": "La Francophonie",
         "groupId": "francophonie"
       },{
         "title": "Tunisia",
         "id": "TN",
         "color": "#67b7dc",
+        "customData": "La Francophonie",
         "groupId": "francophonie"
       },{
         "title": "Vanuatu",
         "id": "VU",
         "color": "#67b7dc",
+        "customData": "La Francophonie",
         "groupId": "francophonie"
       },{
         "title": "Vietnam",
         "id": "VN",
         "color": "#67b7dc",
+        "customData": "La Francophonie",
         "groupId": "francophonie"
       },
 
       {
         "title": "Argentina",
         "id": "AR",
-        "color": "#67b7dc",
+        "color": "#F4B350",
+        "customData": "Organization of Ibero-American States",
         "groupId": "ibero"
       },{
         "title": "Bolivia",
         "id": "BO",
-        "color": "#67b7dc",
+        "color": "#F4B350",
+        "customData": "Organization of Ibero-American States",
         "groupId": "ibero"
       },{
         "title": "Brazil",
         "id": "BR",
-        "color": "#67b7dc",
+        "color": "#F4B350",
+        "customData": "Organization of Ibero-American States",
         "groupId": "ibero"
       },{
         "title": "Chile",
         "id": "CL",
-        "color": "#67b7dc",
+        "color": "#F4B350",
+        "customData": "Organization of Ibero-American States",
         "groupId": "ibero"
       },{
         "title": "Colombia",
         "id": "CO",
-        "color": "#67b7dc",
+        "color": "#F4B350",
+        "customData": "Organization of Ibero-American States",
         "groupId": "ibero"
       },{
         "title": "Costa Rica",
         "id": "CR",
-        "color": "#67b7dc",
+        "color": "#F4B350",
+        "customData": "Organization of Ibero-American States",
         "groupId": "ibero"
       },{
         "title": "Cuba",
         "id": "CU",
-        "color": "#67b7dc",
+        "color": "#F4B350",
+        "customData": "Organization of Ibero-American States",
         "groupId": "ibero"
       },{
         "title": "Dominican Republic",
         "id": "DO",
-        "color": "#67b7dc",
+        "color": "#F4B350",
+        "customData": "Organization of Ibero-American States",
         "groupId": "ibero"
       },{
         "title": "Ecuador",
         "id": "EC",
-        "color": "#67b7dc",
+        "color": "#F4B350",
+        "customData": "Organization of Ibero-American States",
         "groupId": "ibero"
       },{
         "title": "El Salvador",
         "id": "SV",
-        "color": "#67b7dc",
+        "color": "#F4B350",
+        "customData": "Organization of Ibero-American States",
         "groupId": "ibero"
       },{
         "title": "Equatorial Guinea",
         "id": "GQ",
-        "color": "#67b7dc",
+        "color": "#F4B350",
+        "customData": "Organization of Ibero-American States",
         "groupId": "ibero"
       },{
         "title": "Guatemala",
         "id": "GT",
-        "color": "#67b7dc",
+        "color": "#F4B350",
+        "customData": "Organization of Ibero-American States",
         "groupId": "ibero"
       },{
         "title": "Honduras",
         "id": "HN",
-        "color": "#67b7dc",
+        "color": "#F4B350",
+        "customData": "Organization of Ibero-American States",
         "groupId": "ibero"
       },{
         "title": "Mexico",
         "id": "MX",
-        "color": "#67b7dc",
+        "color": "#F4B350",
+        "customData": "Organization of Ibero-American States",
         "groupId": "ibero"
       },{
         "title": "Nicaragua",
         "id": "NI",
-        "color": "#67b7dc",
+        "color": "#F4B350",
+        "customData": "Organization of Ibero-American States",
         "groupId": "ibero"
       },{
         "title": "Panama",
         "id": "PA",
-        "color": "#67b7dc",
+        "color": "#F4B350",
+        "customData": "Organization of Ibero-American States",
         "groupId": "ibero"
       },{
         "title": "Paraguay",
         "id": "PY",
-        "color": "#67b7dc",
+        "color": "#F4B350",
+        "customData": "Organization of Ibero-American States",
         "groupId": "ibero"
       },{
         "title": "Peru",
         "id": "PE",
-        "color": "#67b7dc",
+        "color": "#F4B350",
+        "customData": "Organization of Ibero-American States",
         "groupId": "ibero"
       },{
         "title": "Portugal",
         "id": "PT",
-        "color": "#67b7dc",
+        "color": "#F4B350",
+        "customData": "Organization of Ibero-American States",
         "groupId": "ibero"
       },{
         "title": "Spain",
         "id": "ES",
-        "color": "#67b7dc",
+        "color": "#F4B350",
+        "customData": "Organization of Ibero-American States",
         "groupId": "ibero"
       },{
         "title": "Uruguay",
         "id": "UY",
-        "color": "#67b7dc",
+        "color": "#F4B350",
+        "customData": "Organization of Ibero-American States",
         "groupId": "ibero"
       },{
         "title": "Venezuela",
         "id": "VE",
-        "color": "#67b7dc",
+        "color": "#F4B350",
+        "customData": "Organization of Ibero-American States",
         "groupId": "ibero"
       },
     ]
@@ -568,10 +675,7 @@ let post_empire = AmCharts.makeChart( "post_empire", {
 
   "areasSettings": {
     "rollOverOutlineColor": "#FFFFFF",
-    "rollOverColor": "#CC0000",
-    "alpha": 0.8,
-    "unlistedAreasAlpha": 0.1,
-    "balloonText": "[[title]] joined EU at [[customData]]"
+    "balloonText": "[[customData]]"
   },
 
 
@@ -588,17 +692,17 @@ let post_empire = AmCharts.makeChart( "post_empire", {
     "left": 0,
     "horizontalGap": 10,
     "data": [ {
-      "title": "EU member before 2004",
+      "title": "Common Wealth of Independent State",
+      "color": "#947CB0"
+    }, {
+      "title": "Common Wealth",
+      "color": "#EC644B"
+    }, {
+      "title": "La Francophonie",
       "color": "#67b7dc"
     }, {
-      "title": "Joined at 2004",
-      "color": "#ebdb8b"
-    }, {
-      "title": "Joined at 2007",
-      "color": "#83c2ba"
-    }, {
-      "title": "Joined at 2013",
-      "color": "#db8383"
+      "title": "Organization of Ibero-American States",
+      "color": "#F4B350"
     } ]
   },
   "export": {

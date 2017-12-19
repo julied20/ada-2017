@@ -35,6 +35,11 @@ li {float: left;
   height: 500px;
 }
 
+#post_empire_map_div {
+  width: 100%;
+  height: 500px;
+}
+
 #timeline_row {
   position: relative;
   height:35vh;
@@ -89,12 +94,25 @@ li {float: left;
     max-height: 10vh;
 }
 
-footer.main_footer {
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -142px;
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  height: 142px;
+}
+
+
+footer.main-footer {
+  position: absolute !important;
   font-family: "Open Sans", sans-serif !important;
   font-size: 1rem !important;
   max-width: 100vh !important;
   font-weight: normal !important;
   line-height: 1.5 !important;
-  color: #BDC3C7 !important;
-  background-color: #000 !important;
 }
