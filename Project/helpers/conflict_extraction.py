@@ -197,7 +197,7 @@ def get_year_intensity_conflict_df(clean_conflict):
     columns = ["Year", "Intensity1", "Intensity2"]
     years = np.linspace(1945, 2016, num=2016-1945+1, dtype=int)
     years = np.reshape(years, (len(years), 1))
-    intensity = np.zeros((len(years), 5), dtype=int)
+    intensity = np.zeros((len(years), 2), dtype=int)
     years_intensity = np.concatenate((years,intensity),axis=1)
 
     yr_conflict_df = pd.DataFrame(years_intensity, columns=columns)
