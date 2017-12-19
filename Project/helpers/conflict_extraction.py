@@ -192,6 +192,51 @@ def get_year_regions_conflict_df(clean_conflict):
 
     return yr_conflict_df
 
+def get_year_intensity_conflict_df(clean_conflict):
+    """ Create the intensity in functions of the year number of conflict dataframe """
+    columns = ["Year", "Intensity1", "Intensity2"]
+    years = np.linspace(1945, 2016, num=2016-1945+1, dtype=int)
+    years = np.reshape(years, (len(years), 1))
+    intensity = np.zeros((len(years), 5), dtype=int)
+    years_intensity = np.concatenate((years,intensity),axis=1)
+
+    yr_conflict_df = pd.DataFrame(years_intensity, columns=columns)
+    yr_conflict_df = yr_conflict_df.set_index('Year')
+
+    for index in range(len(clean_conflict)):
+        year = clean_conflict.get_value(index,'year')
+        intensity = clean_conflict.get_value(index,'intensity')
+
+        if int(intensity) == 1: yr_conflict_df.set_value(year, 'Intensity1', yr_conflict_df.get_value(year, 'Intensity1')+1)
+        if int(intensity) == 2: yr_conflict_df.set_value(year, 'Intensity2', yr_conflict_df.get_value(year, 'Intensity2')+1)
+
+    yr_conflict_df.to_csv("datasets/colonization_conflict_year_intensity.csv")
+
+    return yr_conflict_df    
+
+def get_continent_reason_conflict_df(clean_conflict):
+    """ Create the reason in functions of the continent number of conflict dataframe """
+    columns = ["Reason", "Europe", "Middle East", "Asia", "Africa", "America"]
+    years = np.linspace(1945, 2016, num=2016-1945+1, dtype=int)
+    years = np.reshape(years, (len(years), 1))
+    incomp = np.zeros((len(years), 5), dtype=int)
+    years_incomp = np.concatenate((years,incomp),axis=1)
+
+    yr_conflict_df = pd.DataFrame(years_incomp, columns=columns)
+    yr_conflict_df = yr_conflict_df.set_index('Year')
+
+    for index in range(len(clean_conflict)):
+        year = clean_conflict.get_value(index,'year')
+        incomp = clean_conflict.get_value(index,'incomp')
+
+        if int(incomp) == 1: yr_conflict_df.set_value(year, 'Europe', yr_conflict_df.get_value(year, 'Europe')+1)
+        if int(incomp) == 2: yr_conflict_df.set_value(year, 'Middle East', yr_conflict_df.get_value(year, 'Middle East')+1)
+        if int(incomp) == 3: yr_conflict_df.set_value(year, 'Asia', yr_conflict_df.get_value(year, 'Asia')+1)
+
+    yr_conflict_df.to_csv("datasets/colonization_conflict_year_regions.csv")
+
+    return yr_conflict_df    
+
 def get_year_countries_conflict_df(pre_colonization_conflict_df, post_colonization_conflict_df):
     """ Create the pre/post decolonization countries/years conflicts dataframes """
 

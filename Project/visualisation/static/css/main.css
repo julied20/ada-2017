@@ -21,6 +21,7 @@ li {float: left;
   margin: 0 4px;
   padding: 0;
   justify-content: space-around;
+  cursor: pointer;
   }
 
 #map_div {
