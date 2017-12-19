@@ -126,15 +126,30 @@
 
                                 <p> The graph presented below present the number of conflicts per year and per continent. Some tendencies can be assessed from there. The number of conflicts grew after the second world war to reach a maximum at the end of the Cold War in 1991, then went down until 2013 that led us to the higher number of conflicts since the Second World War.  </p>
 
-                                <!-- Modal content-->
+                                <div>
+                                  <div class="hero-link">
+                                       <!-- Modal -->
+                                    <div id="myModal" class="modal fade" role="dialog">
+                                      <div class="modal-dialog">
+
+                                        <!-- Modal content-->
                                         <div class="modal-content">
                                           <div class="modal-body">
-                                            <p>Select a continent on the legend to observe the conflicts and the dedicated analysis</p>
+                                            <p>Select a region in the legend. A brief description for each region can then appear below</p>
                                           </div>
                                           <div class="modal-footer">
                                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                           </div>
                                         </div>
+
+                                      </div>
+                                    </div>
+                                 </div>
+                                 <button class="btn btn-primary btn-lg outline" id="btn">Instructions</button>
+                                 <div class="hero-link">
+                                 </div>
+
+                                </div>
 
                                 <div class="col-sm" id="conflicts_region_">
                                     <canvas id="conflicts_region"></canvas>
