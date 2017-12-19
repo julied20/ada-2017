@@ -32,11 +32,6 @@ let colonizers = [
         "rgba(249, 105, 14, 1)"
     ),
     new Colonizer(
-        "Netherlands",
-        "NL",
-        "rgba(203, 56, 85, 1)"
-    ),
-    new Colonizer(
         "Italy",
         "IT",
         "rgba(63, 191, 12, 1)"
@@ -45,6 +40,11 @@ let colonizers = [
         "Belgium",
         "BE",
         "rgba(249, 5, 40, 1)"
+    ),
+    new Colonizer(
+        "Netherlands",
+        "NL",
+        "rgba(203, 56, 85, 1)"
     ),
     new Colonizer(
         "Denmark",
@@ -65,7 +65,6 @@ d3.queue()
 .await(load_data);
 
 function load_data(error, colonies, conflicts_pre, conflicts_post, country_coordinates, conflicts_year_region, dec_years, timeline_gen, c_intensity) {//first param is error and not data
-    console.log(colonies);
     for(let c of colonies) {
         colonized_countries.push(new Colonized_Country(
             c.colonized_country,
@@ -79,11 +78,11 @@ function load_data(error, colonies, conflicts_pre, conflicts_post, country_coord
             c.set_color("#E9D460");
         } else if (Number(c.year) < 1930 ){
             c.set_color("#D4A94F");
-        } else if (Number(c.year) < 1955 ){//|| Number(c.year) < 1955) {
+        } else if (Number(c.year) < 1955 ){
             c.set_color("#C07E3E");
-        } else if (Number(c.year) < 1980 ){//|| Number(c.year) < 1980) {
+        } else if (Number(c.year) < 1980 ){
             c.set_color("#AB532C");
-        } else if (Number(c.year) <  2016 ){//|| Number(c.year) < 2016) {
+        } else if (Number(c.year) <  2016 ){
             c.set_color("#96281B");
         }
     }
@@ -104,12 +103,12 @@ function load_data(error, colonies, conflicts_pre, conflicts_post, country_coord
     }
 
     // For Number of conflicts per region
-    let years = [];//conflicts_year_region.Year;
-    let middle_east = [];//conflicts_year_region.Middle_East;
-    let africa = [];//conflicts_year_region.Africa;
-    let europe = [];//conflicts_year_region.Europe;
-    let asia = [];//conflicts_year_region.Asia;
-    let america = [];//conflicts_year_region.America;
+    let years = [];
+    let middle_east = [];
+    let africa = [];
+    let europe = [];
+    let asia = [];
+    let america = [];
     for(let c_y_r of conflicts_year_region) {
         years.push(c_y_r.Year);
         middle_east.push(c_y_r.Middle_East);
@@ -137,15 +136,6 @@ function load_data(error, colonies, conflicts_pre, conflicts_post, country_coord
         ))
     });
 
-    console.log(gen_conflicts);
-    /*conflict_post.forEach(function(conflict_) {
-        post_conflicts.push(new Conflict(
-            conflict_.location,
-            conflict_.ID,
-            conflict_.year,
-            conflict_.colonizer_country
-        ))
-    });*/
 
     country_coordinates.forEach(function(country_co) {
         countries.push(new Country(
@@ -200,7 +190,7 @@ colonizers[1].set_colonies(add_country_to_colony(uk_col));
 const de_col = colonies.filter(c => c.colonizer_country == "Denmark");
 colonizers[8].set_colonies(add_country_to_colony(de_col));
 const ne_col = colonies.filter(c => c.colonizer_country == "Netherlands");
-colonizers[5].set_colonies(add_country_to_colony(ne_col));
+colonizers[7].set_colonies(add_country_to_colony(ne_col));
 const pr_col = colonies.filter(c => c.colonizer_country == "Portugal");
 colonizers[4].set_colonies(add_country_to_colony(pr_col));
 const ru_col = colonies.filter(c => c.colonizer_country == "Russia");
@@ -208,79 +198,41 @@ colonizers[3].set_colonies(add_country_to_colony(ru_col));
 const es_col = colonies.filter(c => c.colonizer_country == "Spain");
 colonizers[2].set_colonies(add_country_to_colony(es_col));
 const it_col = colonies.filter(c => c.colonizer_country == "Italy");
-colonizers[6].set_colonies(add_country_to_colony(it_col));
+colonizers[5].set_colonies(add_country_to_colony(it_col));
 const be_col = colonies.filter(c => c.colonizer_country == "Belgium");
-colonizers[7].set_colonies(add_country_to_colony(be_col));
+colonizers[6].set_colonies(add_country_to_colony(be_col));
 
 // To have the diff timelines
 let years_conflicts = []
 let nb_confl_uk = []
-//let nb_confl_post_uk = []
 let nb_confl_fr = []
-//let nb_confl_post_fr = []
 let nb_confl_ne = []
-//let nb_confl_post_ne = []
 let nb_confl_esp = []
-//let nb_confl_post_esp = []
 let nb_confl_it = []
-//let nb_confl_post_it = []
 let nb_confl_rus = []
-//let nb_confl_post_rus = []
 let nb_confl_da = []
-//let nb_confl_post_da = []
 let nb_confl_bel = []
-//let nb_confl_post_bel = []
 let nb_confl_po = []
-//let nb_confl_post_po = []
 
 
 for(let i = 0; i< timeline_gen.length; ++i) {
     years_conflicts.push(timeline_gen[i].Year);
-    nb_confl_uk.push(timeline_gen[i].United_Kingdom);
-    //nb_confl_post_uk.push(timeline_post[i].United_Kingdom);
-    nb_confl_fr.push(timeline_gen[i].France);
-    //nb_confl_post_fr.push(timeline_post[i].France);
-    nb_confl_da.push(timeline_gen[i].Denmark);
-    //nb_confl_post_da.push(timeline_post[i].Denmark);
-    nb_confl_esp.push(timeline_gen[i].Spain);
-    //nb_confl_post_esp.push(timeline_post[i].Spain);
-    nb_confl_it.push(timeline_gen[i].Italy);
-    //nb_confl_post_it.push(timeline_post[i].Italy);
-    nb_confl_rus.push(timeline_gen[i].Russia);
-    //nb_confl_post_rus.push(timeline_post[i].Russia);
-    nb_confl_bel.push(timeline_gen[i].Belgium);
-    //nb_confl_post_bel.push(timeline_post[i].Belgium);
-    nb_confl_ne.push(timeline_gen[i].Netherlands);
-    //nb_confl_post_ne.push(timeline_post[i].Netherlands);
-    nb_confl_po.push(timeline_gen[i].Portugal);
-    //nb_confl_post_po.push(timeline_post[i].Portugal);
-}
+    nb_confl_uk.push(timeline_gen[i].United_Kingdom);    nb_confl_fr.push(timeline_gen[i].France);    nb_confl_da.push(timeline_gen[i].Denmark);    nb_confl_esp.push(timeline_gen[i].Spain);    nb_confl_it.push(timeline_gen[i].Italy);    nb_confl_rus.push(timeline_gen[i].Russia);    nb_confl_bel.push(timeline_gen[i].Belgium);    nb_confl_ne.push(timeline_gen[i].Netherlands);    nb_confl_po.push(timeline_gen[i].Portugal);}
 colonizers[1].set_conflicts(years_conflicts, nb_confl_fr);
-//colonizers[1].set_conflicts_post(years_conflicts, nb_confl_post_fr);
 colonizers[0].set_conflicts(years_conflicts, nb_confl_uk);
-//colonizers[0].set_conflicts_post(years_conflicts, nb_confl_post_uk);
 colonizers[8].set_conflicts(years_conflicts, nb_confl_da);
-//colonizers[8].set_conflicts_post(years_conflicts, nb_confl_post_da);
-colonizers[5].set_conflicts(years_conflicts, nb_confl_ne);
-//colonizers[5].set_conflicts_post(years_conflicts, nb_confl_post_ne);
+colonizers[7].set_conflicts(years_conflicts, nb_confl_ne);
 colonizers[4].set_conflicts(years_conflicts, nb_confl_po);
-//colonizers[4].set_conflicts_post(years_conflicts, nb_confl_post_po);
 colonizers[3].set_conflicts(years_conflicts, nb_confl_rus);
-//colonizers[3].set_conflicts_post(years_conflicts, nb_confl_post_rus);
 colonizers[2].set_conflicts(years_conflicts, nb_confl_esp);
-//colonizers[2].set_conflicts_post(years_conflicts, nb_confl_post_esp);
-colonizers[6].set_conflicts(years_conflicts, nb_confl_it);
-//colonizers[6].set_conflicts_post(years_conflicts, nb_confl_post_it);
-colonizers[7].set_conflicts(years_conflicts, nb_confl_bel);
-//colonizers[7].set_conflicts_post(years_conflicts, nb_confl_post_bel);
+colonizers[5].set_conflicts(years_conflicts, nb_confl_it);
+colonizers[6].set_conflicts(years_conflicts, nb_confl_bel);
 
 
 
 $(function(){
   if($('body').is('.dec')){
       get_graph(years_dec, nb_dec);
-      //update_timeline(current_colonizer, colonizers);
-      //get_area(current_year, current_colonizer, gen_conflicts);
       get_map_deco(colonized_countries);
   } else if($('body').is('.pre_dec')) {
       get_map_colonies(colonizers);

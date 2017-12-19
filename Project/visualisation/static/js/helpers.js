@@ -13,10 +13,7 @@ class Colonizer {
     this.conflict_years = conflict_years;
     this.nb_conflicts = nb_conflicts;
   }
-  /*set_conflicts_post(conflict_years, nb_conflicts) {
-    this.conflict_post_years = conflict_years;
-    this.nb_post_conflicts = nb_conflicts;
-}*/
+
 
 
   //Take a list of countries
@@ -57,7 +54,6 @@ class Conflict {
     this.ISO2 = ISO2;
     this.year = year;
     this.colonizer = colonizer;
-    //this.year_decolonisation = year_decolonisation;
   }
   set_data(data) {
     this.data = data;
@@ -72,7 +68,6 @@ class Year {
 }
 
 function get_colonizer_conflicts(confl) {
-    console.log(colonizers[current_colonizer]);
   colonizer_conflicts = confl.filter(x => x.colonizer == colonizers[current_colonizer].country);
   return colonizer_conflicts;
 }
