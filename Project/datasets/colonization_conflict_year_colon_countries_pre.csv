@@ -1,4 +1,4 @@
-Year,United_Kingdom,France,Spain,Russia,Portugal,Netherlands,Italy,Belgium,Denmark
+Year,United Kingdom,France,Spain,Russia,Portugal,Italy,Belgium,Netherlands,Denmark
 1945,0,0,0,0,0,0,0,0,0
 1946,1,2,0,0,0,0,0,0,0
 1947,0,3,0,0,0,0,0,0,0
@@ -14,7 +14,7 @@ Year,United_Kingdom,France,Spain,Russia,Portugal,Netherlands,Italy,Belgium,Denma
 1957,2,4,0,0,0,0,0,0,0
 1958,1,4,0,0,0,0,0,0,0
 1959,1,2,0,0,0,0,0,0,0
-1960,0,2,0,0,0,0,0,1,0
+1960,0,2,0,0,0,0,1,0,0
 1961,0,1,0,0,1,0,0,0,0
 1962,1,1,0,0,1,0,0,0,0
 1963,0,0,0,0,2,0,0,0,0
