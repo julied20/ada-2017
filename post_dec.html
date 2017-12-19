@@ -69,11 +69,41 @@
                                     The map and associated graph below is acting as a dictionnary of all conflicts in the world, related to the former colonisers. By selecting a year and a coloniser, the former colonies engaged in a conflict are highlighted on the map.
 
                                 </p>
+                                <div>
+                                  <div class="hero-link">
+                                       <!-- Modal -->
+                                    <div id="myModal" class="modal fade" role="dialog">
+                                      <div class="modal-dialog">
 
-                                 <div class="row" id="map_row">
-                                     <div class="col-sm" id="decolonies_map_div">
-                                     </div>
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                          <div class="modal-body">
+                                            <p>Select a year, a colonizer and start exploring the conflicts!</p>
+                                          </div>
+                                          <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                          </div>
+                                        </div>
+
+                                      </div>
+                                    </div>
                                  </div>
+                                 <button class="btn btn-primary btn-lg outline" id="btn">Instructions</button>
+                                 <div class="hero-link">
+                                 </div>
+
+                                </div>
+
+                            </div>
+                            <nav class="navbar" id="navbar">
+                                <a class="navbar-brand">Colonizers</a>
+                                <ul class="navbar-nav mr-auto" id="navbarUL">
+                                </ul>
+                            </nav>
+                            <div class="col-sm" id="timeline_row">
+                                <canvas id="timeline"></canvas>
+                            </div>
+                            <div class="col-sm" id="map_div"></div>
 
                                 <p>
                                 The United Kingdom presents an increasing tendancy in the number of conflicts in its former colonies since after World War II. We can observe that almost every year brings a new conflict implying either Pakistan or India.
@@ -109,7 +139,7 @@
                                 <div class="col-sm" id="conflicts_region_">
                                     <canvas id="conflicts_region"></canvas>
                                 </div>
-                                
+
                                 </div>
                                 <div id="europe"  style="display:none;">
                                     <h3> Europe </h3>
@@ -148,7 +178,7 @@
                                 </div>
 
                                 <h2> Origin of conflicts </h2>
-                                
+
                                 <p>
                                     The decolonization process often excluded the history of the previous state entities. They ignored the territorial claims and tribes divisions to draw lines on maps (mainly in Africa). In both 'colonized' continents, most of the conflicts emerge from territorial claims. Then, the instability of the local states and governments is highlighted by the high level of governmental conflicts, with new groups trying to reach powers in former colonies.
                                 </p>
@@ -251,9 +281,10 @@ $("body").on("click","#btn",function(){
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.min.js"></script>
 
     <script type="text/javascript" src='Project/visualisation/static/js/helpers.js'></script>
-    <script type="text/javascript" src='Project/visualisation/static/js/decolonisation_map.js'></script>
     <script type="text/javascript" src='Project/visualisation/static/js/conflicts_per_region.js'></script>
     <script type="text/javascript" src='Project/visualisation/static/js/conflicts_per_intensity.js'></script>
+    <script type="text/javascript" src='Project/visualisation/static/js/map.js'></script>
+    <script type="text/javascript" src='Project/visualisation/static/js/timeline.js'></script>
     <script type="text/javascript" src='Project/visualisation/static/js/main.js'></script>
 
 
