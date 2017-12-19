@@ -1052,9 +1052,9 @@ section.gallery .overlay i {
 * ==========================================================
 */
 footer.main-footer {
-  background: #0e0e0e;
+  background: #fff;
   padding: 100px 0 0;
-  color: #fff;
+  color: #0e0e0e;
 }
 
 footer.main-footer .contact-details p {
