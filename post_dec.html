@@ -96,11 +96,20 @@
 
                                 <p> The graph presented below present the number of conflicts per year and per continent. Some tendencies can be assessed from there. The number of conflicts grew after the second world war to reach a maximum at the end of the Cold War in 1991, then went down until 2013 that led us to the higher number of conflicts since the Second World War.  </p>
 
+                                <!-- Modal content-->
+                                        <div class="modal-content">
+                                          <div class="modal-body">
+                                            <p>Select a continent on the legend to observe the conflicts and the dedicated analysis</p>
+                                          </div>
+                                          <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                          </div>
+                                        </div>
+
                                 <div class="col-sm" id="conflicts_region_">
                                     <canvas id="conflicts_region"></canvas>
                                 </div>
-                                <div id="none_selected"  style="display:block;">
-                                    <h4> Select one region! </h4>
+                                
                                 </div>
                                 <div id="europe"  style="display:none;">
                                     <h3> Europe </h3>
@@ -139,11 +148,9 @@
                                 </div>
 
                                 <h2> Origin of conflicts </h2>
+                                
                                 <p>
-                                    TO DO : Plot above of Origin of conflicts in the World
-                                </p>
-                                <p>
-                                    The decolonization process often excluded the history of the previous state entities. They ignored the territorial claims and tribes divisions to draw lines on maps (mainly in Africa). Thus, we observe that in both 'colonized' continents, most of the conflicts emerge from territorial claims. Then, the instability of the local states and governments is highlighted by the high level of governmental conflicts, with new groups trying to reach powers in former colonies.
+                                    The decolonization process often excluded the history of the previous state entities. They ignored the territorial claims and tribes divisions to draw lines on maps (mainly in Africa). In both 'colonized' continents, most of the conflicts emerge from territorial claims. Then, the instability of the local states and governments is highlighted by the high level of governmental conflicts, with new groups trying to reach powers in former colonies.
                                 </p>
 
                                 <div class="col-sm" id="conflicts_intensity_">
