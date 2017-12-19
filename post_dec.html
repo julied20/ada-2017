@@ -65,7 +65,10 @@
                             <h1>Post Decolonisation<a href="#"></a></h1>
                             <div class="post-body">
                                 <p> Our problematic wants to overview the stability of the former colonies. For our analysis as we are using the UCDP dataset, we will mainly look at the conflicts in which the former colonies are implicated. With this mindset, an unstable colony would be one with many conflicts happening on its territory. </p>
+                                <p>
+                                    The map and associated graph below is acting as a dictionnary of all conflicts in the world, related to the former colonisers. By selecting a year and a coloniser, the former colonies engaged in a conflict are highlighted on the map.
 
+                                </p>
 
                                 <nav class="navbar" id="navbar">
                                     <a class="navbar-brand">Colonizers</a>
@@ -76,11 +79,33 @@
                                     <canvas id="timeline"></canvas>
                                 </div>
                                 <div class="col-sm" id="map_div"></div>
-
+                                <p>
+                                The United Kingdom presents an increasing tendancy in the number of conflicts in its former colonies since after World War II. We can observe that almost every year brings a new conflict implying either Pakistan or India. </p>
+                                <p>
+                                    France has a relatively lower record of conflicts in its colonies, as it stayed almost constant at 7 conflicts per year since the 1970s. However, the recent war on terrorism in Syria and former French Africa (where France is military implicated) has made those numbers go up in 2015.
+                                </p>
+                                <p>
+                                    The conflicts in former Spanish colonies increased after the declaration by the United States of the War on Drugs in 1971. It then decreased around 1989 to reach a stable low value since the beginning of the XXIst century.
+                                </p>
+                                <p>
+                                    Russia highest number of conflicts occurs during the Georgian Civil War between 1992 and 1993. Russia is also implicated in conflicts at its boundaries, like the Ukrainian conflict since 2015.
+                                </p>
+                                <p>
+                                    Portugal and Netherlands both present a low number of conflicts in their former colonies
+                                </p>
+                                <p>
+                                    The main conflict for the former Italian colonies concern Ethiopia, like the Eritrean–Ethiopian War from 1998 to 2000.
+                                </p>
+                                <p>
+                                    Belgium only had three colonies. Nonetheless, the conflicts number seem quite high in comparison. The gestion of the independence of the Belgian Congo, almost constantly in conflict seems to be the main cause. The conflicts between Hutus and Tustis led to the Rwandan Genocide in 1994.
+                                </p>
+                                <p>
+                                    In comparison to all those examples, the independancie from Denmark appears as the best situation for a former colony. However, as Iceland corresponds as its only former colony, it appears quite easy to reach good values in conflicts number.
+                                </p>
 
                                 <h2> Conflicts per region </h2>
 
-                                <p> TThe graph presented below present the number of conflicts per year and per continent. Some tendencies can be assessed from there. The number of conflicts grew after the second world war to reach a maximum at the end of the Cold War in 1991, then went down until 2013 that led us to the higher number of conflicts since the Second World War.  </p>
+                                <p> The graph presented below present the number of conflicts per year and per continent. Some tendencies can be assessed from there. The number of conflicts grew after the second world war to reach a maximum at the end of the Cold War in 1991, then went down until 2013 that led us to the higher number of conflicts since the Second World War.  </p>
 
                                 <div class="col-sm" id="conflicts_region_">
                                     <canvas id="conflicts_region"></canvas>
@@ -91,7 +116,7 @@
                                 <div id="europe"  style="display:none;">
                                     <h3> Europe </h3>
                                     <p>
-                                        In the old continent, Europe, we observe that the number of conflicts is declining after the end of the IInd World War. It then to stagnates to almost no-conflicts for a long period. The Yugoslav war that begun in 1991 broke this period of peace that we continue to live with the recent conflicts in Eastern Europe with Russia. This is comforting the efforts made post-war in order to bring a Europe of peace in place. It began with the creation of European Coal and Steel Community created in 1952 to regulate the industrial production under a central authority. It was the base of the European Union creating the longest period of (almost) peace since many centuries on a continent ravaged by multiple expansion and cultural wars.
+                                        In the old continent, Europe, we observe that the number of conflicts is declining after the end of the IInd World War. It then to stagnates to almost no-conflicts for a long period. The conflicts observed here are not linked to any decolonisation process. The Yugoslav war that begun in 1991 broke this period of peace that we continue to live with the recent conflicts in Eastern Europe with Russia. This is comforting the efforts made post-war in order to bring a Europe of peace in place. It began with the creation of European Coal and Steel Community created in 1952 to regulate the industrial production under a central authority. It was the base of the European Union creating the longest period of (almost) peace since many centuries on a continent ravaged by multiple expansion and cultural wars.
                                     </p>
                                 </div>
 
@@ -120,7 +145,7 @@
                                 <div id="america"  style="display:none;">
                                     <h3>America</h3>
                                     <p>
-                                        As the Americas experienced their independence long before the first conflict registered in our dataset, the plotted values
+                                        As the Americas experienced their independence long before the first conflict registered in our dataset, the plotted values doesn't represent what we want to measure. However, the conflicts that can be observed come from the consequences of the American war on drug and different independent groups like the FARCS in Columbia, or the internal conflicts in Peru that happens since 1980. 
                                     </p>
                                 </div>
 
@@ -136,20 +161,20 @@
                                     <canvas id="conflicts_intensity"></canvas>
                                 </div>
                                 <div id="none_selected_2"  style="display:block;">
-                                <h4> Select one region! </h4>
+                                <h5> Select one region in the graph above</h5>
                                 </div>
                                 <div id="intensity1"  style="display:none;">
-                                <h3> Intensity1 </h3>
+                                <h3> Minor conflict </h3>
                                  <p>
-                                     blabla
+                                     Minor conflicts are the ones that present between 25 and 999 battle-related deaths in a given year according to the UCDP dataset. We observe that their numbers have been increasing since the second world war, up to 1991. It then decreased a bit before going back to the values of the early 1990s. 
                                 </p>
                                 </div>
 
                                 <div id="intensity2"  style="display:none;">
-                                <h3> Intesity2 </h3>
+                                <h3> War </h3>
 
                                 <p>
-                                    blabla2
+                                    Major conflicts and wars are the ones that present more than 1'000 battle-related deaths in a given year according to the UCDP dataset. Their numbers is thankfully considerably lower than the minor conflicts, and have been fluctuating a lot since the end of World War II. They reached their peak in 1988 before decreasing up to 2013. 
                                 </p>
                                 </div>
 
