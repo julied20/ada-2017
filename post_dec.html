@@ -70,6 +70,30 @@
 
                                 </p>
 
+                                <div>
+                                  <div class="hero-link">
+                                       <!-- Modal -->
+                                    <div id="myModal" class="modal fade" role="dialog">
+                                      <div class="modal-dialog">
+
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                          <div class="modal-body">
+                                            <p>Select a year, a colonizer and start exploring the conflicts!</p>
+                                          </div>
+                                          <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                          </div>
+                                        </div>
+
+                                      </div>
+                                    </div>
+                                 </div>
+                                 <button class="btn btn-primary btn-lg outline" id="btn">Instructions</button>
+                                 <div class="hero-link">
+                                 </div>
+
+                                </div>
                                 <nav class="navbar" id="navbar">
                                     <a class="navbar-brand">Colonizers</a>
                                     <ul class="navbar-nav mr-auto" id="navbarUL">
@@ -145,7 +169,7 @@
                                 <div id="america"  style="display:none;">
                                     <h3>America</h3>
                                     <p>
-                                        As the Americas experienced their independence long before the first conflict registered in our dataset, the plotted values doesn't represent what we want to measure. However, the conflicts that can be observed come from the consequences of the American war on drug and different independent groups like the FARCS in Columbia, or the internal conflicts in Peru that happens since 1980. 
+                                        As the Americas experienced their independence long before the first conflict registered in our dataset, the plotted values doesn't represent what we want to measure. However, the conflicts that can be observed come from the consequences of the American war on drug and different independent groups like the FARCS in Columbia, or the internal conflicts in Peru that happens since 1980.
                                     </p>
                                 </div>
 
@@ -166,7 +190,7 @@
                                 <div id="intensity1"  style="display:none;">
                                 <h3> Minor conflict </h3>
                                  <p>
-                                     Minor conflicts are the ones that present between 25 and 999 battle-related deaths in a given year according to the UCDP dataset. We observe that their numbers have been increasing since the second world war, up to 1991. It then decreased a bit before going back to the values of the early 1990s. 
+                                     Minor conflicts are the ones that present between 25 and 999 battle-related deaths in a given year according to the UCDP dataset. We observe that their numbers have been increasing since the second world war, up to 1991. It then decreased a bit before going back to the values of the early 1990s.
                                 </p>
                                 </div>
 
@@ -174,7 +198,7 @@
                                 <h3> War </h3>
 
                                 <p>
-                                    Major conflicts and wars are the ones that present more than 1'000 battle-related deaths in a given year according to the UCDP dataset. Their numbers is thankfully considerably lower than the minor conflicts, and have been fluctuating a lot since the end of World War II. They reached their peak in 1988 before decreasing up to 2013. 
+                                    Major conflicts and wars are the ones that present more than 1'000 battle-related deaths in a given year according to the UCDP dataset. Their numbers is thankfully considerably lower than the minor conflicts, and have been fluctuating a lot since the end of World War II. They reached their peak in 1988 before decreasing up to 2013.
                                 </p>
                                 </div>
 
@@ -215,7 +239,21 @@
     <script src="Project/visualisation/static/vendor/jquery.cookie/jquery.cookie.js"> </script>
     <script src="Project/visualisation/static/vendor/@fancyapps/fancybox/jquery.fancybox.min.js"></script>
     <script src="Project/visualisation/static/js/front.js"></script>
+    <script> $(document).ready(function(){
 
+$("body").on("click","#btn",function(){
+
+  $("#myModal").modal("show");
+
+  //appending modal background inside the blue div
+  $('.modal-backdrop').appendTo('.blue');
+
+  //remove the padding right and modal-open class from the body tag which bootstrap adds when a modal is shown
+  $('body').removeClass("modal-open")
+  $('body').css("padding-right","");
+});
+
+});</script>
 
     <script src="https://www.amcharts.com/lib/3/ammap.js"></script>
     <script src="https://d3js.org/d3.v4.min.js"></script>

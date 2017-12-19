@@ -93,6 +93,33 @@
                                         Then the movement slew down during the second half of this century. The First World War manifests a new spike of independencies, before the biggest wave that occurred after the Second World War. It began as a first batch directly after the war, until a second that occurred in the 1960s. The main decolonizations finished at the fall of the Soviet Union in 1991.
                                     </p>
                                 </div>
+
+                                <div>
+                                  <div class="hero-link">
+                                       <!-- Modal -->
+                                    <div id="myModal" class="modal fade" role="dialog">
+                                      <div class="modal-dialog">
+
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                          <div class="modal-body">
+                                            <p>Select a year, a colonizer and start exploring the conflicts!</p>
+                                          </div>
+                                          <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                          </div>
+                                        </div>
+
+                                      </div>
+                                    </div>
+                                 </div>
+                                 <button class="btn btn-primary btn-lg outline" id="btn">Instructions</button>
+                                 <div class="hero-link">
+                                 </div>
+
+                                </div>
+
+
                                 <nav class="navbar" id="navbar">
                                     <a class="navbar-brand">Colonizers</a>
                                     <ul class="navbar-nav mr-auto" id="navbarUL">
@@ -103,9 +130,6 @@
                                 </div>
                                     <div class="col-sm" id="map_div">
                                     </div>
-
-
-
 
                                 <blockquote class="blockquote">
                                     <p>The wind of change is blowing through this continent. Whether we like it or not, this growth of national consciousness is a political fact.</p>
@@ -163,7 +187,21 @@
             <script src="Project/visualisation/static/vendor/jquery.cookie/jquery.cookie.js"> </script>
             <script src="Project/visualisation/static/vendor/@fancyapps/fancybox/jquery.fancybox.min.js"></script>
             <script src="Project/visualisation/static/js/front.js"></script>
+            <script> $(document).ready(function(){
 
+     $("body").on("click","#btn",function(){
+
+          $("#myModal").modal("show");
+
+          //appending modal background inside the blue div
+          $('.modal-backdrop').appendTo('.blue');
+
+          //remove the padding right and modal-open class from the body tag which bootstrap adds when a modal is shown
+          $('body').removeClass("modal-open")
+          $('body').css("padding-right","");
+      });
+
+});</script>
 
             <script src="https://www.amcharts.com/lib/3/ammap.js"></script>
             <script src="https://d3js.org/d3.v4.min.js"></script>

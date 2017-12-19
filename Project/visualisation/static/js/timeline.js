@@ -64,15 +64,12 @@ function update_timeline(current_colonizer, colonizers, pre) {
     let nb_conflicts = [];
 
     if(pre) {
-        console.log('On est avant');
         years = colonizers[current_colonizer].conflict_pre_years;
         nb_conflicts = colonizers[current_colonizer].nb_pre_conflicts;
     } else if (!pre) {
-        console.log('On est en post_dec');
         years = colonizers[current_colonizer].conflict_post_years;
         nb_conflicts = colonizers[current_colonizer].nb_post_conflicts;
     }
-    //console.log(colonizers[current_colonizer].conflict_years);
     let colors = [];
     colors.push(border_color);
     for(let i = 1; i <years.length; ++i){
