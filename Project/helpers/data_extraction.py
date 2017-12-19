@@ -95,13 +95,22 @@ def get_dataframe_cleaned(df):
 
     # Small correction of some countries
     colonization_df_cleaned.loc[colonization_df_cleaned['colonized_country'] == 'Moldova', 'Year'] = "1991"
+
+    # Change name 
+    colonization_df_cleaned.loc[colonization_df_cleaned['colonized_country'] == 'United States', 'colonized_country'] = 'United States of America'
+    colonization_df_cleaned.loc[colonization_df_cleaned['colonized_country'] == 'The Gambia', 'colonized_country'] = 'Gambia'
     colonization_df_cleaned.loc[colonization_df_cleaned['colonized_country'] == 'Cisplatina (Uruguay)', 'colonized_country'] = 'Uruguay'
     colonization_df_cleaned.loc[colonization_df_cleaned['colonized_country'] == 'Republic of Tunisia', 'colonized_country'] = 'Tunisia'
     colonization_df_cleaned.loc[colonization_df_cleaned['colonized_country'] == 'Independent State of Papua New Guinea', 'colonized_country'] = 'Papua New Guinea'
-    colonization_df_cleaned.loc[colonization_df_cleaned['colonized_country'] == 'United States', 'colonized_country'] = 'United Kingdom'
-    colonization_df_cleaned.loc[colonization_df_cleaned['colonized_country'] == 'United States', 'colonized_country'] = 'United States of America'
+       
+    # Remove countries
     colonization_df_cleaned = colonization_df_cleaned[colonization_df_cleaned['colonized_country'] != 'Iran']
-    colonization_df_cleaned.loc[colonization_df_cleaned['colonized_country'] == 'The Gambia', 'colonized_country'] = 'Gambia'
+    colonization_df_cleaned = colonization_df_cleaned[colonization_df_cleaned['colonized_country'] != 'Taiwan']
+    
+    # Change colonizer
+    colonization_df_cleaned.loc[colonization_df_cleaned['colonized_country'] == 'United States', 'colonizer_country'] = 'United Kingdom'
+    colonization_df_cleaned.loc[colonization_df_cleaned['colonized_country'] == 'Brazil', 'colonizer_country'] = 'Portugal'
+    colonization_df_cleaned.loc[colonization_df_cleaned['colonized_country'] == 'Bangladesh', 'colonizer_country'] = 'United Kingdom'
 
     return colonization_df_cleaned
 
