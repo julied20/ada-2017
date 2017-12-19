@@ -55,18 +55,14 @@ let my_chart = new Chart(ctx, {
 });
 
 
-function update_timeline(current_colonizer, colonizers, pre) {
+function update_timeline(current_colonizer, colonizers) {
 
     let years = [];
     let nb_conflicts = [];
 
-    if(pre) {
-        years = colonizers[current_colonizer].conflict_pre_years;
-        nb_conflicts = colonizers[current_colonizer].nb_pre_conflicts;
-    } else if (!pre) {
-        years = colonizers[current_colonizer].conflict_post_years;
-        nb_conflicts = colonizers[current_colonizer].nb_post_conflicts;
-    }
+    years = colonizers[current_colonizer].conflict_years;
+    nb_conflicts = colonizers[current_colonizer].nb_conflicts;
+
     let colors = [];
     colors.push(border_color);
     for(let i = 1; i <years.length; ++i){
