@@ -32,7 +32,8 @@ function get_graph_colonies(colonizers) {
             ]
         },
         options: {
-            legend: { display: false },
+            legend: {
+                display: false },
             title: {
                 display: true,
                 text: 'Number of colonies per colonizaters'
@@ -40,6 +41,7 @@ function get_graph_colonies(colonizers) {
             legend: {
                 onClick: null
             },
+
             maintainAspectRatio: false,
             onClick: function(e){
             let element = this.getElementAtEvent(e);
