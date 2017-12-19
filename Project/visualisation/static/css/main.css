@@ -88,3 +88,13 @@ li {float: left;
     max-width: 10vh;
     max-height: 10vh;
 }
+
+footer.main_footer {
+  font-family: "Open Sans", sans-serif !important;
+  font-size: 1rem !important;
+  max-width: 100vh !important;
+  font-weight: normal !important;
+  line-height: 1.5 !important;
+  color: #BDC3C7 !important;
+  background-color: #000 !important;
+}
