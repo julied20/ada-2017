@@ -36,6 +36,11 @@ li {float: left;
   height: 500px;
 }
 
+#decolonies_map_div {
+  width: 100%;
+  height: 500px;
+}
+
 #post_empire_map_div {
   width: 100%;
   height: 500px;

@@ -2,6 +2,7 @@ let countries = [];
 let current_year_conflicts = [];
 let pre_conflicts = [];
 let post_conflicts = [];
+let colonized_countries = [];
 
 
 let colonizers = [
@@ -28,7 +29,7 @@ let colonizers = [
     new Colonizer(
         "Portugal",
         "PT",
-        "rgba(147, 159, 92, 1)"
+        "rgba(249, 105, 14, 1)"
     ),
     new Colonizer(
         "Netherlands",
@@ -67,6 +68,32 @@ d3.queue()
 .await(load_data);
 
 function load_data(error, colonies, conflict_pre, conflict_post, country_coordinates, conflicts_year_region, dec_years, timeline_pre, timeline_post, c_intensity) {//first param is error and not data
+
+    //Get colonized_country:
+    for(let c of colonies) {
+        colonized_countries.push(new Colonized_Country(
+            c.colonized_country,
+            c.ID,
+            c.Year,
+        ))
+    }
+
+    for(let c of colonized_countries) {
+        if(Number(c.year) < 1850) {
+            c.set_color("#E9D460");
+        } else if (Number(c.year) < 1930 ){//|| Number(c.year) < 1930) {
+            c.set_color("#D4A94F");
+        } else if (Number(c.year) < 1955 ){//|| Number(c.year) < 1955) {
+            c.set_color("#C07E3E");
+        } else if (Number(c.year) < 1980 ){//|| Number(c.year) < 1980) {
+            c.set_color("#AB532C");
+        } else if (Number(c.year) <  2016 ){//|| Number(c.year) < 2016) {
+            c.set_color("#96281B");
+        }
+    }
+    console.log(colonized_countries);
+
+
 
     //For Number of decolonisation per graph
     let nb_dec = [];
@@ -126,7 +153,6 @@ function load_data(error, colonies, conflict_pre, conflict_post, country_coordin
         ))
     });
 
-    console.log(pre_conflicts);
 
 // Create navbar with colonizers
 nav_ul = d3.select('#navbarUL');
@@ -204,7 +230,6 @@ let nb_confl_post_bel = []
 let nb_confl_pre_po = []
 let nb_confl_post_po = []
 
-console.log(timeline_pre);
 
 for(let i = 0; i< timeline_pre.length; ++i) {
     years_pre_post_conflicts.push(timeline_pre[i].Year);
@@ -227,7 +252,6 @@ for(let i = 0; i< timeline_pre.length; ++i) {
     nb_confl_pre_po.push(timeline_pre[i].Portugal);
     nb_confl_post_po.push(timeline_post[i].Portugal);
 }
-console.log(nb_confl_pre_uk);
 colonizers[1].set_conflicts_pre(years_pre_post_conflicts, nb_confl_pre_fr);
 colonizers[1].set_conflicts_post(years_pre_post_conflicts, nb_confl_post_fr);
 colonizers[0].set_conflicts_pre(years_pre_post_conflicts, nb_confl_pre_uk);
@@ -252,8 +276,9 @@ colonizers[7].set_conflicts_post(years_pre_post_conflicts, nb_confl_post_bel);
 $(function(){
   if($('body').is('.dec')){
       get_graph(years_dec, nb_dec);
-      update_timeline(current_colonizer, colonizers, true);
-      get_area(current_year, current_colonizer, pre_conflicts);
+      //update_timeline(current_colonizer, colonizers, true);
+      //get_area(current_year, current_colonizer, pre_conflicts);
+      get_map_deco(colonized_countries);
   } else if($('body').is('.pre_dec')) {
       get_map_colonies(colonizers);
       get_graph_colonies(colonizers);

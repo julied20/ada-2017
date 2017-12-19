@@ -26,6 +26,18 @@ class Colonizer {
 }
 
 
+class Colonized_Country {
+    constructor(country, ISO2, year) {
+        this.country = country;
+        this.ISO2 = ISO2;
+        this.year = year;
+    }
+    set_color(color) {
+        this.color = color;
+    }
+}
+
+
 class Country {
   constructor(country, ISO2, latitude, longitude) {
     this.country = country;
@@ -60,16 +72,12 @@ class Year {
 }
 
 function get_colonizer_conflicts(confl) {
-    console.log(confl);
   colonizer_conflicts = confl.filter(x => x.colonizer == colonizers[current_colonizer].country);
-  console.log(colonizer_conflicts);
   return colonizer_conflicts;
 }
 
 function get_current_year_conflicts(current_year, confl) {
-    console.log(current_year);
     current_year_conflicts = confl.filter(x => x.year == current_year);
-    console.log(current_year_conflicts);
   return current_year_conflicts;
 }
 
