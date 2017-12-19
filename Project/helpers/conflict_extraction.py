@@ -23,9 +23,9 @@ def get_colonization_conflicts_df():
     pre_colonization_conflict_df, post_colonization_conflict_df = get_pre_post_colonization_df(conflict_df)
 
     # Create the pre/post years/colonized_country dataset
-    yc_conflict_pre_df, yc_conflict_post_df = get_year_countries_conflict_df(pre_colonization_conflict_df, post_colonization_conflict_df)
+    yc_conflict_df, yc_conflict_pre_df, yc_conflict_post_df = get_year_countries_conflict_df(pre_colonization_conflict_df, post_colonization_conflict_df)
 
-    return conflict_df, pre_colonization_conflict_df, post_colonization_conflict_df, yr_conflict_df, yc_conflict_pre_df, yc_conflict_post_df
+    return conflict_df, pre_colonization_conflict_df, post_colonization_conflict_df, yr_conflict_df, yc_conflict_df, yc_conflict_pre_df, yc_conflict_post_df
 
 
 def get_cleaned_conflict_df(df):
@@ -256,8 +256,11 @@ def get_year_countries_conflict_df(pre_colonization_conflict_df, post_colonizati
 
     yc_conflict_post_df = get_yc_conflict_df(post_colonization_conflict_df , years_countries, columns, colonizer_countries)
     yc_conflict_post_df.to_csv("datasets/colonization_conflict_year_colon_countries_post.csv")
+    
+    yc_conflict_df = pd.concat([yc_conflict_pre_df,  yc_conflict_post_df]).reset_index(drop=True)
+    yc_conflict_df.to_csv("datasets/colonization_conflict_year_colon_countries_general.csv")
 
-    return yc_conflict_pre_df, yc_conflict_post_df
+    return  yc_conflict_df, yc_conflict_pre_df, yc_conflict_post_df
 
 def get_yc_conflict_df(conflict_df, years_countries, columns, colonizer_countries):
     """ Create countries/years conflicts dataframe """

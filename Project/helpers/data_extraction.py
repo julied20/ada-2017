@@ -81,8 +81,6 @@ def get_dataframe_cleaned(df):
     colonization_df_cleaned.loc[len(colonization_df_cleaned)+1] = ['Syria', "SY", "24", "10", "1945", "France", "/wiki/Syria"]
     colonization_df_cleaned.loc[len(colonization_df_cleaned)+1] = ['Niger', "NE", "03", "08", "1960", "France", "/wiki/Niger"]
     colonization_df_cleaned.loc[len(colonization_df_cleaned)+1] = ['Lebanon', "LB", "24", "10", "1945", "France", "/wiki/Lebanon"]
-
-    colonization_df_cleaned.to_csv("datasets/colonies_wikipedia_TEST.csv")
     
     # Change decolonization date
     change_date(colonization_df_cleaned, "Namibia", "31", "05", "1910")
@@ -108,7 +106,7 @@ def get_dataframe_cleaned(df):
     colonization_df_cleaned = colonization_df_cleaned[colonization_df_cleaned['colonized_country'] != 'Taiwan']
     
     # Change colonizer
-    colonization_df_cleaned.loc[colonization_df_cleaned['colonized_country'] == 'United States', 'colonizer_country'] = 'United Kingdom'
+    colonization_df_cleaned.loc[colonization_df_cleaned['colonized_country'] == 'United States of America', 'colonizer_country'] = 'United Kingdom'
     colonization_df_cleaned.loc[colonization_df_cleaned['colonized_country'] == 'Brazil', 'colonizer_country'] = 'Portugal'
     colonization_df_cleaned.loc[colonization_df_cleaned['colonized_country'] == 'Bangladesh', 'colonizer_country'] = 'United Kingdom'
 
