@@ -1,5 +1,17 @@
 # Has the decolonization set the countries free?
 
+## Final Datastory - Mileston III
+
+The last milestone aimed at producing a datastory to answer our problematic: how did the decolonization affected the stability of the colonized country?
+
+[One can find our datastory here](https://julied20.github.io/ada-2017/core.html).
+
+It is divided in four chapters, distributed on different webpages. Most maps are interactive and will display some informations only after selecting the desired data on the barplots.
+
+Jean Gschwind : Data cleaning and handling, production of usefull csv files
+Julie Djeffal : Graph and Maps production, website code
+Tristan Besson : Data Story Writing & Exploratory Analysis
+
 ## Milestone I
 
 ### Abstract
