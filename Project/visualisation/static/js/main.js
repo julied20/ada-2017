@@ -55,23 +55,17 @@ let colonizers = [
 
 d3.queue()
 .defer(d3.csv, "Project/datasets/colonies_wikipedia.csv")
-//.defer(d3.csv, "Project/datasets/timeline_colonies.csv" )
-//.defer(d3.csv, "Project/datasets/colonization_conflict_pre.csv" )
-//.defer(d3.csv, "Project/datasets/colonization_conflict_post.csv" )
 .defer(d3.csv, "Project/datasets/colonization_conflict_pre.csv" )
+.defer(d3.csv, "Project/datasets/colonization_conflict_post.csv" )
 .defer(d3.csv, "Project/datasets/countries_codes_and_coordinates.csv")
 .defer(d3.csv, "Project/datasets/colonization_conflict_year_regions.csv")
 .defer(d3.csv, "Project/datasets/timeline_decolonisation.csv")
-//.defer(d3.csv, "Project/datasets/colonization_conflict_year_colon_countries_pre.csv")
-.defer(d3.csv, "Project/datasets/colonization_conflict_year_colon_countries_pre.csv")
-//.defer(d3.csv, "Project/datasets/colonization_conflict_year_colon_countries_post.csv")
+.defer(d3.csv, "Project/datasets/colonization_conflict_year_colon_countries_gen.csv")
 .defer(d3.csv, "Project/datasets/colonization_conflict_year_intensity.csv")
-//.defer(d3.csv, "Project/datasets/timeline_deco.csv")
 .await(load_data);
 
-function load_data(error, colonies, conflicts_gen, country_coordinates, conflicts_year_region, dec_years, timeline_gen, c_intensity) {//first param is error and not data
+function load_data(error, colonies, conflicts_pre, conflicts_post, country_coordinates, conflicts_year_region, dec_years, timeline_gen, c_intensity) {//first param is error and not data
     console.log(colonies);
-    //Get colonized_country:
     for(let c of colonies) {
         colonized_countries.push(new Colonized_Country(
             c.colonized_country,
@@ -83,7 +77,7 @@ function load_data(error, colonies, conflicts_gen, country_coordinates, conflict
     for(let c of colonized_countries) {
         if(Number(c.year) < 1850) {
             c.set_color("#E9D460");
-        } else if (Number(c.year) < 1930 ){//|| Number(c.year) < 1930) {
+        } else if (Number(c.year) < 1930 ){
             c.set_color("#D4A94F");
         } else if (Number(c.year) < 1955 ){//|| Number(c.year) < 1955) {
             c.set_color("#C07E3E");
@@ -126,7 +120,7 @@ function load_data(error, colonies, conflicts_gen, country_coordinates, conflict
 
     }
 
-    conflicts_gen.forEach(function(conflict_) {
+    conflicts_pre.forEach(function(conflict_) {
         gen_conflicts.push(new Conflict(
             conflict_.location,
             conflict_.ID,
@@ -134,6 +128,16 @@ function load_data(error, colonies, conflicts_gen, country_coordinates, conflict
             conflict_.colonizer_country
         ))
     });
+    conflicts_post.forEach(function(conflict_) {
+        gen_conflicts.push(new Conflict(
+            conflict_.location,
+            conflict_.ID,
+            conflict_.year,
+            conflict_.colonizer_country
+        ))
+    });
+
+    console.log(gen_conflicts);
     /*conflict_post.forEach(function(conflict_) {
         post_conflicts.push(new Conflict(
             conflict_.location,

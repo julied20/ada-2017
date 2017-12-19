@@ -72,6 +72,7 @@ class Year {
 }
 
 function get_colonizer_conflicts(confl) {
+    console.log(colonizers[current_colonizer]);
   colonizer_conflicts = confl.filter(x => x.colonizer == colonizers[current_colonizer].country);
   return colonizer_conflicts;
 }
@@ -83,7 +84,7 @@ function get_current_year_conflicts(current_year, confl) {
 
 // Reset the current year to min
 function update_current_year(c, colonizers){
-  current_year  = d3.min(colonizers[c].conflict_pre_years);
+  current_year  = d3.min(colonizers[c].conflict_years);
 }
 
 // Add the list of colonized countries to the coloniser

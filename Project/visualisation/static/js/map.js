@@ -1,8 +1,9 @@
 function get_area(current_year, current_colonizer, confl) {
     let areas = [];
     const current_year_conflicts = get_current_year_conflicts(current_year, confl);
+    console.log(current_year_conflicts);
     const conflicts = get_colonizer_conflicts(current_year_conflicts);
-    console.log();
+    console.log(conflicts);
     conflicts.forEach(function(area) {
       let country_color;
         country_color =  "rgba(255, 206, 86, 1)";

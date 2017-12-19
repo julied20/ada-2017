@@ -33,11 +33,8 @@ let my_chart = new Chart(ctx, {
             const new_year = element[0]._model.label;
             year_changed(new_year);
             current_year = new_year;
-            if($('body').is('.dec')){
-                get_area(current_year, colonizers, pre_conflicts);
-            } else if ($('body').is('.post_dec')){
-                get_area(current_year, colonizers, post_conflicts);
-            }
+            console.log(gen_conflicts);
+            get_area(current_year, colonizers, gen_conflicts);
         }
     },
     onHover: function(e){
