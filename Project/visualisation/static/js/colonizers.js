@@ -22,7 +22,7 @@ let colonizers = [
     new Colonizer(
         "Portugal",
         "PT",
-        "rgba(147, 159, 92, 1)"
+        "rgba(249, 105, 14, 1)"
     ),
     new Colonizer(
         "Russia",
