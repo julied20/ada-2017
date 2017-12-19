@@ -15,6 +15,8 @@ function get_graph_colonies(colonizers) {
 
     });
 
+    Chart.defaults.global.legend.display = false;
+
     new Chart(document.getElementById("nb_colonizers"), {
 
         type: 'bar',
