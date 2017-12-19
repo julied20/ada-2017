@@ -1,7 +1,7 @@
 /*************************************/
 // Number of conflicts per years
 function get_conflicts_per_region(years, america, europe, africa, middle_east, asia) {
-
+    let index_before = 15;
     new Chart(document.getElementById("conflicts_region"), {
         type: 'bar',
         data: {
@@ -48,10 +48,58 @@ function get_conflicts_per_region(years, america, europe, africa, middle_east, a
           const index = legendItem.datasetIndex;
           const ci = this.chart;
           const alreadyHidden = (ci.getDatasetMeta(index).hidden === null) ? false : ci.getDatasetMeta(index).hidden;
+          if(index == index_before) {
+              console.log('Yep');
+              document.getElementById('none_selected').style.display = "block";
+              document.getElementById('america').style.display = "none";
+              document.getElementById('europe').style.display = "none";
+              document.getElementById('africa').style.display = "none";
+              document.getElementById('middle_east').style.display = "none";
+              document.getElementById('asia').style.display = "none";
+              index_before = 15;
+          } else if (index != index_before) {
+              index_before = index;
+              if (index == 0 ) {
+                  document.getElementById('america').style.display = "block";
+                  document.getElementById('europe').style.display = "none";
+                  document.getElementById('africa').style.display = "none";
+                  document.getElementById('middle_east').style.display = "none";
+                  document.getElementById('asia').style.display = "none";
+                  document.getElementById('none_selected').style.display = "none";
+              } else if (index == 1 ){
+                  document.getElementById('america').style.display = "none";
+                  document.getElementById('europe').style.display = "block";
+                  document.getElementById('africa').style.display = "none";
+                  document.getElementById('middle_east').style.display = "none";
+                  document.getElementById('asia').style.display = "none";
+                  document.getElementById('none_selected').style.display = "none";
+              } else if (index == 2 ){
+                  document.getElementById('america').style.display = "none";
+                  document.getElementById('europe').style.display = "none";
+                  document.getElementById('africa').style.display = "block";
+                  document.getElementById('middle_east').style.display = "none";
+                  document.getElementById('asia').style.display = "none";
+                  document.getElementById('none_selected').style.display = "none";
+              } else if (index == 3 ){
+                  document.getElementById('america').style.display = "none";
+                  document.getElementById('europe').style.display = "none";
+                  document.getElementById('africa').style.display = "none";
+                  document.getElementById('middle_east').style.display = "block";
+                  document.getElementById('asia').style.display = "none";
+                  document.getElementById('none_selected').style.display = "none";
+              } else if (index == 4 ){
+                  document.getElementById('america').style.display = "none";
+                  document.getElementById('europe').style.display = "none";
+                  document.getElementById('africa').style.display = "none";
+                  document.getElementById('middle_east').style.display = "none";
+                  document.getElementById('asia').style.display = "block";
+                  document.getElementById('none_selected').style.display = "none";
+              }
+          }
 
           ci.data.datasets.forEach(function(e, i) {
             var meta = ci.getDatasetMeta(i);
-
+            // If time do this dynamically
             if (i !== index) {
               if (!alreadyHidden) {
                 meta.hidden = meta.hidden === null ? !meta.hidden : null;
