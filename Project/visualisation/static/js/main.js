@@ -276,17 +276,17 @@ colonizers[7].set_conflicts_post(years_pre_post_conflicts, nb_confl_post_bel);
 $(function(){
   if($('body').is('.dec')){
       get_graph(years_dec, nb_dec);
-      //update_timeline(current_colonizer, colonizers, true);
-      //get_area(current_year, current_colonizer, pre_conflicts);
-      get_map_deco(colonized_countries);
+      update_timeline(current_colonizer, colonizers, true);
+      get_area(current_year, current_colonizer, pre_conflicts);
   } else if($('body').is('.pre_dec')) {
       get_map_colonies(colonizers);
       get_graph_colonies(colonizers);
   } else if($('body').is('.post_dec')) {
-      update_timeline(current_colonizer, colonizers, false);
-      get_area(current_year, current_colonizer, post_conflicts);
+      //update_timeline(current_colonizer, colonizers, false);
+      //get_area(current_year, current_colonizer, post_conflicts);
       get_conflicts_per_region(years, america, europe, africa, middle_east, asia);
       get_conflicts_per_intensity(years, intensity1, intensity2);
+      get_map_deco(colonized_countries);
   }
 });
 

@@ -13,11 +13,11 @@ class Colonizer {
     this.conflict_pre_years = conflict_years;
     this.nb_pre_conflicts = nb_conflicts;
   }
-
   set_conflicts_post(conflict_years, nb_conflicts) {
     this.conflict_post_years = conflict_years;
     this.nb_post_conflicts = nb_conflicts;
   }
+
 
   //Take a list of countries
   set_colonies(colonies) {

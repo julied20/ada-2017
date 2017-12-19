@@ -123,6 +123,10 @@ footer.main-footer {
   line-height: 1.5 !important;
 }
 
+#myModal{
+    opacity: 0.8
+}
+
 /**************************
   DEFAULT BOOTSTRAP STYLES
 **************************/
