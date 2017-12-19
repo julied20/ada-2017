@@ -74,6 +74,10 @@ li {float: left;
   height:35vh;
 }
 
+#conflicts_region {
+  position: relative;
+  height:55vh;
+}
 .col-lg-4 {
     max-width: 10vh;
     max-height: 10vh;
