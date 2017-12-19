@@ -79,6 +79,11 @@ li {float: left;
   position: relative;
   height:55vh;
 }
+
+#conflicts_intensity {
+    height: 169px;
+    width: 660px;
+}
 .col-lg-4 {
     max-width: 10vh;
     max-height: 10vh;

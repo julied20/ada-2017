@@ -62,10 +62,11 @@ d3.queue()
 .defer(d3.csv, "Project/datasets/timeline_decolonisation.csv")
 .defer(d3.csv, "Project/datasets/colonization_conflict_year_colon_countries_pre.csv")
 .defer(d3.csv, "Project/datasets/colonization_conflict_year_colon_countries_post.csv")
+.defer(d3.csv, "Project/datasets/colonization_conflict_year_intensity.csv")
 //.defer(d3.csv, "Project/datasets/timeline_deco.csv")
 .await(load_data);
 
-function load_data(error, colonies, conflict_pre, conflict_post, country_coordinates, conflicts_year_region, dec_years, timeline_pre, timeline_post) {//first param is error and not data
+function load_data(error, colonies, conflict_pre, conflict_post, country_coordinates, conflicts_year_region, dec_years, timeline_pre, timeline_post, c_intensity) {//first param is error and not data
 
     //For Number of decolonisation per graph
     let nb_dec = [];
@@ -73,6 +74,13 @@ function load_data(error, colonies, conflict_pre, conflict_post, country_coordin
     for (let d of dec_years) {
         years_dec.push(d.year)
         nb_dec.push(d.number_of_decolonization);
+    }
+
+    let intensity1 = []
+    let intensity2 = []
+    for (let c of c_intensity) {
+        intensity1.push(c.Intensity1);
+        intensity2.push(c.Intensity2);
     }
 
     // For Number of conflicts per region
@@ -143,7 +151,7 @@ colonizers.forEach((colonizer, index) => {
         } else if ($('body').is('.post_dec')){
             update_current_year(current_colonizer, colonizers);
             update_timeline(current_colonizer, colonizers, false);
-            get_area(current_year, colonizers, post_conflicts);
+            get_area(current_year, colonizers, post_conflicts);            
         }
 
     })
@@ -249,6 +257,7 @@ $(function(){
       update_timeline(current_colonizer, colonizers, false);
       get_area(current_year, current_colonizer, post_conflicts);
       get_conflicts_per_region(years, america, europe, africa, middle_east, asia);
+      get_conflicts_per_intensity(years, intensity1, intensity2);
   }
 });
 

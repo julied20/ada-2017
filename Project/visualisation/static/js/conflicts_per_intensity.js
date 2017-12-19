@@ -1,36 +1,21 @@
 /*************************************/
 // Number of conflicts per years
-function get_conflicts_per_region(years, america, europe, africa, middle_east, asia) {
+function get_conflicts_per_intensity(years, intensity1, intensity2) {
     let index_before = 15;
-    new Chart(document.getElementById("conflicts_region"), {
+    new Chart(document.getElementById("conflicts_intensity"), {
         type: 'bar',
         data: {
             labels: years,
             datasets: [
                 {
-                    label: "Number of conflicts in Americas",
-                    data: america,
+                    label: "Number of conflicts of intensity 1",
+                    data: intensity1,
                     backgroundColor: 'rgb(191, 63, 63)',
                 },
                 {
-                    label: "Number of conflicts in Europe",
-                    data: europe,
+                    label: "Number of intensity 2",
+                    data: intensity2,
                     backgroundColor: 'rgb(63, 191, 63)',
-                },
-                {
-                    label: "Number of conflicts in Africa",
-                    data: africa,
-                    backgroundColor: 'rgb(63, 63, 191)',
-                },
-                {
-                    label: "Number of conflicts in Middle East",
-                    data: middle_east,
-                    backgroundColor: 'rgb(191, 191, 63)',
-                },
-                {
-                    label: "Number of conflicts in Asia",
-                    data: asia,
-                    backgroundColor: 'rgb(191, 127, 63)',
                 }
             ]
         },
@@ -50,50 +35,20 @@ function get_conflicts_per_region(years, america, europe, africa, middle_east, a
           const alreadyHidden = (ci.getDatasetMeta(index).hidden === null) ? false : ci.getDatasetMeta(index).hidden;
           if(index == index_before) {
               console.log('Yep');
-              document.getElementById('none_selected').style.display = "block";
-              document.getElementById('america').style.display = "none";
-              document.getElementById('europe').style.display = "none";
-              document.getElementById('africa').style.display = "none";
-              document.getElementById('middle_east').style.display = "none";
-              document.getElementById('asia').style.display = "none";
+              document.getElementById('none_selected_2').style.display = "block";
+              document.getElementById('intensity1').style.display = "none";
+              document.getElementById('intensity2').style.display = "none";
               index_before = 15;
           } else if (index != index_before) {
               index_before = index;
               if (index == 0 ) {
-                  document.getElementById('america').style.display = "block";
-                  document.getElementById('europe').style.display = "none";
-                  document.getElementById('africa').style.display = "none";
-                  document.getElementById('middle_east').style.display = "none";
-                  document.getElementById('asia').style.display = "none";
-                  document.getElementById('none_selected').style.display = "none";
+                  document.getElementById('intensity1').style.display = "block";
+                  document.getElementById('intensity2').style.display = "none";
+                  document.getElementById('none_selected_2').style.display = "none";
               } else if (index == 1 ){
-                  document.getElementById('america').style.display = "none";
-                  document.getElementById('europe').style.display = "block";
-                  document.getElementById('africa').style.display = "none";
-                  document.getElementById('middle_east').style.display = "none";
-                  document.getElementById('asia').style.display = "none";
-                  document.getElementById('none_selected').style.display = "none";
-              } else if (index == 2 ){
-                  document.getElementById('america').style.display = "none";
-                  document.getElementById('europe').style.display = "none";
-                  document.getElementById('africa').style.display = "block";
-                  document.getElementById('middle_east').style.display = "none";
-                  document.getElementById('asia').style.display = "none";
-                  document.getElementById('none_selected').style.display = "none";
-              } else if (index == 3 ){
-                  document.getElementById('america').style.display = "none";
-                  document.getElementById('europe').style.display = "none";
-                  document.getElementById('africa').style.display = "none";
-                  document.getElementById('middle_east').style.display = "block";
-                  document.getElementById('asia').style.display = "none";
-                  document.getElementById('none_selected').style.display = "none";
-              } else if (index == 4 ){
-                  document.getElementById('america').style.display = "none";
-                  document.getElementById('europe').style.display = "none";
-                  document.getElementById('africa').style.display = "none";
-                  document.getElementById('middle_east').style.display = "none";
-                  document.getElementById('asia').style.display = "block";
-                  document.getElementById('none_selected').style.display = "none";
+                  document.getElementById('intensity1').style.display = "none";
+                  document.getElementById('intensity2').style.display = "block";
+                  document.getElementById('none_selected_2').style.display = "none";
               }
           }
 
@@ -117,7 +72,7 @@ function get_conflicts_per_region(years, america, europe, africa, middle_east, a
       tooltips: {
         custom: function(tooltip) {
           if (!tooltip.opacity) {
-            document.getElementById("conflicts_region").style.cursor = 'default';
+            document.getElementById("conflicts_intensity").style.cursor = 'default';
             return;
           }
         }
