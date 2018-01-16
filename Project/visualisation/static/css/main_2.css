@@ -13,35 +13,38 @@
  height: 20px;
 }
 
+.map_dec {
+    height: 20px;
+}
+
+.timeline {
+    height: 20px;
+}
+
 #nb_colonies {
   position: relative;
   height:15vh;
 }
 
-#map_div {
-  position: relative;
-  width: 60%;
-  height: 80vh;
-}
+
 
 #colonies_map_div {
   width: 100%;
-  height: 500px;
+  height: 200px;
 }
 
 #decolonies_map_div {
   width: 100%;
-  height: 500px;
+  height: 300px;
 }
 
 #post_empire_map_div {
   width: 100%;
-  height: 500px;
+  height: 100px;
 }
 
-#timeline_row {
-  position: relative;
-  height:35vh;
+.amcharts-chart-div {
+    height: 40vh !important;
 }
 
 #nb_colonies {

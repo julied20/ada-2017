@@ -30,117 +30,109 @@
 </head>
 <body class="dashboard">
     <header class="header">
-      <!-- Main Navbar-->
-      <nav class="navbar navbar-expand-lg">
-        <div class="search-area">
-          <div class="search-area-inner d-flex align-items-center justify-content-center">
-            <div class="close-btn"><i class="icon-close"></i></div>
-            <div class="row d-flex justify-content-center">
-              <div class="col-md-8">
-                <form action="#">
-                  <div class="form-group">
-                    <input type="search" name="search" id="search" placeholder="What are you looking for?">
-                    <button type="submit" class="submit"><i class="icon-search-1"></i></button>
-                  </div>
-                </form>
-              </div>
+        <!-- Main Navbar-->
+        <nav class="navbar navbar-expand-lg">
+            <div class="search-area">
+                <div class="search-area-inner d-flex align-items-center justify-content-center">
+                    <div class="close-btn"><i class="icon-close"></i></div>
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-8">
+                            <form action="#">
+                                <div class="form-group">
+                                    <input type="search" name="search" id="search" placeholder="What are you looking for?">
+                                    <button type="submit" class="submit"><i class="icon-search-1"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="container">
-          <!-- Navbar Brand -->
-          <div class="navbar-header d-flex align-items-center justify-content-between">
-            <!-- Navbar Brand --><a href="/ada-2017/core.html" class="navbar-brand">Has the decolonisation set the countries free?</a>
+            <div class="container">
+                <!-- Navbar Brand -->
+                <div class="navbar-header d-flex align-items-center justify-content-between">
+                    <!-- Navbar Brand --><a href="/ada-2017/core.html" class="navbar-brand">Has the decolonisation set the countries free?</a>
 
-            <!-- Toggle Button-->
-            <button type="button" data-toggle="collapse" data-target="#navbarcollapse" aria-controls="navbarcollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span></span><span></span><span></span></button>
-          </div>
-          <!-- Navbar Menu -->
-          <div id="navbarcollapse" class="collapse navbar-collapse">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item"><a href="https://github.com/julied20/ada-2017/tree/master/Project" class="nav-link " target="_blank" >Project</a></li>
-              <li class="nav-item"><a href="http://julied20.github.io/ada-2017/core.html" class="nav-link " target="_blank" >Data Story</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+                    <!-- Toggle Button-->
+                    <button type="button" data-toggle="collapse" data-target="#navbarcollapse" aria-controls="navbarcollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span></span><span></span><span></span></button>
+                </div>
+                <!-- Navbar Menu -->
+                <div id="navbarcollapse" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a href="https://github.com/julied20/ada-2017/tree/master/Project" class="nav-link " target="_blank" >Project</a></li>
+                        <li class="nav-item"><a href="http://julied20.github.io/ada-2017/core.html" class="nav-link " target="_blank" >Data Story</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
+
+
     <div class="container">
-    <div class="row">
-        <div class="col-4 col-md-8">
+
+        <div class="card-columns">
             <div class="card">
                 <div class="card-body">
-                  <h5 class="card-title">Decolonisation Timeline</h5>
-                  <div id="decolonisation_per_year">
-                      <canvas id="decolonisation"></canvas>
-                  </div>
+                    <h5 class="card-title">Decolonisation Timeline</h5>
+                    <div id="decolonisation_per_year">
+                        <canvas id="decolonisation"></canvas>
+                    </div>
                 </div>
-              </div>
+            </div>
 
-        </div>
-        <div class="col-4 col-md-4 ">
             <div class="card">
                 <div class="card-body">
-                  <h5 class="card-title">Conflicts per region</h5>
-                  <div class="col-sm" id="conflicts_region_">
-                      <canvas id="conflicts_region"></canvas>
-                  </div>
-                  <div id="none_selected"  style="display:block;"></div>
-                  <div id="europe"  style="display:none;"></div>
-                  <div id="africa"  style="display:none;"></div>
-                  <div id="asia"  style="display:none;"></div>
-                  <div id="middle_east"  style="display:none;"></div>
-                  <div id="america"  style="display:none;"></div>
+                    <h5 class="card-title">Decolonisation Map</h5>
+                    <div class="row" id="map_row">
+                        <div class="col-sm" id="decolonies_map_div">
+                        </div>
+                    </div>
                 </div>
-              </div>
+            </div>
 
-        </div>
-        <div class="col-4 col-md-4 ">
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Conflicts Intensity</h5>
-                  <div class="col-sm" id="conflicts_intensity_">
-                      <canvas id="conflicts_intensity"></canvas>
-                  </div>
-                  <div id="none_selected_2"  style="display:block;"></div>
-                  <div id="intensity1"  style="display:none;"></div>
-                  <div id="intensity2"  style="display:none;"></div>
-                </div>
-              </div>
-
-        </div>
-
-    </div>
-    <!-- Stack the columns on mobile by making one full-width and the other half-width -->
-    <div class="row">
-      <div class="col-4 col-md-6">
-          <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Colonies par Colonisers</h5>
+            <div class="card bg-primary text-white text-center p-3">
                 <div id="nb_colonies">
                     <canvas id="nb_colonizers"></canvas>
                 </div>
                 <div id="map_row">
-                    <div class="col-sm" id="colonies_map_div">
-                    </div>
-               </div>
-              </div>
-            </div>
-      </div>
-      <div class="col-4 col-md-6">
-          <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Decolonisation Map</h5>
-                <div class="row" id="map_row">
-                    <div class="col-sm" id="decolonies_map_div">
+                    <div class="map_div" id="colonies_map_div">
                     </div>
                 </div>
-              </div>
+
             </div>
-      </div>
+            <div class="card p-3">
+                <div class="card-body">
+                    <h5 class="card-title">Post Empire Organisation</h5>
+                    <div class="row" id="map_row">
+                        <div class="col-sm" id="post_empire_map_div">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card p-3 text-right">
+                <div class="col-sm" id="conflicts_region_">
+                    <canvas id="conflicts_region"></canvas>
+                </div>
+                <div id="none_selected"  style="display:block;"></div>
+                <div id="europe"  style="display:none;"></div>
+                <div id="africa"  style="display:none;"></div>
+                <div id="asia"  style="display:none;"></div>
+                <div id="middle_east"  style="display:none;"></div>
+                <div id="america"  style="display:none;"></div>
+
+            </div>
+            <div class="card p-3">
+                <h5 class="card-title">Conflicts Intensity</h5>
+                <div class="col-sm" id="conflicts_intensity_">
+                    <canvas id="conflicts_intensity"></canvas>
+                </div>
+                <div id="none_selected_2"  style="display:block;"></div>
+                <div id="intensity1"  style="display:none;"></div>
+                <div id="intensity2"  style="display:none;"></div>
+            </div>
+
+        </div>
     </div>
-</div>
 
     <!-- Javascript files-->
     <
@@ -156,6 +148,7 @@
 
 
     <script type="text/javascript" src='Project/visualisation/static/js/helpers.js'></script>
+    <script type="text/javascript" src='Project/visualisation/static/js/post_empire.js'></script>
     <script type="text/javascript" src='Project/visualisation/static/js/conflicts_per_region.js'></script>
     <script type="text/javascript" src='Project/visualisation/static/js/conflicts_per_intensity.js'></script>
     <script type="text/javascript" src='Project/visualisation/static/js/decolonisation_per_year.js'></script>
