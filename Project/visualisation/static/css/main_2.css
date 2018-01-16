@@ -6,11 +6,13 @@
  margin-bottom: 30px;
 }
 
-.tall {
- height: 40px;
-}
-.taller {
- height: 20px;
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 3;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 3;
+  }
 }
 
 .map_dec {
@@ -18,14 +20,21 @@
 }
 
 .timeline {
-    height: 20px;
+    height: 17px;
 }
 
 #nb_colonies {
-  position: relative;
-  height:15vh;
+  height:20vh;
 }
 
+#post_empire_map_div {
+    height: 20vh;
+    width: 80vh ;
+}
+
+#nb_colonizers {
+  height:20vh !important;
+}
 
 
 #colonies_map_div {
@@ -38,18 +47,18 @@
   height: 300px;
 }
 
-#post_empire_map_div {
-  width: 100%;
-  height: 100px;
+
+html, body{height:100vh;}
+#outer{
+min-height:100%;
 }
 
 .amcharts-chart-div {
-    height: 40vh !important;
+    height: 70vh !important;
 }
 
-#nb_colonies {
-  position: relative;
-  height:35vh;
+#decolonisation {
+  height:30vh !important;
 }
 
 #decolonisation_per_year {
@@ -58,11 +67,11 @@
 }
 
 #conflicts_intensity {
-    height: 169px;
+    height: 200px !important;
     width: 660px;
 }
 
-#conflicts_region {
-    height: 169px;
-    width: 660px;
+#conflicts_region_ {
+    position: relative;
+    height:40vh;
 }

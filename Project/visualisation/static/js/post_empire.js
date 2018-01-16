@@ -4,9 +4,9 @@ const post_empire = AmCharts.makeChart( "post_empire_map_div", {
   "type": "map",
   "dataProvider": {
       "map": "worldLow",
-      "zoomLevel": 1,
-      "zoomLongitude": 46,
-      "zoomLatitude": 2,
+      "zoomLevel": 1.2,
+      "zoomLongitude": 16,
+      "zoomLatitude": 42,
       "areas": [ {
         "title": "Armenia",
         "id": "AM",

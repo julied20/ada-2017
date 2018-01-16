@@ -23,9 +23,9 @@ function get_map_colonies(colonizers, col) {
         "type": "map",
         "dataProvider": {
             "map": "worldLow",
-            "zoomLevel": 1,
-            "zoomLongitude": 46,
-            "zoomLatitude": 2,
+            "zoomLevel": 1.2,
+            "zoomLongitude": 8,
+            "zoomLatitude": 6,
             "areas": areas,
             "zoomControl": {
                 "zoomControlEnabled": false,

@@ -58,7 +58,28 @@ function get_graph(years_dec, nb_dec) {
         legend: {
           onClick: null
         },
-        maintainAspectRatio: false
+        maintainAspectRatio: false,
+        onClick: function(e){
+        let element = this.getElementAtEvent(e);
+        if (element[0] != undefined) {
+            const year = element[0]._view.label;
+            get_map_deco(colonized_countries, year);
+            //const index = element[0]._index;
+            //const colonizer_name = colonizers[index].country;
+            //const color = colonizers[index].color;
+            //get_map_colonies(colonizers, colonizers[index])
+      }
+    },
+    onHover: function(e){
+        let element = this.getElementAtEvent(e);
+        if (element[0] != undefined) {
+            d3.select('#nb_colonizers')
+                .style('cursor', 'pointer')
+        } else {
+            d3.select('#nb_colonizers')
+                .style('cursor', 'default')
+        }
+    },
       }
   });
 }

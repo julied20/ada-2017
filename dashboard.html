@@ -50,7 +50,7 @@
             <div class="container">
                 <!-- Navbar Brand -->
                 <div class="navbar-header d-flex align-items-center justify-content-between">
-                    <!-- Navbar Brand --><a href="/ada-2017/core.html" class="navbar-brand">Has the decolonisation set the countries free?</a>
+                    <!-- Navbar Brand --><h5>Has the decolonisation set the countries free?</h5>
 
                     <!-- Toggle Button-->
                     <button type="button" data-toggle="collapse" data-target="#navbarcollapse" aria-controls="navbarcollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span></span><span></span><span></span></button>
@@ -68,29 +68,43 @@
 
 
 
-    <div class="container">
+    <!--<div class="container">-->
+
+    <p> </p>
 
         <div class="card-columns">
+
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Decolonisation Timeline</h5>
-                    <div id="decolonisation_per_year">
-                        <canvas id="decolonisation"></canvas>
+                    <h6 class="card-title">Conflicts per regions</h6>
+                    <div class="col-sm" id="conflicts_region_">
+                        <canvas id="conflicts_region"></canvas>
                     </div>
+                    <div id="none_selected"  style="display:block;"></div>
+                    <div id="europe"  style="display:none;"></div>
+                    <div id="africa"  style="display:none;"></div>
+                    <div id="asia"  style="display:none;"></div>
+                    <div id="middle_east"  style="display:none;"></div>
+                    <div id="america"  style="display:none;"></div>
                 </div>
             </div>
 
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Decolonisation Map</h5>
-                    <div class="row" id="map_row">
-                        <div class="col-sm" id="decolonies_map_div">
-                        </div>
-                    </div>
+                <h6 class="card-title">Conflicts Intensity</h6>
+                <div class="col-sm" id="conflicts_intensity_">
+                    <canvas id="conflicts_intensity"></canvas>
                 </div>
+                <div id="none_selected_2"  style="display:block;"></div>
+                <div id="intensity1"  style="display:none;"></div>
+                <div id="intensity2"  style="display:none;"></div>
+            </div>
             </div>
 
-            <div class="card bg-primary text-white text-center p-3">
+
+            <div class="card">
+                <div class="card-body">
+                <h6 class="card-title">Colonizers</h6>
                 <div id="nb_colonies">
                     <canvas id="nb_colonizers"></canvas>
                 </div>
@@ -100,39 +114,35 @@
                 </div>
 
             </div>
-            <div class="card p-3">
+            </div>
+
+            <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Post Empire Organisation</h5>
+
+                <h6 class="card-title">Post Empire Organisation</h6>
+                <div class="row" id="map_row">
+                    <div class="col-sm" id="post_empire_map_div">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+            <div class="card">
+                <div class="card-body">
+                    <h6 class="card-title">Decolonisation Timeline</h6>
+                    <div id="decolonisation_per_year">
+                        <canvas id="decolonisation"></canvas>
+                    </div>
                     <div class="row" id="map_row">
-                        <div class="col-sm" id="post_empire_map_div">
+                        <div class="col-sm" id="decolonies_map_div">
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card p-3 text-right">
-                <div class="col-sm" id="conflicts_region_">
-                    <canvas id="conflicts_region"></canvas>
-                </div>
-                <div id="none_selected"  style="display:block;"></div>
-                <div id="europe"  style="display:none;"></div>
-                <div id="africa"  style="display:none;"></div>
-                <div id="asia"  style="display:none;"></div>
-                <div id="middle_east"  style="display:none;"></div>
-                <div id="america"  style="display:none;"></div>
-
-            </div>
-            <div class="card p-3">
-                <h5 class="card-title">Conflicts Intensity</h5>
-                <div class="col-sm" id="conflicts_intensity_">
-                    <canvas id="conflicts_intensity"></canvas>
-                </div>
-                <div id="none_selected_2"  style="display:block;"></div>
-                <div id="intensity1"  style="display:none;"></div>
-                <div id="intensity2"  style="display:none;"></div>
-            </div>
 
         </div>
-    </div>
+    <!--</div>-->
 
     <!-- Javascript files-->
     <

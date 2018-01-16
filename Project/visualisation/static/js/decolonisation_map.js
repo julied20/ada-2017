@@ -1,24 +1,28 @@
-function get_map_deco(colonized_country) {
+function get_map_deco(colonized_country, year) {
     let areas = [];
 
 
     colonized_country.forEach(function(area) {
+        let color = area.color
+        if (area.year == year) {
+            color = "#FE5000"
+        }
+
         areas.push({
             "title" : area.country + " - " + area.year,
             "id" : area.ISO2,
-            "color": area.color
+            "color": color
         })
 
     });
-    console.log(areas);
 
     let colonies_map = AmCharts.makeChart( "decolonies_map_div", {
         "type": "map",
         "dataProvider": {
             "map": "worldLow",
             "zoomLevel": 1,
-            "zoomLongitude": 46,
-            "zoomLatitude": 2,
+            "zoomLongitude": 0,
+            "zoomLatitude": 40,
             "areas": areas,
             "zoomControl": {
                 "zoomControlEnabled": false,

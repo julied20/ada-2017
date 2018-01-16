@@ -237,7 +237,7 @@ colonizers[6].set_conflicts(years_conflicts, nb_confl_bel);
 $(function(){
   if($('body').is('.dec')){
       get_graph(years_dec, nb_dec);
-      get_map_deco(colonized_countries);
+      get_map_deco(colonized_countries, 0);
   } else if($('body').is('.pre_dec')) {
       get_map_colonies(colonizers);
       get_graph_colonies(colonizers);
@@ -250,7 +250,7 @@ $(function(){
       get_conflicts_per_region(years, america, europe, africa, middle_east, asia);
       get_conflicts_per_intensity(years, intensity1, intensity2);
       get_graph(years_dec, nb_dec);
-      get_map_deco(colonized_countries);
+      get_map_deco(colonized_countries, 0);
       get_map_colonies(colonizers);
       get_graph_colonies(colonizers);
 
