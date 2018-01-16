@@ -4,7 +4,7 @@ function get_map_deco(colonized_country) {
 
     colonized_country.forEach(function(area) {
         areas.push({
-            "title" : area.country,
+            "title" : area.country + " - " + area.year,
             "id" : area.ISO2,
             "color": area.color
         })

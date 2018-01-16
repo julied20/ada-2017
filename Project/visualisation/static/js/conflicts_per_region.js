@@ -49,7 +49,6 @@ function get_conflicts_per_region(years, america, europe, africa, middle_east, a
           const ci = this.chart;
           const alreadyHidden = (ci.getDatasetMeta(index).hidden === null) ? false : ci.getDatasetMeta(index).hidden;
           if(index == index_before) {
-              console.log('Yep');
               document.getElementById('none_selected').style.display = "block";
               document.getElementById('america').style.display = "none";
               document.getElementById('europe').style.display = "none";
