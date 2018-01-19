@@ -1,20 +1,3 @@
-/* highlight col-* */
-.row [class*='col-'] {
-
- background-clip: content-box;
- min-height: 120px;
- margin-bottom: 30px;
-}
-
-.card-columns {
-  @include media-breakpoint-only(lg) {
-    column-count: 3;
-  }
-  @include media-breakpoint-only(xl) {
-    column-count: 3;
-  }
-}
-
 .map_dec {
     height: 20px;
 }
@@ -23,10 +6,14 @@
     height: 17px;
 }
 
-#main_img {
-    height:100%;
-    width:100%
+.image {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
 }
+
 
 #nb_colonies {
   height:20vh;
@@ -62,8 +49,6 @@ min-height:100%;
     height: 70vh !important;
 }
 
-
-
 #decolonisation_per_year {
   position: relative;
   height:25vh;
@@ -84,7 +69,7 @@ min-height:100%;
   height: 50px;
   width: 50px;
   outline: black;
-  background-size: 100%, 100%;
+  background-size: 0%, 0%;
   border-radius: 0%;
   border: 0px solid black;
   background-image: none;

@@ -13,15 +13,15 @@ padding-top: 1em;
 </style>
 
 <body class="presentation">
-<div class="carousel-ada">
+<!--<div class="carousel-ada">-->
 
 <div id="myCarousel" class="carousel slide " >
 
   <div class="carousel-inner" role="listbox">
       <div class="carousel-item active">
-          <img id = "main_img" src="Project/visualisation/img/main.jpg" alt="Main Slide">
-          <div class="carousel-caption">
-            <h5>Has the decolonisation set the countries free?</h5>
+          <img src="/Project/visualisation/img/main.jpg" alt="">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Has the Decolonisation set the countries free?</h3>
             <p>Tristan Besson, Julie Djeffal & Jean Gschwind</p>
           </div>
       </div>
@@ -87,7 +87,7 @@ padding-top: 1em;
 
 </div>
 
-</div>
+<!--</div>-->
 
 <!-- jQuery library -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -128,6 +128,20 @@ $('#myCarousel').carousel({
 });
 </script>
 <script>
+$(document).keydown(function(e) {
+    if (e.keyCode === 37) {
+       // Previous
+       $(".carousel-control.left").click();
+       return false;
+    }
+    if (e.keyCode === 39) {
+       // Next
+       $(".carousel-control.right").click();
+       return false;
+    }
+});
+</script>
+<script>
 // Initialize tooltip component
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
@@ -137,6 +151,8 @@ $(function () {
 $(function () {
   $('[data-toggle="popover"]').popover()
 })
+
+
 </script>
 
 </body>
