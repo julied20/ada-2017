@@ -254,6 +254,14 @@ $(function(){
       get_map_colonies(colonizers);
       get_graph_colonies(colonizers);
 
+  } else if($('body').is('.presentation')) {
+      get_conflicts_per_region(years, america, europe, africa, middle_east, asia);
+      get_conflicts_per_intensity(years, intensity1, intensity2);
+      get_graph(years_dec, nb_dec);
+      get_map_deco(colonized_countries, 0);
+      get_map_colonies(colonizers);
+      get_graph_colonies(colonizers);
+
   }
 });
 

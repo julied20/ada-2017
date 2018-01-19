@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<title>My Example</title>
+
+<!-- Latest compiled and minified Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="Project/visualisation/static/css/main_3.css">
+
+
+<style>
+body {
+padding-top: 1em;
+}
+</style>
+
+<body class="presentation">
+<div class="carousel-ada">
+
+<div id="myCarousel" class="carousel slide " >
+
+  <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active">
+          <img id = "main_img" src="Project/visualisation/img/main.jpg" alt="Main Slide">
+          <div class="carousel-caption">
+            <h5>Has the decolonisation set the countries free?</h5>
+            <p>Tristan Besson, Julie Djeffal & Jean Gschwind</p>
+          </div>
+      </div>
+    <div class="carousel-item">
+            <div class="nb_colonizers">
+                <div id="nb_colonies">
+                    <canvas id="nb_colonizers"></canvas>
+                </div>
+                <div id="map_row">
+                    <div class="map_div" id="colonies_map_div">
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="carousel-item">
+        <h6 class="card-title">Decolonisation Timeline</h6>
+        <div id="decolonisation_per_year">
+            <canvas id="decolonisation"></canvas>
+        </div>
+        <div class="row" id="map_row">
+            <div class="col-sm" id="decolonies_map_div">
+            </div>
+        </div>
+    </div>
+    <div class="carousel-item">
+        <div class="card">
+            <div class="card-body">
+                <h6 class="card-title">Conflicts per regions</h6>
+                <div class="col-sm" id="conflicts_region_">
+                    <canvas id="conflicts_region"></canvas>
+                </div>
+                <div id="none_selected"  style="display:block;"></div>
+                <div id="europe"  style="display:none;"></div>
+                <div id="africa"  style="display:none;"></div>
+                <div id="asia"  style="display:none;"></div>
+                <div id="middle_east"  style="display:none;"></div>
+                <div id="america"  style="display:none;"></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+            <h6 class="card-title">Conflicts Intensity</h6>
+            <div class="col-sm" id="conflicts_intensity_">
+                <canvas id="conflicts_intensity"></canvas>
+            </div>
+            <div id="none_selected_2"  style="display:block;"></div>
+            <div id="intensity1"  style="display:none;"></div>
+            <div id="intensity2"  style="display:none;"></div>
+        </div>
+        </div>
+    </div>
+  </div>
+
+  <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+
+</div>
+
+</div>
+
+<!-- jQuery library -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+<!-- Popper -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+
+<!-- Latest compiled and minified Bootstrap JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"> </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+<script src="https://www.amcharts.com/lib/3/ammap.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://d3js.org/topojson.v1.min.js"></script>
+<script src="https://www.amcharts.com/lib/3/plugins/dataloader/dataloader.min.js"></script>
+<script src="https://www.amcharts.com/lib/3/maps/js/worldLow.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.js"></script>
+
+
+<script type="text/javascript" src='Project/visualisation/static/js/helpers.js'></script>
+<script type="text/javascript" src='Project/visualisation/static/js/post_empire.js'></script>
+<script type="text/javascript" src='Project/visualisation/static/js/conflicts_per_region.js'></script>
+<script type="text/javascript" src='Project/visualisation/static/js/conflicts_per_intensity.js'></script>
+<script type="text/javascript" src='Project/visualisation/static/js/decolonisation_per_year.js'></script>
+<script type="text/javascript" src='Project/visualisation/static/js/decolonisation_map.js'></script>
+<script type="text/javascript" src='Project/visualisation/static/js/colonies_map.js'></script>
+<script type="text/javascript" src='Project/visualisation/static/js/nb_colonies.js'></script>
+<script type="text/javascript" src='Project/visualisation/static/js/main.js'></script>
+
+<!-- Initialize Bootstrap functionality -->
+<script>
+$('#myCarousel').carousel({
+    interval: false
+});
+</script>
+<script>
+// Initialize tooltip component
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
+// Initialize popover component
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+</script>
+
+</body>

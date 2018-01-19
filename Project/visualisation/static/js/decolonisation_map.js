@@ -75,6 +75,9 @@ function get_map_deco(colonized_country, year) {
                 // get map object
                 let colonies_map = e.chart;
             }
-        }]
+        }],
+        "export": {
+            "enabled": true
+        }
     });
 }

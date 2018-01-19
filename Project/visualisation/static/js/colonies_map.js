@@ -57,6 +57,9 @@ function get_map_colonies(colonizers, col) {
                 // get map object
                 let colonies_map = e.chart;
             }
-        }]
+        }],
+        "export": {
+            "enabled": true
+        }
     });
 }
