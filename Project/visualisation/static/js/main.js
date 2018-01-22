@@ -44,7 +44,7 @@ let colonizers = [
     new Colonizer(
         "Netherlands",
         "NL",
-        "rgba(203, 56, 85, 1)"
+        "#FFC0CB"
     ),
     new Colonizer(
         "Denmark",
